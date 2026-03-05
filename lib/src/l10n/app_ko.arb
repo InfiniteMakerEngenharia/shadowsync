@@ -1,0 +1,1526 @@
+{
+  "@@locale": "ko",
+  
+  
+  "appTitle": "ShadowSync",
+  "@appTitle": {
+    "description": "Título do aplicativo"
+  },
+  
+  "appSubtitle": "백업 관리자",
+  "@appSubtitle": {
+    "description": "Subtítulo do aplicativo"
+  },
+  
+  
+  "myRoutines": "내 루틴",
+  "@myRoutines": {
+    "description": "Título da seção de rotinas"
+  },
+  
+  "verifyDisk": "디스크 확인",
+  "@verifyDisk": {
+    "description": "Opção de verificar disco"
+  },
+  
+  "decrypt": "복호화",
+  "@decrypt": {
+    "description": "Opção de descriptografar"
+  },
+  
+  "settings": "설정",
+  "@settings": {
+    "description": "Página de configurações"
+  },
+  
+  "startingBackup": "\"{routineName}\" 백업 시작 중...",
+  "@startingBackup": {
+    "description": "Mensagem ao iniciar backup",
+    "placeholders": {
+      "routineName": {
+        "type": "String",
+        "example": "Backup Documentos"
+      }
+    }
+  },
+  
+  "deleteRoutine": "루틴 삭제",
+  "@deleteRoutine": {
+    "description": "Título do diálogo de exclusão"
+  },
+  
+  "deleteRoutineConfirm": "\"{routineName}\" 루틴을 삭제하시겠습니까? 이 작업은 취소할 수 없습니다.",
+  "@deleteRoutineConfirm": {
+    "description": "Mensagem de confirmação de exclusão",
+    "placeholders": {
+      "routineName": {
+        "type": "String",
+        "example": "Backup Documentos"
+      }
+    }
+  },
+  
+  "cancel": "취소",
+  "@cancel": {
+    "description": "Botão cancelar"
+  },
+  
+  "delete": "삭제",
+  "@delete": {
+    "description": "Botão excluir"
+  },
+  
+  
+  "noRoutines": "구성된 루틴이 없습니다",
+  "@noRoutines": {
+    "description": "Mensagem quando não há rotinas"
+  },
+  
+  "noScheduledBackups": "예약된 자동 백업이 없습니다",
+  "@noScheduledBackups": {
+    "description": "Mensagem quando não há backups agendados"
+  },
+  
+  "serviceActive": "서비스 활성",
+  "@serviceActive": {
+    "description": "Indicador de serviço ativo"
+  },
+  
+  "nextBackup": "다음: \"{name}\" {time}",
+  "@nextBackup": {
+    "description": "Próximo backup agendado",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "Backup Documentos"
+      },
+      "time": {
+        "type": "String",
+        "example": "14:30"
+      }
+    }
+  },
+  
+  "today": "오늘",
+  "@today": {
+    "description": "Hoje"
+  },
+  
+  "tomorrow": "내일",
+  "@tomorrow": {
+    "description": "Amanhã"
+  },
+  
+  "monday": "월",
+  "@monday": {
+    "description": "Segunda-feira (abreviado)"
+  },
+  
+  "tuesday": "화",
+  "@tuesday": {
+    "description": "Terça-feira (abreviado)"
+  },
+  
+  "wednesday": "수",
+  "@wednesday": {
+    "description": "Quarta-feira (abreviado)"
+  },
+  
+  "thursday": "목",
+  "@thursday": {
+    "description": "Quinta-feira (abreviado)"
+  },
+  
+  "friday": "금",
+  "@friday": {
+    "description": "Sexta-feira (abreviado)"
+  },
+  
+  "saturday": "토",
+  "@saturday": {
+    "description": "Sábado (abreviado)"
+  },
+  
+  "sunday": "일",
+  "@sunday": {
+    "description": "Domingo (abreviado)"
+  },
+  
+  "newBackup": "새 백업",
+  "@newBackup": {
+    "description": "Botão para criar novo backup"
+  },
+  
+  
+  "runBackup": "백업 실행",
+  "@runBackup": {
+    "description": "Tooltip para executar backup"
+  },
+  
+  "deleteRoutineTooltip": "루틴 삭제",
+  "@deleteRoutineTooltip": {
+    "description": "Tooltip para excluir rotina"
+  },
+  
+  "manualExecution": "수동 실행",
+  "@manualExecution": {
+    "description": "Modo de execução manual"
+  },
+  
+  "noScheduleAvailable": "예약되지 않음",
+  "@noScheduleAvailable": {
+    "description": "Quando não há próximo agendamento disponível"
+  },
+  
+  "scheduledDaily": "예약됨: 매일 {time}",
+  "@scheduledDaily": {
+    "description": "Agendamento diário",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:30"
+      }
+    }
+  },
+  
+  "scheduledWeekly": "예약됨: 매주 • {date}",
+  "@scheduledWeekly": {
+    "description": "Agendamento semanal",
+    "placeholders": {
+      "date": {
+        "type": "String",
+        "example": "Segunda, 14:30"
+      }
+    }
+  },
+  
+  "scheduledInterval": "예약됨: {interval}마다",
+  "@scheduledInterval": {
+    "description": "Agendamento por intervalo",
+    "placeholders": {
+      "interval": {
+        "type": "String",
+        "example": "2 horas"
+      }
+    }
+  },
+  
+  "mode": "모드: ",
+  "@mode": {
+    "description": "Label de modo"
+  },
+  
+  "next": "다음: ",
+  "@next": {
+    "description": "Label de próximo"
+  },
+  
+  "last": "마지막: ",
+  "@last": {
+    "description": "Label de último"
+  },
+  
+  "lastBackupLabel": "마지막 백업: ",
+  "@lastBackupLabel": {
+    "description": "Label de último backup"
+  },
+  
+  "fileCount": "{count, plural, =1{파일 1개} other{파일 {count}개}}",
+  "@fileCount": {
+    "description": "Contador de arquivos",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "extractedCount": "{count, plural, =1{추출 1개} other{추출 {count}개}}",
+  "@extractedCount": {
+    "description": "Contador de arquivos extraídos",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  
+  
+  "general": "일반",
+  "@general": {
+    "description": "Aba geral"
+  },
+  
+  "telegram": "Telegram",
+  "@telegram": {
+    "description": "Aba telegram"
+  },
+  
+  "email": "이메일",
+  "@email": {
+    "description": "Aba email"
+  },
+  
+  "userName": "사용자 이름",
+  "@userName": {
+    "description": "Campo nome do usuário"
+  },
+  
+  "enterYourName": "이름을 입력하세요",
+  "@enterYourName": {
+    "description": "Placeholder nome do usuário"
+  },
+  
+  "encryptionPassword": "암호화 비밀번호",
+  "@encryptionPassword": {
+    "description": "Campo senha de criptografia"
+  },
+  
+  "encryptionPasswordHint": "암호화된 백업을 보호하는 데 사용됩니다",
+  "@encryptionPasswordHint": {
+    "description": "Hint da senha de criptografia"
+  },
+  
+  "enterPassword": "비밀번호를 입력하세요",
+  "@enterPassword": {
+    "description": "Placeholder senha"
+  },
+  
+  "backupFileName": "백업 파일 이름",
+  "@backupFileName": {
+    "description": "Campo nome do arquivo de backup"
+  },
+  
+  "useCustomName": "사용자 정의 이름 사용",
+  "@useCustomName": {
+    "description": "Opção usar nome personalizado"
+  },
+  
+  "customName": "사용자 정의 이름",
+  "@customName": {
+    "description": "Campo nome personalizado"
+  },
+  
+  "telegramNotifications": "Telegram 알림",
+  "@telegramNotifications": {
+    "description": "Título notificações telegram"
+  },
+  
+  "telegramDescription": "Telegram을 통해 백업 알림을 받으세요",
+  "@telegramDescription": {
+    "description": "Descrição notificações telegram"
+  },
+  
+  "enableNotifications": "알림 활성화",
+  "@enableNotifications": {
+    "description": "Opção habilitar notificações"
+  },
+  
+  "botToken": "봇 토큰",
+  "@botToken": {
+    "description": "Campo bot token"
+  },
+  
+  "botTokenHint": "Telegram에서 @BotFather로 봇을 생성하세요",
+  "@botTokenHint": {
+    "description": "Hint do bot token"
+  },
+  
+  "botTokenExample": "123456789:ABCdefGHI...",
+  "@botTokenExample": {
+    "description": "Exemplo de bot token"
+  },
+  
+  "chatId": "채팅 ID",
+  "@chatId": {
+    "description": "Campo chat ID"
+  },
+  
+  "chatIdHint": "봇에 /start를 보내고 @userinfobot을 사용하여 ID를 받으세요",
+  "@chatIdHint": {
+    "description": "Hint do chat ID"
+  },
+  
+  "chatIdExample": "채팅 ID (예: 123456789)",
+  "@chatIdExample": {
+    "description": "Exemplo de chat ID"
+  },
+  
+  "whenNotify": "알림 시기",
+  "@whenNotify": {
+    "description": "Título quando notificar"
+  },
+  
+  "backupSuccess": "백업 성공",
+  "@backupSuccess": {
+    "description": "Opção notificar sucesso"
+  },
+  
+  "backupFailed": "백업 실패",
+  "@backupFailed": {
+    "description": "Opção notificar falha"
+  },
+  
+  "backupStarted": "백업 시작",
+  "@backupStarted": {
+    "description": "Opção notificar início"
+  },
+  
+  "sending": "전송 중...",
+  "@sending": {
+    "description": "Status enviando"
+  },
+  
+  "sendTest": "테스트 전송",
+  "@sendTest": {
+    "description": "Botão enviar teste"
+  },
+  
+  "emailNotifications": "이메일 알림",
+  "@emailNotifications": {
+    "description": "Título notificações email"
+  },
+  
+  "emailDescription": "이메일을 통해 백업 알림을 받으세요",
+  "@emailDescription": {
+    "description": "Descrição notificações email"
+  },
+  
+  "emailProvider": "이메일 제공업체",
+  "@emailProvider": {
+    "description": "Campo provedor de email"
+  },
+  
+  "emailProviderHint": "제공업체를 선택하거나 수동으로 구성하세요",
+  "@emailProviderHint": {
+    "description": "Hint do provedor de email"
+  },
+  
+  "selectProvider": "제공업체 선택",
+  "@selectProvider": {
+    "description": "Placeholder selecionar provedor"
+  },
+  
+  "smtpServer": "SMTP 서버",
+  "@smtpServer": {
+    "description": "Campo servidor SMTP"
+  },
+  
+  "smtpServerExample": "예: smtp.gmail.com",
+  "@smtpServerExample": {
+    "description": "Exemplo de servidor SMTP"
+  },
+  
+  "smtpServerPlaceholder": "smtp.example.com",
+  "@smtpServerPlaceholder": {
+    "description": "Placeholder servidor SMTP"
+  },
+  
+  "smtpPort": "SMTP 포트",
+  "@smtpPort": {
+    "description": "Campo porta SMTP"
+  },
+  
+  "smtpPortHint": "TLS의 경우 587, SSL의 경우 465",
+  "@smtpPortHint": {
+    "description": "Hint da porta SMTP"
+  },
+  
+  "smtpPortPlaceholder": "587",
+  "@smtpPortPlaceholder": {
+    "description": "Placeholder porta SMTP"
+  },
+  
+  "yourEmail": "이메일",
+  "@yourEmail": {
+    "description": "Campo seu email"
+  },
+  
+  "yourEmailHint": "알림을 보내는 데 사용될 이메일",
+  "@yourEmailHint": {
+    "description": "Hint do seu email"
+  },
+  
+  "yourEmailPlaceholder": "youremail@gmail.com",
+  "@yourEmailPlaceholder": {
+    "description": "Placeholder do seu email"
+  },
+  
+  "emailPassword": "비밀번호 또는 앱 비밀번호",
+  "@emailPassword": {
+    "description": "Campo senha do email"
+  },
+  
+  "emailPasswordHint": "2단계 인증이 있는 경우 앱 비밀번호를 사용하세요",
+  "@emailPasswordHint": {
+    "description": "Hint da senha do email"
+  },
+  
+  "emailPasswordPlaceholder": "비밀번호 또는 앱 비밀번호",
+  "@emailPasswordPlaceholder": {
+    "description": "Placeholder da senha do email"
+  },
+  
+  "destinationEmails": "수신 이메일",
+  "@destinationEmails": {
+    "description": "Campo emails de destino"
+  },
+  
+  "destinationEmailsHint": "여러 이메일은 쉼표로 구분하세요",
+  "@destinationEmailsHint": {
+    "description": "Hint dos emails de destino"
+  },
+  
+  "destinationEmailsPlaceholder": "email1@example.com, email2@example.com",
+  "@destinationEmailsPlaceholder": {
+    "description": "Placeholder dos emails de destino"
+  },
+  
+  "security": "보안",
+  "@security": {
+    "description": "Título segurança"
+  },
+  
+  "useStartTls": "STARTTLS 사용 (권장)",
+  "@useStartTls": {
+    "description": "Opção usar STARTTLS"
+  },
+  
+  "useSsl": "SSL 사용",
+  "@useSsl": {
+    "description": "Opção usar SSL"
+  },
+  
+  "save": "저장",
+  "@save": {
+    "description": "Botão salvar"
+  },
+  
+  "fillBotTokenAndChatId": "테스트를 보내려면 봇 토큰과 채팅 ID를 입력하세요",
+  "@fillBotTokenAndChatId": {
+    "description": "Mensagem de erro ao enviar teste do telegram"
+  },
+  
+  "testMessageSent": "테스트 메시지가 성공적으로 전송되었습니다!",
+  "@testMessageSent": {
+    "description": "Mensagem de sucesso ao enviar teste"
+  },
+  
+  "errorWithMessage": "오류: {message}",
+  "@errorWithMessage": {
+    "description": "Mensagem de erro genérica",
+    "placeholders": {
+      "message": {
+        "type": "String",
+        "example": "Conexão recusada"
+      }
+    }
+  },
+  
+  "fillAllFields": "모든 필수 필드를 입력하세요",
+  "@fillAllFields": {
+    "description": "Mensagem de erro ao salvar sem preencher campos"
+  },
+  
+  "enterAtLeastOneEmail": "하나 이상의 수신 이메일을 입력하세요",
+  "@enterAtLeastOneEmail": {
+    "description": "Mensagem de erro ao salvar sem email de destino"
+  },
+  
+  "testEmailSent": "테스트 이메일이 성공적으로 전송되었습니다!",
+  "@testEmailSent": {
+    "description": "Mensagem de sucesso ao enviar teste de email"
+  },
+  
+  
+  "basicData": "기본 데이터",
+  "@basicData": {
+    "description": "Step dados básicos"
+  },
+  
+  "scheduling": "예약",
+  "@scheduling": {
+    "description": "Step agendamento"
+  },
+  
+  "processing": "처리",
+  "@processing": {
+    "description": "Step processamento"
+  },
+  
+  "review": "검토",
+  "@review": {
+    "description": "Step revisão"
+  },
+  
+  "nextStep": "다음",
+  "@nextStep": {
+    "description": "Botão próximo passo"
+  },
+  
+  "saveRoutine": "루틴 저장",
+  "@saveRoutine": {
+    "description": "Botão salvar rotina"
+  },
+  
+  "back": "뒤로",
+  "@back": {
+    "description": "Botão voltar"
+  },
+  
+  "routineName": "루틴 이름",
+  "@routineName": {
+    "description": "Campo nome da rotina"
+  },
+  
+  "backupSources": "백업 소스",
+  "@backupSources": {
+    "description": "Título origens do backup"
+  },
+  
+  "selectFilesAndFolders": "파일 및/또는 폴더를 선택할 수 있습니다.",
+  "@selectFilesAndFolders": {
+    "description": "Descrição de origens"
+  },
+  
+  "sourcePathsExample": "/Users/myuser/Documents;/Users/myuser/Projects",
+  "@sourcePathsExample": {
+    "description": "Exemplo de caminhos de origem"
+  },
+  
+  "addSource": "소스 추가",
+  "@addSource": {
+    "description": "Botão adicionar origem"
+  },
+  
+  "selecting": "선택 중...",
+  "@selecting": {
+    "description": "Status selecionando"
+  },
+  
+  "selectFiles": "파일 선택",
+  "@selectFiles": {
+    "description": "Botão selecionar arquivos"
+  },
+  
+  "selectFolder": "폴더 선택",
+  "@selectFolder": {
+    "description": "Botão selecionar pasta"
+  },
+  
+  "backupDestination": "백업 대상",
+  "@backupDestination": {
+    "description": "Campo destino do backup"
+  },
+  
+  "destinationDescription": "파일을 저장할 폴더를 선택하세요.",
+  "@destinationDescription": {
+    "description": "Descrição do destino"
+  },
+  
+  "destinationExample": "/Volumes/Backup/Destination",
+  "@destinationExample": {
+    "description": "Exemplo de destino"
+  },
+  
+  "selectDestinationFolder": "대상 폴더 선택",
+  "@selectDestinationFolder": {
+    "description": "Botão selecionar pasta de destino"
+  },
+  
+  "frequency": "빈도",
+  "@frequency": {
+    "description": "Título frequência"
+  },
+  
+  "manual": "수동",
+  "@manual": {
+    "description": "Tipo de agendamento manual"
+  },
+  
+  "daily": "매일",
+  "@daily": {
+    "description": "Tipo de agendamento diário"
+  },
+  
+  "weekly": "매주",
+  "@weekly": {
+    "description": "Tipo de agendamento semanal"
+  },
+  
+  "interval": "간격",
+  "@interval": {
+    "description": "Tipo de agendamento por intervalo"
+  },
+  
+  "runAt": "실행 시간:",
+  "@runAt": {
+    "description": "Label executar às"
+  },
+  
+  "runEvery": "실행 주기:",
+  "@runEvery": {
+    "description": "Label executar a cada"
+  },
+  
+  "manualExecutionInfo": "카드의 재생 버튼을 누르면 수동으로 백업이 실행됩니다.",
+  "@manualExecutionInfo": {
+    "description": "Informação sobre execução manual"
+  },
+  
+  "oneMinute": "1분",
+  "@oneMinute": {
+    "description": "Intervalo de 1 minuto"
+  },
+  
+  "nMinutes": "{n}분",
+  "@nMinutes": {
+    "description": "Intervalo de n minutos",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "oneHour": "1시간",
+  "@oneHour": {
+    "description": "Intervalo de 1 hora"
+  },
+  
+  "nHours": "{n}시간",
+  "@nHours": {
+    "description": "Intervalo de n horas",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "oneDay": "1일",
+  "@oneDay": {
+    "description": "Intervalo de 1 dia"
+  },
+  
+  "nDays": "{n}일",
+  "@nDays": {
+    "description": "Intervalo de n dias",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "compressBackup": "백업 압축",
+  "@compressBackup": {
+    "description": "Opção compactar backup"
+  },
+  
+  "compressionFormat": "압축 형식",
+  "@compressionFormat": {
+    "description": "Campo formato de compactação"
+  },
+  
+  "encryptBackup": "백업 암호화",
+  "@encryptBackup": {
+    "description": "Opção criptografar backup"
+  },
+  
+  "name": "이름",
+  "@name": {
+    "description": "Label nome"
+  },
+  
+  "sources": "소스",
+  "@sources": {
+    "description": "Label origens"
+  },
+  
+  "destination": "대상",
+  "@destination": {
+    "description": "Label destino"
+  },
+  
+  "schedule": "예약",
+  "@schedule": {
+    "description": "Label agendamento"
+  },
+  
+  "compression": "압축",
+  "@compression": {
+    "description": "Label compactação"
+  },
+  
+  "activeWithFormat": "활성 ({format})",
+  "@activeWithFormat": {
+    "description": "Compactação ativa com formato",
+    "placeholders": {
+      "format": {
+        "type": "String",
+        "example": "ZIP"
+      }
+    }
+  },
+  
+  "deactivated": "비활성",
+  "@deactivated": {
+    "description": "Desativada"
+  },
+  
+  "encryption": "암호화",
+  "@encryption": {
+    "description": "Label criptografia"
+  },
+  
+  "active": "활성",
+  "@active": {
+    "description": "Ativa"
+  },
+  
+  "diskSpace": "디스크 공간",
+  "@diskSpace": {
+    "description": "Título espaço em disco"
+  },
+  
+  "calculatingSizes": "크기 계산 중...",
+  "@calculatingSizes": {
+    "description": "Status calculando tamanhos"
+  },
+  
+  "sourceSize": "소스 크기",
+  "@sourceSize": {
+    "description": "Label tamanho da origem"
+  },
+  
+  "notAvailable": "사용할 수 없음",
+  "@notAvailable": {
+    "description": "Não disponível"
+  },
+  
+  "availableSpace": "대상의 사용 가능한 공간",
+  "@availableSpace": {
+    "description": "Label espaço disponível"
+  },
+  
+  "retention": "보존 기간 (버전 수)",
+  "@retention": {
+    "description": "Campo retenção"
+  },
+  
+  "sufficientSpace": "충분한 공간! {percent}% 여유 공간이 있습니다.",
+  "@sufficientSpace": {
+    "description": "Mensagem de espaço suficiente",
+    "placeholders": {
+      "percent": {
+        "type": "String",
+        "example": "50"
+      }
+    }
+  },
+  
+  "insufficientSpace": "공간 부족! 대상 디스크에 {size}가 부족합니다.",
+  "@insufficientSpace": {
+    "description": "Mensagem de espaço insuficiente",
+    "placeholders": {
+      "size": {
+        "type": "String",
+        "example": "2.5 GB"
+      }
+    }
+  },
+  
+  "fileSelectionCancelled": "파일 선택이 취소되었습니다.",
+  "@fileSelectionCancelled": {
+    "description": "Mensagem de seleção cancelada"
+  },
+  
+  "filesAdded": "{count, plural, =1{소스에 파일 1개가 추가되었습니다.} other{소스에 파일 {count}개가 추가되었습니다.}}",
+  "@filesAdded": {
+    "description": "Mensagem de arquivos adicionados",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "failedToSelectFiles": "파일 선택 실패: {error}",
+  "@failedToSelectFiles": {
+    "description": "Erro ao selecionar arquivos",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  
+  "folderSelectionCancelled": "소스 폴더 선택이 취소되었습니다.",
+  "@folderSelectionCancelled": {
+    "description": "Mensagem de seleção cancelada"
+  },
+  
+  "sourceFolderSelected": "소스 폴더가 선택되었습니다.",
+  "@sourceFolderSelected": {
+    "description": "Mensagem de pasta selecionada"
+  },
+  
+  "failedToSelectSourceFolder": "소스 폴더 선택 실패: {error}",
+  "@failedToSelectSourceFolder": {
+    "description": "Erro ao selecionar pasta de origem",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  
+  "iosSaveLocation": "iOS에서는 백업이 Documents/Backups에 저장됩니다",
+  "@iosSaveLocation": {
+    "description": "Informação sobre local de salvamento no iOS"
+  },
+  
+  "destinationSelectionCancelled": "대상 폴더 선택이 취소되었습니다.",
+  "@destinationSelectionCancelled": {
+    "description": "Mensagem de seleção cancelada"
+  },
+  
+  "destinationFolderSelected": "대상 폴더가 선택되었습니다.",
+  "@destinationFolderSelected": {
+    "description": "Mensagem de pasta selecionada"
+  },
+  
+  "failedToSelectDestination": "대상 폴더 선택 실패: {error}",
+  "@failedToSelectDestination": {
+    "description": "Erro ao selecionar pasta de destino",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  
+  "enterRoutineName": "루틴 이름을 입력하세요.",
+  "@enterRoutineName": {
+    "description": "Erro ao validar nome da rotina"
+  },
+  
+  "enterAtLeastOneSource": "하나 이상의 소스를 입력하세요.",
+  "@enterAtLeastOneSource": {
+    "description": "Erro ao validar origens"
+  },
+  
+  "enterDestinationPath": "대상 경로를 입력하세요.",
+  "@enterDestinationPath": {
+    "description": "Erro ao validar destino"
+  },
+  
+  "retentionMustBePositive": "보존 기간은 0보다 큰 숫자여야 합니다.",
+  "@retentionMustBePositive": {
+    "description": "Erro ao validar retenção"
+  },
+  
+  "configureEncryptionPassword": "암호화를 활성화하기 전에 설정에서 암호화 비밀번호를 설정하세요.",
+  "@configureEncryptionPassword": {
+    "description": "Erro ao habilitar criptografia sem senha configurada"
+  },
+  
+  
+  "decryptFile": "파일 복호화",
+  "@decryptFile": {
+    "description": "Título do diálogo de descriptografia"
+  },
+  
+  "decryptionDescription": "ShadowSync로 보호된 파일을 복호화합니다",
+  "@decryptionDescription": {
+    "description": "Descrição do diálogo de descriptografia"
+  },
+  
+  "encryptedFile": "암호화된 파일",
+  "@encryptedFile": {
+    "description": "Label arquivo criptografado"
+  },
+  
+  "selectFileEllipsis": "파일 선택...",
+  "@selectFileEllipsis": {
+    "description": "Placeholder selecionar arquivo"
+  },
+  
+  "destinationFolder": "대상 폴더",
+  "@destinationFolder": {
+    "description": "Label pasta de destino"
+  },
+  
+  "selectFolderEllipsis": "폴더 선택...",
+  "@selectFolderEllipsis": {
+    "description": "Placeholder selecionar pasta"
+  },
+  
+  "outputFileName": "출력 파일 이름:",
+  "@outputFileName": {
+    "description": "Label nome do arquivo de saída"
+  },
+  
+  "decryptionPassword": "복호화 비밀번호:",
+  "@decryptionPassword": {
+    "description": "Label senha de descriptografia"
+  },
+  
+  "enterEncryptionPassword": "암호화에 사용된 비밀번호를 입력하세요",
+  "@enterEncryptionPassword": {
+    "description": "Hint da senha de descriptografia"
+  },
+  
+  "selectEncryptedFile": "암호화된 파일 선택",
+  "@selectEncryptedFile": {
+    "description": "Tooltip selecionar arquivo criptografado"
+  },
+  
+  "selectDestinationFolderTooltip": "대상 폴더 선택",
+  "@selectDestinationFolderTooltip": {
+    "description": "Tooltip selecionar pasta de destino"
+  },
+  
+  "execute": "실행",
+  "@execute": {
+    "description": "Botão executar"
+  },
+  
+  "decrypting": "복호화 중...",
+  "@decrypting": {
+    "description": "Status descriptografando"
+  },
+  
+  "close": "닫기",
+  "@close": {
+    "description": "Botão fechar"
+  },
+  
+  "decryptAnother": "다른 파일 복호화",
+  "@decryptAnother": {
+    "description": "Botão descriptografar outro"
+  },
+  
+  "startingDecryption": "복호화 시작 중...",
+  "@startingDecryption": {
+    "description": "Status iniciando descriptografia"
+  },
+  
+  "preparingDecryption": "복호화 준비 중...",
+  "@preparingDecryption": {
+    "description": "Status preparando descriptografia"
+  },
+  
+  "decryptingFile": "파일 복호화 중...",
+  "@decryptingFile": {
+    "description": "Status descriptografando arquivo"
+  },
+  
+  "extractingContent": "내용 추출 중...",
+  "@extractingContent": {
+    "description": "Status extraindo conteúdo"
+  },
+  
+  "finalizing": "완료 중...",
+  "@finalizing": {
+    "description": "Status finalizando"
+  },
+  
+  "decryptedSuccessfully": "복호화 성공! {count, plural, =1{파일 1개가 추출되었습니다.} other{파일 {count}개가 추출되었습니다.}}",
+  "@decryptedSuccessfully": {
+    "description": "Mensagem de sucesso ao descriptografar",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "errorSelectingFile": "파일 선택 오류: {error}",
+  "@errorSelectingFile": {
+    "description": "Erro ao selecionar arquivo",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  
+  "errorSelectingDestination": "대상 선택 오류: {error}",
+  "@errorSelectingDestination": {
+    "description": "Erro ao selecionar destino",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  
+  
+  "verifyDiskTitle": "디스크 확인",
+  "@verifyDiskTitle": {
+    "description": "Título do diálogo de verificação de disco"
+  },
+  
+  "selectDiskToVerify": "무결성을 확인할 디스크를 선택하세요",
+  "@selectDiskToVerify": {
+    "description": "Descrição do diálogo de verificação"
+  },
+  
+  "verifying": "확인 중: {diskName}",
+  "@verifying": {
+    "description": "Título verificando disco",
+    "placeholders": {
+      "diskName": {
+        "type": "String",
+        "example": "Disco Principal"
+      }
+    }
+  },
+  
+  "backToSelection": "선택으로 돌아가기",
+  "@backToSelection": {
+    "description": "Tooltip voltar à seleção"
+  },
+  
+  "loadingDisks": "디스크 로드 중...",
+  "@loadingDisks": {
+    "description": "Status carregando discos"
+  },
+  
+  "errorLoadingDisks": "디스크 로드 오류: {error}",
+  "@errorLoadingDisks": {
+    "description": "Erro ao carregar discos",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  
+  "tryAgain": "다시 시도",
+  "@tryAgain": {
+    "description": "Botão tentar novamente"
+  },
+  
+  "noDisksFound": "디스크를 찾을 수 없습니다",
+  "@noDisksFound": {
+    "description": "Mensagem quando não há discos"
+  },
+  
+  "freeSpace": "{size} 여유 공간",
+  "@freeSpace": {
+    "description": "Espaço livre do disco",
+    "placeholders": {
+      "size": {
+        "type": "String",
+        "example": "100 GB"
+      }
+    }
+  },
+  
+  "diskSpaceUnavailable": "저장소 정보 없음",
+  "@diskSpaceUnavailable": {
+    "description": "디스크 저장소 정보를 사용할 수 없을 때의 메시지"
+  },
+  
+  "internalStorage": "내부 저장소",
+  "@internalStorage": {
+    "description": "Nome do armazenamento interno do dispositivo"
+  },
+  
+  "sdCard": "SD 카드",
+  "@sdCard": {
+    "description": "Nome do cartão SD"
+  },
+  
+  "externalSdCard": "외부 SD 카드",
+  "@externalSdCard": {
+    "description": "Nome do cartão SD externo"
+  },
+  
+  "primaryStorage": "기본 저장소",
+  "@primaryStorage": {
+    "description": "Nome do armazenamento principal"
+  },
+  
+  "externalStorage": "외부 저장소",
+  "@externalStorage": {
+    "description": "Nome do armazenamento externo"
+  },
+  
+  "deviceStorage": "기기 저장소",
+  "@deviceStorage": {
+    "description": "Nome do armazenamento do dispositivo"
+  },
+  
+  "appStorage": "앱 저장소",
+  "@appStorage": {
+    "description": "Nome do armazenamento do app"
+  },
+  
+  "testsToRun": "실행할 테스트:",
+  "@testsToRun": {
+    "description": "Título testes a executar"
+  },
+  
+  "testResults": "테스트 결과",
+  "@testResults": {
+    "description": "Título resultados dos testes"
+  },
+  
+  "verificationInProgress": "확인 진행 중...",
+  "@verificationInProgress": {
+    "description": "Status verificação em andamento"
+  },
+  
+  "diskVerifiedNoProblems": "디스크 확인 완료 - 문제가 발견되지 않았습니다",
+  "@diskVerifiedNoProblems": {
+    "description": "Status disco verificado sem problemas"
+  },
+  
+  "verificationCompletedWithWarnings": "경고와 함께 확인 완료",
+  "@verificationCompletedWithWarnings": {
+    "description": "Status verificação com avisos"
+  },
+  
+  "problemsDetected": "디스크에서 문제가 감지되었습니다",
+  "@problemsDetected": {
+    "description": "Status problemas detectados"
+  },
+  
+  "waiting": "대기 중...",
+  "@waiting": {
+    "description": "Status aguardando"
+  },
+  
+  "totalTime": "총 시간: {duration}",
+  "@totalTime": {
+    "description": "Tempo total da verificação",
+    "placeholders": {
+      "duration": {
+        "type": "String",
+        "example": "2m 30s"
+      }
+    }
+  },
+  
+  "mountPoint": "마운트 지점",
+  "@mountPoint": {
+    "description": "Label ponto de montagem"
+  },
+  
+  "device": "장치",
+  "@device": {
+    "description": "Label dispositivo"
+  },
+  
+  "fileSystem": "파일 시스템",
+  "@fileSystem": {
+    "description": "Label sistema de arquivos"
+  },
+  
+  "totalCapacity": "총 용량",
+  "@totalCapacity": {
+    "description": "Label capacidade total"
+  },
+  
+  "availableSpaceLabel": "사용 가능한 공간",
+  "@availableSpaceLabel": {
+    "description": "Label espaço disponível"
+  },
+  
+  "mediaType": "미디어 유형",
+  "@mediaType": {
+    "description": "Label tipo de mídia"
+  },
+  
+  "type": "유형",
+  "@type": {
+    "description": "Label tipo"
+  },
+  
+  "removable": "탈착식",
+  "@removable": {
+    "description": "Tipo removível"
+  },
+  
+  "internal": "내장",
+  "@internal": {
+    "description": "Tipo interno"
+  },
+  
+  "startVerification": "확인 시작",
+  "@startVerification": {
+    "description": "Botão iniciar verificação"
+  },
+  
+  "verifyAgain": "다시 확인",
+  "@verifyAgain": {
+    "description": "Botão verificar novamente"
+  },
+  
+  "testAccessibilityCheck": "접근성 확인",
+  "@testAccessibilityCheck": {
+    "description": "디스크 접근성 테스트의 이름"
+  },
+  
+  "testSpaceAnalysis": "디스크 공간 분석",
+  "@testSpaceAnalysis": {
+    "description": "디스크 공간 분석 테스트의 이름"
+  },
+  
+  "testReadTest": "읽기 테스트",
+  "@testReadTest": {
+    "description": "디스크 읽기 테스트의 이름"
+  },
+  
+  "testFileSystemCheck": "파일 시스템 확인",
+  "@testFileSystemCheck": {
+    "description": "파일 시스템 검증 테스트의 이름"
+  },
+  
+  "testSmartStatus": "S.M.A.R.T. 상태",
+  "@testSmartStatus": {
+    "description": "S.M.A.R.T. 상태 테스트의 이름"
+  },
+  
+  
+  "language": "언어",
+  "@language": {
+    "description": "Seleção de idioma"
+  },
+  
+  "languagePortuguese": "Português (Brasil)",
+  "@languagePortuguese": {
+    "description": "Nome do idioma Português"
+  },
+  
+  "languageEnglish": "English",
+  "@languageEnglish": {
+    "description": "Nome do idioma Inglês"
+  },
+  
+  "languageFrench": "Français",
+  "@languageFrench": {
+    "description": "Nome do idioma Francês"
+  },
+  
+  "languageGerman": "Deutsch",
+  "@languageGerman": {
+    "description": "Nome do idioma Alemão"
+  },
+  
+  "languageSpanish": "Español",
+  "@languageSpanish": {
+    "description": "Nome do idioma Espanhol"
+  },
+  
+  "languageItalian": "Italiano",
+  "@languageItalian": {
+    "description": "Nome do idioma Italiano"
+  },
+  
+  "languageJapanese": "日本語",
+  "@languageJapanese": {
+    "description": "Nome do idioma Japonês"
+  },
+  
+  "languageChinese": "中文 (简体)",
+  "@languageChinese": {
+    "description": "Nome do idioma Chinês Simplificado"
+  },
+  
+  "languageKorean": "한국어",
+  "@languageKorean": {
+    "description": "Nome do idioma Coreano"
+  },
+  
+  "scheduleTypeManual": "수동",
+  "@scheduleTypeManual": {
+    "description": "Schedule type: Manual"
+  },
+  
+  "scheduleTypeDaily": "매일",
+  "@scheduleTypeDaily": {
+    "description": "Schedule type: Daily"
+  },
+  
+  "scheduleTypeWeekly": "매주",
+  "@scheduleTypeWeekly": {
+    "description": "Schedule type: Weekly"
+  },
+  
+  "scheduleTypeInterval": "간격",
+  "@scheduleTypeInterval": {
+    "description": "Schedule type: Interval"
+  },
+  
+  "backupName": "이름",
+  "@backupName": {
+    "description": "Label: Backup name"
+  },
+  
+  "backupSource": "원본",
+  "@backupSource": {
+    "description": "Label: Backup source(s)"
+  },
+  
+  "destination": "대상",
+  "@destination": {
+    "description": "Label: Backup destination"
+  },
+  
+  "scheduling": "일정",
+  "@scheduling": {
+    "description": "Label: Backup scheduling"
+  },
+  
+  "frequency": "빈도",
+  "@frequency": {
+    "description": "Label: Schedule frequency"
+  },
+  
+  "nextBackupFormat": "다음: \"{routineName}\" {time}",
+  "@nextBackupFormat": {
+    "description": "Format of the next scheduled backup",
+    "placeholders": {
+      "routineName": {
+        "type": "String",
+        "example": "Backup Documents"
+      },
+      "time": {
+        "type": "String",
+        "example": "today, 14:30"
+      }
+    }
+  },
+  
+  "diskSpaceSufficient": "충분한 공간! {margin}% 여유 사용 가능.",
+  "@diskSpaceSufficient": {
+    "description": "Message when there is available space",
+    "placeholders": {
+      "margin": {
+        "type": "String",
+        "example": "30"
+      }
+    }
+  },
+  
+  "diskSpaceInsufficient": "공간 부족! 대상 디스크에 {deficit}가 부족합니다.",
+  "@diskSpaceInsufficient": {
+    "description": "Message when there is not enough available space",
+    "placeholders": {
+      "deficit": {
+        "type": "String",
+        "example": "500 MB"
+      }
+    }
+  },
+  
+  "backupCompression": "압축",
+  "@backupCompression": {
+    "description": "Label: Backup compression"
+  },
+  
+  "backupEncryption": "암호화",
+  "@backupEncryption": {
+    "description": "Label: Backup encryption"
+  },
+  
+  "encryptionActive": "활성화됨",
+  "@encryptionActive": {
+    "description": "Encryption status: Active"
+  },
+  
+  "noRoutinesConfigured": "구성된 루팁이 없습니다",
+  "@noRoutinesConfigured": {
+    "description": "Message: No routines configured"
+  },
+  
+  "noScheduledBackups": "예정된 백업이 없습니다",
+  "@noScheduledBackups": {
+    "description": "Message: No scheduled backups"
+  },
+  
+  "serviceActive": "서비스 활성",
+  "@serviceActive": {
+    "description": "Status message: Service active"
+  },
+  
+  "dateToday": "오늘",
+  "@dateToday": {
+    "description": "Date label: Today"
+  },
+  
+  "dateTomorrow": "내일",
+  "@dateTomorrow": {
+    "description": "Date label: Tomorrow"
+  },
+  
+  "weekdayMonday": "월",
+  "@weekdayMonday": {
+    "description": "Abbreviation: Monday"
+  },
+  
+  "weekdayTuesday": "화",
+  "@weekdayTuesday": {
+    "description": "Abbreviation: Tuesday"
+  },
+  
+  "weekdayWednesday": "수",
+  "@weekdayWednesday": {
+    "description": "Abbreviation: Wednesday"
+  },
+  
+  "weekdayThursday": "목",
+  "@weekdayThursday": {
+    "description": "Abbreviation: Thursday"
+  },
+  
+  "weekdayFriday": "금",
+  "@weekdayFriday": {
+    "description": "Abbreviation: Friday"
+  },
+  
+  "weekdaySaturday": "토",
+  "@weekdaySaturday": {
+    "description": "Abbreviation: Saturday"
+  },
+  
+  "weekdaySunday": "일",
+  "@weekdaySunday": {
+    "description": "Abbreviation: Sunday"
+  },
+  
+  "about": "정보",
+  "@about": {
+    "description": "About menu option"
+  },
+  
+  "aboutTitle": "ShadowSync 정보",
+  "@aboutTitle": {
+    "description": "About dialog title"
+  },
+  
+  "version": "버전",
+  "@version": {
+    "description": "App version label"
+  },
+  
+  "developer": "개발자",
+  "@developer": {
+    "description": "Developer label"
+  },
+  
+  "visitWebsite": "웹사이트 방문",
+  "@visitWebsite": {
+    "description": "Button to visit website"
+  },
+
+  "backupCompleted": "백업이 완료되었습니다 ✓",
+  "@backupCompleted": {
+    "description": "Notification title for successful backup"
+  }
+}

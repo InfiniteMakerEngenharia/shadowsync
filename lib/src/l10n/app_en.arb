@@ -1,0 +1,1645 @@
+{
+  "@@locale": "en",
+  
+  
+  "appTitle": "ShadowSync",
+  "@appTitle": {
+    "description": "Application title"
+  },
+  
+  "appSubtitle": "Backup Manager",
+  "@appSubtitle": {
+    "description": "Application subtitle"
+  },
+  
+  
+  "myRoutines": "My Routines",
+  "@myRoutines": {
+    "description": "Routines section title"
+  },
+  
+  "verifyDisk": "Verify Disk",
+  "@verifyDisk": {
+    "description": "Verify disk option"
+  },
+  
+  "decrypt": "Decrypt",
+  "@decrypt": {
+    "description": "Decrypt option"
+  },
+  
+  "settings": "Settings",
+  "@settings": {
+    "description": "Settings page"
+  },
+  
+  "startingBackup": "Starting backup \"{routineName}\"...",
+  "@startingBackup": {
+    "description": "Message when starting backup",
+    "placeholders": {
+      "routineName": {
+        "type": "String",
+        "example": "Documents Backup"
+      }
+    }
+  },
+  
+  "deleteRoutine": "Delete routine",
+  "@deleteRoutine": {
+    "description": "Delete dialog title"
+  },
+  
+  "deleteRoutineConfirm": "Do you really want to delete the routine \"{routineName}\"? This action cannot be undone.",
+  "@deleteRoutineConfirm": {
+    "description": "Delete confirmation message",
+    "placeholders": {
+      "routineName": {
+        "type": "String",
+        "example": "Documents Backup"
+      }
+    }
+  },
+  
+  "cancel": "Cancel",
+  "@cancel": {
+    "description": "Cancel button"
+  },
+  
+  "delete": "Delete",
+  "@delete": {
+    "description": "Delete button"
+  },
+  
+  
+  "noRoutines": "No routines configured",
+  "@noRoutines": {
+    "description": "Message when there are no routines"
+  },
+  
+  "noScheduledBackups": "No automatic backups scheduled",
+  "@noScheduledBackups": {
+    "description": "Message when there are no scheduled backups"
+  },
+  
+  "serviceActive": "Service active",
+  "@serviceActive": {
+    "description": "Active service indicator"
+  },
+  
+  "nextBackup": "Next: \"{name}\" {time}",
+  "@nextBackup": {
+    "description": "Next scheduled backup",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "Documents Backup"
+      },
+      "time": {
+        "type": "String",
+        "example": "2:30 PM"
+      }
+    }
+  },
+  
+  "today": "today",
+  "@today": {
+    "description": "Today"
+  },
+  
+  "tomorrow": "tomorrow",
+  "@tomorrow": {
+    "description": "Tomorrow"
+  },
+  
+  "monday": "mon",
+  "@monday": {
+    "description": "Monday (abbreviated)"
+  },
+  
+  "tuesday": "tue",
+  "@tuesday": {
+    "description": "Tuesday (abbreviated)"
+  },
+  
+  "wednesday": "wed",
+  "@wednesday": {
+    "description": "Wednesday (abbreviated)"
+  },
+  
+  "thursday": "thu",
+  "@thursday": {
+    "description": "Thursday (abbreviated)"
+  },
+  
+  "friday": "fri",
+  "@friday": {
+    "description": "Friday (abbreviated)"
+  },
+  
+  "saturday": "sat",
+  "@saturday": {
+    "description": "Saturday (abbreviated)"
+  },
+  
+  "sunday": "sun",
+  "@sunday": {
+    "description": "Sunday (abbreviated)"
+  },
+  
+  "newBackup": "New Backup",
+  "@newBackup": {
+    "description": "Button to create new backup"
+  },
+  
+  
+  "runBackup": "Run backup",
+  "@runBackup": {
+    "description": "Tooltip to run backup"
+  },
+  
+  "deleteRoutineTooltip": "Delete routine",
+  "@deleteRoutineTooltip": {
+    "description": "Tooltip to delete routine"
+  },
+  
+  "manualExecution": "Manual execution",
+  "@manualExecution": {
+    "description": "Manual execution mode"
+  },
+  
+  "noScheduleAvailable": "Not scheduled",
+  "@noScheduleAvailable": {
+    "description": "When there is no next scheduled time available"
+  },
+  
+  "scheduledDaily": "Scheduled: Daily at {time}",
+  "@scheduledDaily": {
+    "description": "Daily scheduling",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "2:30 PM"
+      }
+    }
+  },
+  
+  "scheduledWeekly": "Scheduled: Weekly • {date}",
+  "@scheduledWeekly": {
+    "description": "Weekly scheduling",
+    "placeholders": {
+      "date": {
+        "type": "String",
+        "example": "Monday, 2:30 PM"
+      }
+    }
+  },
+  
+  "scheduledInterval": "Scheduled: Every {interval}",
+  "@scheduledInterval": {
+    "description": "Interval scheduling",
+    "placeholders": {
+      "interval": {
+        "type": "String",
+        "example": "2 hours"
+      }
+    }
+  },
+  
+  "mode": "Mode: ",
+  "@mode": {
+    "description": "Mode label"
+  },
+  
+  "next": "Next: ",
+  "@next": {
+    "description": "Next label"
+  },
+  
+  "last": "Last: ",
+  "@last": {
+    "description": "Last label"
+  },
+  
+  "lastBackupLabel": "Last backup: ",
+  "@lastBackupLabel": {
+    "description": "Last backup label"
+  },
+  
+  "fileCount": "{count, plural, =1{1 file} other{{count} files}}",
+  "@fileCount": {
+    "description": "File counter",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "extractedCount": "{count, plural, =1{1 extracted} other{{count} extracted}}",
+  "@extractedCount": {
+    "description": "Extracted files counter",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  
+  
+  "general": "General",
+  "@general": {
+    "description": "General tab"
+  },
+  
+  "telegram": "Telegram",
+  "@telegram": {
+    "description": "Telegram tab"
+  },
+  
+  "email": "Email",
+  "@email": {
+    "description": "Email tab"
+  },
+  
+  "userName": "User Name",
+  "@userName": {
+    "description": "User name field"
+  },
+  
+  "enterYourName": "Enter your name",
+  "@enterYourName": {
+    "description": "User name placeholder"
+  },
+  
+  "encryptionPassword": "Encryption Password",
+  "@encryptionPassword": {
+    "description": "Encryption password field"
+  },
+  
+  "encryptionPasswordHint": "Used to protect your encrypted backups",
+  "@encryptionPasswordHint": {
+    "description": "Encryption password hint"
+  },
+  
+  "enterPassword": "Enter password",
+  "@enterPassword": {
+    "description": "Password placeholder"
+  },
+  
+  "backupFileName": "Backup File Name",
+  "@backupFileName": {
+    "description": "Backup file name field"
+  },
+  
+  "useCustomName": "Use custom name",
+  "@useCustomName": {
+    "description": "Use custom name option"
+  },
+  
+  "customName": "Custom name",
+  "@customName": {
+    "description": "Custom name field"
+  },
+  
+  "telegramNotifications": "Telegram Notifications",
+  "@telegramNotifications": {
+    "description": "Telegram notifications title"
+  },
+  
+  "telegramDescription": "Receive alerts about your backups via Telegram",
+  "@telegramDescription": {
+    "description": "Telegram notifications description"
+  },
+  
+  "enableNotifications": "Enable notifications",
+  "@enableNotifications": {
+    "description": "Enable notifications option"
+  },
+  
+  "botToken": "Bot Token",
+  "@botToken": {
+    "description": "Bot token field"
+  },
+  
+  "botTokenHint": "Create a bot with @BotFather on Telegram",
+  "@botTokenHint": {
+    "description": "Bot token hint"
+  },
+  
+  "botTokenExample": "123456789:ABCdefGHI...",
+  "@botTokenExample": {
+    "description": "Bot token example"
+  },
+  
+  "chatId": "Chat ID",
+  "@chatId": {
+    "description": "Chat ID field"
+  },
+  
+  "chatIdHint": "Send /start to the bot and use @userinfobot to get it",
+  "@chatIdHint": {
+    "description": "Chat ID hint"
+  },
+  
+  "chatIdExample": "Your Chat ID (e.g., 123456789)",
+  "@chatIdExample": {
+    "description": "Chat ID example"
+  },
+  
+  "whenNotify": "When to Notify",
+  "@whenNotify": {
+    "description": "When to notify title"
+  },
+  
+  "backupSuccess": "Backup completed successfully",
+  "@backupSuccess": {
+    "description": "Notify on success option"
+  },
+  
+  "backupFailed": "Backup failed",
+  "@backupFailed": {
+    "description": "Notify on failure option"
+  },
+  
+  "backupStarted": "Backup started",
+  "@backupStarted": {
+    "description": "Notify on start option"
+  },
+  
+  "sending": "Sending...",
+  "@sending": {
+    "description": "Sending status"
+  },
+  
+  "sendTest": "Send Test",
+  "@sendTest": {
+    "description": "Send test button"
+  },
+  
+  "emailNotifications": "Email Notifications",
+  "@emailNotifications": {
+    "description": "Email notifications title"
+  },
+  
+  "emailDescription": "Receive alerts about your backups via email",
+  "@emailDescription": {
+    "description": "Email notifications description"
+  },
+  
+  "emailProvider": "Email Provider",
+  "@emailProvider": {
+    "description": "Email provider field"
+  },
+  
+  "emailProviderHint": "Select your provider or configure manually",
+  "@emailProviderHint": {
+    "description": "Email provider hint"
+  },
+  
+  "selectProvider": "Select a provider",
+  "@selectProvider": {
+    "description": "Select provider placeholder"
+  },
+  
+  "smtpServer": "SMTP Server",
+  "@smtpServer": {
+    "description": "SMTP server field"
+  },
+  
+  "smtpServerExample": "E.g., smtp.gmail.com",
+  "@smtpServerExample": {
+    "description": "SMTP server example"
+  },
+  
+  "smtpServerPlaceholder": "smtp.example.com",
+  "@smtpServerPlaceholder": {
+    "description": "SMTP server placeholder"
+  },
+  
+  "smtpPort": "SMTP Port",
+  "@smtpPort": {
+    "description": "SMTP port field"
+  },
+  
+  "smtpPortHint": "587 for TLS, 465 for SSL",
+  "@smtpPortHint": {
+    "description": "SMTP port hint"
+  },
+  
+  "smtpPortPlaceholder": "587",
+  "@smtpPortPlaceholder": {
+    "description": "SMTP port placeholder"
+  },
+  
+  "yourEmail": "Your Email",
+  "@yourEmail": {
+    "description": "Your email field"
+  },
+  
+  "yourEmailHint": "Email to be used to send notifications",
+  "@yourEmailHint": {
+    "description": "Your email hint"
+  },
+  
+  "yourEmailPlaceholder": "youremail@gmail.com",
+  "@yourEmailPlaceholder": {
+    "description": "Your email placeholder"
+  },
+  
+  "emailPassword": "Password or App Password",
+  "@emailPassword": {
+    "description": "Email password field"
+  },
+  
+  "emailPasswordHint": "Use App Password if you have 2-step authentication",
+  "@emailPasswordHint": {
+    "description": "Email password hint"
+  },
+  
+  "emailPasswordPlaceholder": "Your password or App Password",
+  "@emailPasswordPlaceholder": {
+    "description": "Email password placeholder"
+  },
+  
+  "destinationEmails": "Destination Emails",
+  "@destinationEmails": {
+    "description": "Destination emails field"
+  },
+  
+  "destinationEmailsHint": "Separate multiple emails with comma",
+  "@destinationEmailsHint": {
+    "description": "Destination emails hint"
+  },
+  
+  "destinationEmailsPlaceholder": "email1@example.com, email2@example.com",
+  "@destinationEmailsPlaceholder": {
+    "description": "Destination emails placeholder"
+  },
+  
+  "security": "Security",
+  "@security": {
+    "description": "Security title"
+  },
+  
+  "useStartTls": "Use STARTTLS (recommended)",
+  "@useStartTls": {
+    "description": "Use STARTTLS option"
+  },
+  
+  "useSsl": "Use SSL",
+  "@useSsl": {
+    "description": "Use SSL option"
+  },
+  
+  "save": "Save",
+  "@save": {
+    "description": "Save button"
+  },
+  
+  "fillBotTokenAndChatId": "Fill in the Bot Token and Chat ID to send a test",
+  "@fillBotTokenAndChatId": {
+    "description": "Error message when sending telegram test"
+  },
+  
+  "testMessageSent": "Test message sent successfully!",
+  "@testMessageSent": {
+    "description": "Success message when sending test"
+  },
+  
+  "errorWithMessage": "Error: {message}",
+  "@errorWithMessage": {
+    "description": "Generic error message",
+    "placeholders": {
+      "message": {
+        "type": "String",
+        "example": "Connection refused"
+      }
+    }
+  },
+  
+  "fillAllFields": "Fill in all required fields",
+  "@fillAllFields": {
+    "description": "Error message when saving without filling fields"
+  },
+  
+  "enterAtLeastOneEmail": "Enter at least one destination email",
+  "@enterAtLeastOneEmail": {
+    "description": "Error message when saving without destination email"
+  },
+  
+  "testEmailSent": "Test email sent successfully!",
+  "@testEmailSent": {
+    "description": "Success message when sending test email"
+  },
+  
+  
+  "basicData": "Basic Data",
+  "@basicData": {
+    "description": "Basic data step"
+  },
+  
+  "scheduling": "Scheduling",
+  "@scheduling": {
+    "description": "Scheduling step"
+  },
+  
+  "processing": "Processing",
+  "@processing": {
+    "description": "Processing step"
+  },
+  
+  "review": "Review",
+  "@review": {
+    "description": "Review step"
+  },
+  
+  "nextStep": "Next",
+  "@nextStep": {
+    "description": "Next step button"
+  },
+  
+  "saveRoutine": "Save Routine",
+  "@saveRoutine": {
+    "description": "Save routine button"
+  },
+  
+  "back": "Back",
+  "@back": {
+    "description": "Back button"
+  },
+  
+  "routineName": "Routine name",
+  "@routineName": {
+    "description": "Routine name field"
+  },
+  
+  "backupSources": "Backup Sources",
+  "@backupSources": {
+    "description": "Backup sources title"
+  },
+  
+  "selectFilesAndFolders": "You can select files and/or folders.",
+  "@selectFilesAndFolders": {
+    "description": "Sources description"
+  },
+  
+  "sourcePathsExample": "/Users/myuser/Documents;/Users/myuser/Projects",
+  "@sourcePathsExample": {
+    "description": "Source paths example"
+  },
+  
+  "addSource": "Add Source",
+  "@addSource": {
+    "description": "Add source button"
+  },
+  
+  "selecting": "Selecting...",
+  "@selecting": {
+    "description": "Selecting status"
+  },
+  
+  "selectFiles": "Select File(s)",
+  "@selectFiles": {
+    "description": "Select files button"
+  },
+  
+  "selectFolder": "Select Folder",
+  "@selectFolder": {
+    "description": "Select folder button"
+  },
+  
+  "backupDestination": "Backup Destination",
+  "@backupDestination": {
+    "description": "Backup destination field"
+  },
+  
+  "destinationDescription": "Choose the folder where files will be saved.",
+  "@destinationDescription": {
+    "description": "Destination description"
+  },
+  
+  "destinationExample": "/Volumes/Backup/Destination",
+  "@destinationExample": {
+    "description": "Destination example"
+  },
+  
+  "selectDestinationFolder": "Select Destination Folder",
+  "@selectDestinationFolder": {
+    "description": "Select destination folder button"
+  },
+  
+  "frequency": "Frequency",
+  "@frequency": {
+    "description": "Frequency title"
+  },
+  
+  "manual": "Manual",
+  "@manual": {
+    "description": "Manual scheduling type"
+  },
+  
+  "daily": "Daily",
+  "@daily": {
+    "description": "Daily scheduling type"
+  },
+  
+  "weekly": "Weekly",
+  "@weekly": {
+    "description": "Weekly scheduling type"
+  },
+  
+  "interval": "Interval",
+  "@interval": {
+    "description": "Interval scheduling type"
+  },
+  
+  "runAt": "Run at:",
+  "@runAt": {
+    "description": "Run at label"
+  },
+  
+  "runEvery": "Run every:",
+  "@runEvery": {
+    "description": "Run every label"
+  },
+  
+  "manualExecutionInfo": "The backup will be executed manually when you press the play button on the card.",
+  "@manualExecutionInfo": {
+    "description": "Manual execution information"
+  },
+  
+  "oneMinute": "1 minute",
+  "@oneMinute": {
+    "description": "1 minute interval"
+  },
+  
+  "nMinutes": "{n} minutes",
+  "@nMinutes": {
+    "description": "N minutes interval",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "oneHour": "1 hour",
+  "@oneHour": {
+    "description": "1 hour interval"
+  },
+  
+  "nHours": "{n} hours",
+  "@nHours": {
+    "description": "N hours interval",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "oneDay": "1 day",
+  "@oneDay": {
+    "description": "1 day interval"
+  },
+  
+  "nDays": "{n} days",
+  "@nDays": {
+    "description": "N days interval",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "compressBackup": "Compress backup",
+  "@compressBackup": {
+    "description": "Compress backup option"
+  },
+  
+  "compressionFormat": "Compression format",
+  "@compressionFormat": {
+    "description": "Compression format field"
+  },
+  
+  "encryptBackup": "Encrypt backup",
+  "@encryptBackup": {
+    "description": "Encrypt backup option"
+  },
+  
+  "name": "Name",
+  "@name": {
+    "description": "Name label"
+  },
+  
+  "sources": "Sources",
+  "@sources": {
+    "description": "Sources label"
+  },
+  
+  "destination": "Destination",
+  "@destination": {
+    "description": "Destination label"
+  },
+  
+  "schedule": "Schedule",
+  "@schedule": {
+    "description": "Schedule label"
+  },
+  
+  "compression": "Compression",
+  "@compression": {
+    "description": "Compression label"
+  },
+  
+  "activeWithFormat": "Active ({format})",
+  "@activeWithFormat": {
+    "description": "Active compression with format",
+    "placeholders": {
+      "format": {
+        "type": "String",
+        "example": "ZIP"
+      }
+    }
+  },
+  
+  "deactivated": "Deactivated",
+  "@deactivated": {
+    "description": "Deactivated"
+  },
+  
+  "encryption": "Encryption",
+  "@encryption": {
+    "description": "Encryption label"
+  },
+  
+  "active": "Active",
+  "@active": {
+    "description": "Active"
+  },
+  
+  "diskSpace": "Disk Space",
+  "@diskSpace": {
+    "description": "Disk space title"
+  },
+  
+  "calculatingSizes": "Calculating sizes...",
+  "@calculatingSizes": {
+    "description": "Calculating sizes status"
+  },
+  
+  "sourceSize": "Source size",
+  "@sourceSize": {
+    "description": "Source size label"
+  },
+  
+  "notAvailable": "Not available",
+  "@notAvailable": {
+    "description": "Not available"
+  },
+  
+  "availableSpace": "Available space at destination",
+  "@availableSpace": {
+    "description": "Available space label"
+  },
+  
+  "retention": "Retention (number of versions)",
+  "@retention": {
+    "description": "Retention field"
+  },
+  
+  "sufficientSpace": "Sufficient space! {percent}% margin available.",
+  "@sufficientSpace": {
+    "description": "Sufficient space message",
+    "placeholders": {
+      "percent": {
+        "type": "String",
+        "example": "50"
+      }
+    }
+  },
+  
+  "insufficientSpace": "Insufficient space! {size} missing on destination disk.",
+  "@insufficientSpace": {
+    "description": "Insufficient space message",
+    "placeholders": {
+      "size": {
+        "type": "String",
+        "example": "2.5 GB"
+      }
+    }
+  },
+  
+  "fileSelectionCancelled": "File selection cancelled.",
+  "@fileSelectionCancelled": {
+    "description": "Selection cancelled message"
+  },
+  
+  "filesAdded": "{count, plural, =1{1 file added to source.} other{{count} files added to source.}}",
+  "@filesAdded": {
+    "description": "Files added message",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "failedToSelectFiles": "Failed to select files: {error}",
+  "@failedToSelectFiles": {
+    "description": "Error when selecting files",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  
+  "folderSelectionCancelled": "Source folder selection cancelled.",
+  "@folderSelectionCancelled": {
+    "description": "Selection cancelled message"
+  },
+  
+  "sourceFolderSelected": "Source folder selected.",
+  "@sourceFolderSelected": {
+    "description": "Folder selected message"
+  },
+  
+  "failedToSelectSourceFolder": "Failed to select source folder: {error}",
+  "@failedToSelectSourceFolder": {
+    "description": "Error when selecting source folder",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  
+  "iosSaveLocation": "On iOS, backups will be saved to: Documents/Backups",
+  "@iosSaveLocation": {
+    "description": "Information about save location on iOS"
+  },
+  
+  "destinationSelectionCancelled": "Destination folder selection cancelled.",
+  "@destinationSelectionCancelled": {
+    "description": "Selection cancelled message"
+  },
+  
+  "destinationFolderSelected": "Destination folder selected.",
+  "@destinationFolderSelected": {
+    "description": "Folder selected message"
+  },
+  
+  "failedToSelectDestination": "Failed to select destination folder: {error}",
+  "@failedToSelectDestination": {
+    "description": "Error when selecting destination folder",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  
+  "enterRoutineName": "Enter the routine name.",
+  "@enterRoutineName": {
+    "description": "Error when validating routine name"
+  },
+  
+  "enterAtLeastOneSource": "Enter at least one source.",
+  "@enterAtLeastOneSource": {
+    "description": "Error when validating sources"
+  },
+  
+  "enterDestinationPath": "Enter the destination path.",
+  "@enterDestinationPath": {
+    "description": "Error when validating destination"
+  },
+  
+  "retentionMustBePositive": "Retention must be a number greater than zero.",
+  "@retentionMustBePositive": {
+    "description": "Error when validating retention"
+  },
+  
+  "configureEncryptionPassword": "Configure an encryption password in Settings before enabling encryption.",
+  "@configureEncryptionPassword": {
+    "description": "Error when enabling encryption without configured password"
+  },
+  
+  
+  "decryptFile": "Decrypt File",
+  "@decryptFile": {
+    "description": "Decryption dialog title"
+  },
+  
+  "decryptionDescription": "Decrypt files protected by ShadowSync",
+  "@decryptionDescription": {
+    "description": "Decryption dialog description"
+  },
+  
+  "encryptedFile": "Encrypted File",
+  "@encryptedFile": {
+    "description": "Encrypted file label"
+  },
+  
+  "selectFileEllipsis": "Select file...",
+  "@selectFileEllipsis": {
+    "description": "Select file placeholder"
+  },
+  
+  "destinationFolder": "Destination Folder",
+  "@destinationFolder": {
+    "description": "Destination folder label"
+  },
+  
+  "selectFolderEllipsis": "Select folder...",
+  "@selectFolderEllipsis": {
+    "description": "Select folder placeholder"
+  },
+  
+  "outputFileName": "Output file name:",
+  "@outputFileName": {
+    "description": "Output file name label"
+  },
+  
+  "decryptionPassword": "Decryption password:",
+  "@decryptionPassword": {
+    "description": "Decryption password label"
+  },
+  
+  "enterEncryptionPassword": "Enter the password used for encryption",
+  "@enterEncryptionPassword": {
+    "description": "Decryption password hint"
+  },
+  
+  "selectEncryptedFile": "Select encrypted file",
+  "@selectEncryptedFile": {
+    "description": "Select encrypted file tooltip"
+  },
+  
+  "selectDestinationFolderTooltip": "Select destination folder",
+  "@selectDestinationFolderTooltip": {
+    "description": "Select destination folder tooltip"
+  },
+  
+  "execute": "Execute",
+  "@execute": {
+    "description": "Execute button"
+  },
+  
+  "decrypting": "Decrypting...",
+  "@decrypting": {
+    "description": "Decrypting status"
+  },
+  
+  "close": "Close",
+  "@close": {
+    "description": "Close button"
+  },
+  
+  "decryptAnother": "Decrypt Another",
+  "@decryptAnother": {
+    "description": "Decrypt another button"
+  },
+  
+  "startingDecryption": "Starting decryption...",
+  "@startingDecryption": {
+    "description": "Starting decryption status"
+  },
+  
+  "preparingDecryption": "Preparing decryption...",
+  "@preparingDecryption": {
+    "description": "Preparing decryption status"
+  },
+  
+  "decryptingFile": "Decrypting file...",
+  "@decryptingFile": {
+    "description": "Decrypting file status"
+  },
+  
+  "extractingContent": "Extracting content...",
+  "@extractingContent": {
+    "description": "Extracting content status"
+  },
+  
+  "finalizing": "Finalizing...",
+  "@finalizing": {
+    "description": "Finalizing status"
+  },
+  
+  "decryptedSuccessfully": "Decrypted successfully! {count, plural, =1{1 file extracted.} other{{count} files extracted.}}",
+  "@decryptedSuccessfully": {
+    "description": "Success message when decrypting",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "errorSelectingFile": "Error selecting file: {error}",
+  "@errorSelectingFile": {
+    "description": "Error when selecting file",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  
+  "errorSelectingDestination": "Error selecting destination: {error}",
+  "@errorSelectingDestination": {
+    "description": "Error when selecting destination",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  
+  
+  "verifyDiskTitle": "Verify Disk",
+  "@verifyDiskTitle": {
+    "description": "Disk verification dialog title"
+  },
+  
+  "selectDiskToVerify": "Select a disk to verify its integrity",
+  "@selectDiskToVerify": {
+    "description": "Verification dialog description"
+  },
+  
+  "verifying": "Verifying: {diskName}",
+  "@verifying": {
+    "description": "Verifying disk title",
+    "placeholders": {
+      "diskName": {
+        "type": "String",
+        "example": "Main Disk"
+      }
+    }
+  },
+  
+  "backToSelection": "Back to selection",
+  "@backToSelection": {
+    "description": "Back to selection tooltip"
+  },
+  
+  "loadingDisks": "Loading disks...",
+  "@loadingDisks": {
+    "description": "Loading disks status"
+  },
+  
+  "errorLoadingDisks": "Error loading disks: {error}",
+  "@errorLoadingDisks": {
+    "description": "Error when loading disks",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  
+  "tryAgain": "Try again",
+  "@tryAgain": {
+    "description": "Try again button"
+  },
+  
+  "noDisksFound": "No disks found",
+  "@noDisksFound": {
+    "description": "Message when there are no disks"
+  },
+  
+  "freeSpace": "{size} free",
+  "@freeSpace": {
+    "description": "Disk free space",
+    "placeholders": {
+      "size": {
+        "type": "String",
+        "example": "100 GB"
+      }
+    }
+  },
+  
+  "diskSpaceUnavailable": "Space info unavailable",
+  "@diskSpaceUnavailable": {
+    "description": "Mensagem quando informações de espaço em disco não estão disponíveis"
+  },
+  
+  "internalStorage": "Internal Storage",
+  "@internalStorage": {
+    "description": "Nome do armazenamento interno do dispositivo"
+  },
+  
+  "sdCard": "SD Card",
+  "@sdCard": {
+    "description": "Nome do cartão SD"
+  },
+  
+  "externalSdCard": "External SD Card",
+  "@externalSdCard": {
+    "description": "Nome do cartão SD externo"
+  },
+  
+  "primaryStorage": "Primary Storage",
+  "@primaryStorage": {
+    "description": "Nome do armazenamento principal"
+  },
+  
+  "externalStorage": "External Storage",
+  "@externalStorage": {
+    "description": "Nome do armazenamento externo"
+  },
+  
+  "deviceStorage": "Device Storage",
+  "@deviceStorage": {
+    "description": "Nome do armazenamento do dispositivo"
+  },
+  
+  "appStorage": "App Storage",
+  "@appStorage": {
+    "description": "Nome do armazenamento do app"
+  },
+  
+  "testsToRun": "Tests to be run:",
+  "@testsToRun": {
+    "description": "Tests to run title"
+  },
+  
+  "testResults": "Test Results",
+  "@testResults": {
+    "description": "Test results title"
+  },
+  
+  "verificationInProgress": "Verification in progress...",
+  "@verificationInProgress": {
+    "description": "Verification in progress status"
+  },
+  
+  "diskVerifiedNoProblems": "Disk verified - No problems found",
+  "@diskVerifiedNoProblems": {
+    "description": "Disk verified without problems status"
+  },
+  
+  "verificationCompletedWithWarnings": "Verification completed with warnings",
+  "@verificationCompletedWithWarnings": {
+    "description": "Verification with warnings status"
+  },
+  
+  "problemsDetected": "Problems detected on disk",
+  "@problemsDetected": {
+    "description": "Problems detected status"
+  },
+  
+  "waiting": "Waiting...",
+  "@waiting": {
+    "description": "Waiting status"
+  },
+  
+  "totalTime": "Total time: {duration}",
+  "@totalTime": {
+    "description": "Verification total time",
+    "placeholders": {
+      "duration": {
+        "type": "String",
+        "example": "2m 30s"
+      }
+    }
+  },
+  
+  "mountPoint": "Mount point",
+  "@mountPoint": {
+    "description": "Mount point label"
+  },
+  
+  "device": "Device",
+  "@device": {
+    "description": "Device label"
+  },
+  
+  "fileSystem": "File system",
+  "@fileSystem": {
+    "description": "File system label"
+  },
+  
+  "totalCapacity": "Total capacity",
+  "@totalCapacity": {
+    "description": "Total capacity label"
+  },
+  
+  "availableSpaceLabel": "Available space",
+  "@availableSpaceLabel": {
+    "description": "Available space label"
+  },
+  
+  "mediaType": "Media type",
+  "@mediaType": {
+    "description": "Media type label"
+  },
+  
+  "type": "Type",
+  "@type": {
+    "description": "Type label"
+  },
+  
+  "testAccessibilityCheck": "Accessibility Check",
+  "@testAccessibilityCheck": {
+    "description": "Name of disk accessibility test"
+  },
+  
+  "testSpaceAnalysis": "Disk Space Analysis",
+  "@testSpaceAnalysis": {
+    "description": "Name of disk space analysis test"
+  },
+  
+  "testReadTest": "Read Test",
+  "@testReadTest": {
+    "description": "Name of disk read test"
+  },
+  
+  "testFileSystemCheck": "File System Check",
+  "@testFileSystemCheck": {
+    "description": "Name of file system verification test"
+  },
+  
+  "testSmartStatus": "S.M.A.R.T. Status",
+  "@testSmartStatus": {
+    "description": "Name of S.M.A.R.T. status test"
+  },
+  
+  "removable": "Removable",
+  "@removable": {
+    "description": "Removable type"
+  },
+  
+  "internal": "Internal",
+  "@internal": {
+    "description": "Internal type"
+  },
+  
+  "startVerification": "Start Verification",
+  "@startVerification": {
+    "description": "Start verification button"
+  },
+  
+  "verifyAgain": "Verify Again",
+  "@verifyAgain": {
+    "description": "Verify again button"
+  },
+  
+  
+  "language": "Language",
+  "@language": {
+    "description": "Language selection"
+  },
+  
+  "languagePortuguese": "Português (Brasil)",
+  "@languagePortuguese": {
+    "description": "Portuguese language name"
+  },
+  
+  "languageEnglish": "English",
+  "@languageEnglish": {
+    "description": "English language name"
+  },
+  
+  "languageFrench": "Français",
+  "@languageFrench": {
+    "description": "French language name"
+  },
+  
+  "languageGerman": "Deutsch",
+  "@languageGerman": {
+    "description": "German language name"
+  },
+  
+  "languageSpanish": "Español",
+  "@languageSpanish": {
+    "description": "Spanish language name"
+  },
+  
+  "languageItalian": "Italiano",
+  "@languageItalian": {
+    "description": "Italian language name"
+  },
+  
+  "languageJapanese": "日本語",
+  "@languageJapanese": {
+    "description": "Japanese language name"
+  },
+  
+  "languageChinese": "中文 (简体)",
+  "@languageChinese": {
+    "description": "Simplified Chinese language name"
+  },
+  
+  "languageKorean": "한국어",
+  "@languageKorean": {
+    "description": "Korean language name"
+  },
+  
+  "scheduleTypeManual": "Manual",
+  "@scheduleTypeManual": {
+    "description": "Schedule type: Manual"
+  },
+  
+  "scheduleTypeDaily": "Daily",
+  "@scheduleTypeDaily": {
+    "description": "Schedule type: Daily"
+  },
+  
+  "scheduleTypeWeekly": "Weekly",
+  "@scheduleTypeWeekly": {
+    "description": "Schedule type: Weekly"
+  },
+  
+  "scheduleTypeInterval": "Interval",
+  "@scheduleTypeInterval": {
+    "description": "Schedule type: Interval"
+  },
+  
+  "backupName": "Name",
+  "@backupName": {
+    "description": "Label backup name"
+  },
+  
+  "backupSource": "Sources",
+  "@backupSource": {
+    "description": "Label backup sources"
+  },
+  
+  "destination": "Destination",
+  "@destination": {
+    "description": "Label backup destination"
+  },
+  
+  "scheduling": "Scheduling",
+  "@scheduling": {
+    "description": "Label backup scheduling"
+  },
+  
+  "frequency": "Frequency",
+  "@frequency": {
+    "description": "Label schedule frequency"
+  },
+  
+  "nextBackupFormat": "Next: \"{routineName}\" {time}",
+  "@nextBackupFormat": {
+    "description": "Format of the next scheduled backup",
+    "placeholders": {
+      "routineName": {
+        "type": "String",
+        "example": "Backup Documents"
+      },
+      "time": {
+        "type": "String",
+        "example": "today, 14:30"
+      }
+    }
+  },
+  
+  "diskSpaceSufficient": "Sufficient space! {margin}% margin available.",
+  "@diskSpaceSufficient": {
+    "description": "Message when there is available space",
+    "placeholders": {
+      "margin": {
+        "type": "String",
+        "example": "30"
+      }
+    }
+  },
+  
+  "diskSpaceInsufficient": "Insufficient space! {deficit} missing on destination disk.",
+  "@diskSpaceInsufficient": {
+    "description": "Message when there is not enough available space",
+    "placeholders": {
+      "deficit": {
+        "type": "String",
+        "example": "500 MB"
+      }
+    }
+  },
+  
+  "backupCompression": "Compression",
+  "@backupCompression": {
+    "description": "Label backup compression"
+  },
+  
+  "backupEncryption": "Encryption",
+  "@backupEncryption": {
+    "description": "Label backup encryption"
+  },
+  
+  "encryptionActive": "Active",
+  "@encryptionActive": {
+    "description": "Active encryption status"
+  },
+  
+  "noRoutinesConfigured": "No routines configured",
+  "@noRoutinesConfigured": {
+    "description": "Message when no routines have been configured"
+  },
+  
+  "dateToday": "today",
+  "@dateToday": {
+    "description": "Label for today's date"
+  },
+  
+  "dateTomorrow": "tomorrow",
+  "@dateTomorrow": {
+    "description": "Label for tomorrow's date"
+  },
+  
+  "weekdayMonday": "Mon",
+  "@weekdayMonday": {
+    "description": "Abbreviation for Monday"
+  },
+  
+  "weekdayTuesday": "Tue",
+  "@weekdayTuesday": {
+    "description": "Abbreviation for Tuesday"
+  },
+  
+  "weekdayWednesday": "Wed",
+  "@weekdayWednesday": {
+    "description": "Abbreviation for Wednesday"
+  },
+  
+  "weekdayThursday": "Thu",
+  "@weekdayThursday": {
+    "description": "Abbreviation for Thursday"
+  },
+  
+  "weekdayFriday": "Fri",
+  "@weekdayFriday": {
+    "description": "Abbreviation for Friday"
+  },
+  
+  "weekdaySaturday": "Sat",
+  "@weekdaySaturday": {
+    "description": "Abbreviation for Saturday"
+  },
+  
+  "weekdaySunday": "Sun",
+  "@weekdaySunday": {
+    "description": "Abbreviation for Sunday"
+  },
+  
+  "about": "About",
+  "@about": {
+    "description": "About menu option"
+  },
+  
+  "aboutTitle": "About ShadowSync",
+  "@aboutTitle": {
+    "description": "About dialog title"
+  },
+  
+  "version": "Version",
+  "@version": {
+    "description": "App version label"
+  },
+  
+  "developer": "Developer",
+  "@developer": {
+    "description": "Developer label"
+  },
+  
+  "visitWebsite": "Visit Website",
+  "@visitWebsite": {
+    "description": "Button to visit website"
+  },
+
+  "backupCompleted": "Backup Completed ✓",
+  "@backupCompleted": {
+    "description": "Notification title for successful backup"
+  },
+
+  "backupFailed": "Backup Failed ✗",
+  "@backupFailed": {
+    "description": "Notification title for failed backup"
+  },
+
+  "backupCompletedMessage": "The backup \"{routineName}\" has been completed successfully.",
+  "@backupCompletedMessage": {
+    "description": "Notification message for successful backup",
+    "placeholders": {
+      "routineName": {
+        "type": "String",
+        "example": "Documents"
+      }
+    }
+  },
+
+  "backupFailedMessage": "The backup \"{routineName}\" failed: {errorMessage}",
+  "@backupFailedMessage": {
+    "description": "Notification message for failed backup",
+    "placeholders": {
+      "routineName": {
+        "type": "String",
+        "example": "Documents"
+      },
+      "errorMessage": {
+        "type": "String",
+        "example": "Disk full"
+      }
+    }
+  },
+
+  "nextBackupScheduled": "Next Backup Scheduled",
+  "@nextBackupScheduled": {
+    "description": "Notification title for next backup"
+  },
+
+  "nextBackupMessage": "\"{routineName}\" will be executed {timeDescription}.",
+  "@nextBackupMessage": {
+    "description": "Notification message for next backup",
+    "placeholders": {
+      "routineName": {
+        "type": "String",
+        "example": "Documents"
+      },
+      "timeDescription": {
+        "type": "String",
+        "example": "in 1 hour"
+      }
+    }
+  },
+
+  "inLessThanMinute": "in less than 1 minute",
+  "@inLessThanMinute": {
+    "description": "Time description for less than 1 minute"
+  },
+
+  "inMinute": "in 1 minute",
+  "@inMinute": {
+    "description": "Time description for 1 minute"
+  },
+
+  "inMinutes": "in {count} minutes",
+  "@inMinutes": {
+    "description": "Time description for multiple minutes",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "5"
+      }
+    }
+  },
+
+  "inHour": "in 1 hour",
+  "@inHour": {
+    "description": "Time description for 1 hour"
+  },
+
+  "inHours": "in {count} hours",
+  "@inHours": {
+    "description": "Time description for multiple hours",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "3"
+      }
+    }
+  },
+
+  "inHoursMinutes": "in {hours}h{minutes}min",
+  "@inHoursMinutes": {
+    "description": "Time description for hours and minutes",
+    "placeholders": {
+      "hours": {
+        "type": "int",
+        "example": "2"
+      },
+      "minutes": {
+        "type": "int",
+        "example": "30"
+      }
+    }
+  },
+
+  "inDay": "in 1 day",
+  "@inDay": {
+    "description": "Time description for 1 day"
+  },
+
+  "inDays": "in {count} days",
+  "@inDays": {
+    "description": "Time description for multiple days",
+    "placeholders": {
+      "count": {
+        "type": "int",
+        "example": "5"
+      }
+    }
+  },
+
+  "notificationChannelName": "ShadowSync Backups",
+  "@notificationChannelName": {
+    "description": "Android notification channel name"
+  },
+
+  "notificationChannelDescription": "Notifications about backup status and schedules",
+  "@notificationChannelDescription": {
+    "description": "Android notification channel description"
+  }
+}

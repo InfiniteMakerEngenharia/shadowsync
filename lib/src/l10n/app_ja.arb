@@ -1,0 +1,1526 @@
+{
+  "@@locale": "ja",
+  
+  
+  "appTitle": "ShadowSync",
+  "@appTitle": {
+    "description": "アプリのタイトル"
+  },
+  
+  "appSubtitle": "バックアップマネージャー",
+  "@appSubtitle": {
+    "description": "アプリのサブタイトル"
+  },
+  
+  
+  "myRoutines": "マイルーチン",
+  "@myRoutines": {
+    "description": "ルーチンセクションのタイトル"
+  },
+  
+  "verifyDisk": "ディスクを確認",
+  "@verifyDisk": {
+    "description": "ディスクを確認するオプション"
+  },
+  
+  "decrypt": "復号化",
+  "@decrypt": {
+    "description": "復号化オプション"
+  },
+  
+  "settings": "設定",
+  "@settings": {
+    "description": "設定ページ"
+  },
+  
+  "startingBackup": "バックアップ\"{routineName}\"を開始しています...",
+  "@startingBackup": {
+    "description": "バックアップ開始時のメッセージ",
+    "placeholders": {
+      "routineName": {
+        "type": "String",
+        "example": "ドキュメントバックアップ"
+      }
+    }
+  },
+  
+  "deleteRoutine": "ルーチンを削除",
+  "@deleteRoutine": {
+    "description": "削除ダイアログのタイトル"
+  },
+  
+  "deleteRoutineConfirm": "ルーチン\"{routineName}\"を削除してもよろしいですか？この操作は元に戻せません。",
+  "@deleteRoutineConfirm": {
+    "description": "削除確認メッセージ",
+    "placeholders": {
+      "routineName": {
+        "type": "String",
+        "example": "ドキュメントバックアップ"
+      }
+    }
+  },
+  
+  "cancel": "キャンセル",
+  "@cancel": {
+    "description": "キャンセルボタン"
+  },
+  
+  "delete": "削除",
+  "@delete": {
+    "description": "削除ボタン"
+  },
+  
+  
+  "noRoutines": "ルーチンが設定されていません",
+  "@noRoutines": {
+    "description": "ルーチンがない場合のメッセージ"
+  },
+  
+  "noScheduledBackups": "自動バックアップの予定がありません",
+  "@noScheduledBackups": {
+    "description": "予定されたバックアップがない場合のメッセージ"
+  },
+  
+  "serviceActive": "サービス稼働中",
+  "@serviceActive": {
+    "description": "サービスが稼働中の表示"
+  },
+  
+  "nextBackup": "次回：\"{name}\"{time}",
+  "@nextBackup": {
+    "description": "次回の予定されたバックアップ",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "ドキュメントバックアップ"
+      },
+      "time": {
+        "type": "String",
+        "example": "14:30"
+      }
+    }
+  },
+  
+  "today": "今日",
+  "@today": {
+    "description": "今日"
+  },
+  
+  "tomorrow": "明日",
+  "@tomorrow": {
+    "description": "明日"
+  },
+  
+  "monday": "月",
+  "@monday": {
+    "description": "月曜日（略）"
+  },
+  
+  "tuesday": "火",
+  "@tuesday": {
+    "description": "火曜日（略）"
+  },
+  
+  "wednesday": "水",
+  "@wednesday": {
+    "description": "水曜日（略）"
+  },
+  
+  "thursday": "木",
+  "@thursday": {
+    "description": "木曜日（略）"
+  },
+  
+  "friday": "金",
+  "@friday": {
+    "description": "金曜日（略）"
+  },
+  
+  "saturday": "土",
+  "@saturday": {
+    "description": "土曜日（略）"
+  },
+  
+  "sunday": "日",
+  "@sunday": {
+    "description": "日曜日（略）"
+  },
+  
+  "newBackup": "新規バックアップ",
+  "@newBackup": {
+    "description": "新規バックアップを作成するボタン"
+  },
+  
+  
+  "runBackup": "バックアップを実行",
+  "@runBackup": {
+    "description": "バックアップ実行のツールチップ"
+  },
+  
+  "deleteRoutineTooltip": "ルーチンを削除",
+  "@deleteRoutineTooltip": {
+    "description": "ルーチン削除のツールチップ"
+  },
+  
+  "manualExecution": "手動実行",
+  "@manualExecution": {
+    "description": "手動実行モード"
+  },
+  
+  "noScheduleAvailable": "スケジュールなし",
+  "@noScheduleAvailable": {
+    "description": "次のスケジュール時刻が利用できない場合"
+  },
+  
+  "scheduledDaily": "予定：毎日 {time}",
+  "@scheduledDaily": {
+    "description": "毎日のスケジュール",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:30"
+      }
+    }
+  },
+  
+  "scheduledWeekly": "予定：毎週 • {date}",
+  "@scheduledWeekly": {
+    "description": "毎週のスケジュール",
+    "placeholders": {
+      "date": {
+        "type": "String",
+        "example": "月曜日, 14:30"
+      }
+    }
+  },
+  
+  "scheduledInterval": "予定：{interval}ごと",
+  "@scheduledInterval": {
+    "description": "間隔スケジュール",
+    "placeholders": {
+      "interval": {
+        "type": "String",
+        "example": "2時間"
+      }
+    }
+  },
+  
+  "mode": "モード：",
+  "@mode": {
+    "description": "モードラベル"
+  },
+  
+  "next": "次回：",
+  "@next": {
+    "description": "次回ラベル"
+  },
+  
+  "last": "前回：",
+  "@last": {
+    "description": "前回ラベル"
+  },
+  
+  "lastBackupLabel": "前回のバックアップ：",
+  "@lastBackupLabel": {
+    "description": "前回のバックアップラベル"
+  },
+  
+  "fileCount": "{count, plural, =1{1ファイル} other{{count}ファイル}}",
+  "@fileCount": {
+    "description": "ファイルカウンター",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "extractedCount": "{count, plural, =1{1個抽出済み} other{{count}個抽出済み}}",
+  "@extractedCount": {
+    "description": "抽出されたファイルカウンター",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  
+  
+  "general": "一般",
+  "@general": {
+    "description": "一般タブ"
+  },
+  
+  "telegram": "Telegram",
+  "@telegram": {
+    "description": "Telegramタブ"
+  },
+  
+  "email": "メール",
+  "@email": {
+    "description": "メールタブ"
+  },
+  
+  "userName": "ユーザー名",
+  "@userName": {
+    "description": "ユーザー名フィールド"
+  },
+  
+  "enterYourName": "名前を入力",
+  "@enterYourName": {
+    "description": "ユーザー名プレースホルダー"
+  },
+  
+  "encryptionPassword": "暗号化パスワード",
+  "@encryptionPassword": {
+    "description": "暗号化パスワードフィールド"
+  },
+  
+  "encryptionPasswordHint": "暗号化されたバックアップを保護するために使用されます",
+  "@encryptionPasswordHint": {
+    "description": "暗号化パスワードのヒント"
+  },
+  
+  "enterPassword": "パスワードを入力",
+  "@enterPassword": {
+    "description": "パスワードプレースホルダー"
+  },
+  
+  "backupFileName": "バックアップファイル名",
+  "@backupFileName": {
+    "description": "バックアップファイル名フィールド"
+  },
+  
+  "useCustomName": "カスタム名を使用",
+  "@useCustomName": {
+    "description": "カスタム名を使用するオプション"
+  },
+  
+  "customName": "カスタム名",
+  "@customName": {
+    "description": "カスタム名フィールド"
+  },
+  
+  "telegramNotifications": "Telegram通知",
+  "@telegramNotifications": {
+    "description": "Telegram通知のタイトル"
+  },
+  
+  "telegramDescription": "Telegramでバックアップに関する通知を受け取る",
+  "@telegramDescription": {
+    "description": "Telegram通知の説明"
+  },
+  
+  "enableNotifications": "通知を有効にする",
+  "@enableNotifications": {
+    "description": "通知を有効にするオプション"
+  },
+  
+  "botToken": "ボットトークン",
+  "@botToken": {
+    "description": "ボットトークンフィールド"
+  },
+  
+  "botTokenHint": "Telegramで@BotFatherを使ってボットを作成",
+  "@botTokenHint": {
+    "description": "ボットトークンのヒント"
+  },
+  
+  "botTokenExample": "123456789:ABCdefGHI...",
+  "@botTokenExample": {
+    "description": "ボットトークンの例"
+  },
+  
+  "chatId": "チャットID",
+  "@chatId": {
+    "description": "チャットIDフィールド"
+  },
+  
+  "chatIdHint": "ボットに/startを送信し、@userinfobot を使って取得",
+  "@chatIdHint": {
+    "description": "チャットIDのヒント"
+  },
+  
+  "chatIdExample": "チャットID（例：123456789）",
+  "@chatIdExample": {
+    "description": "チャットIDの例"
+  },
+  
+  "whenNotify": "通知のタイミング",
+  "@whenNotify": {
+    "description": "通知のタイミングタイトル"
+  },
+  
+  "backupSuccess": "バックアップが正常に完了",
+  "@backupSuccess": {
+    "description": "成功通知オプション"
+  },
+  
+  "backupFailed": "バックアップが失敗",
+  "@backupFailed": {
+    "description": "失敗通知オプション"
+  },
+  
+  "backupStarted": "バックアップが開始",
+  "@backupStarted": {
+    "description": "開始通知オプション"
+  },
+  
+  "sending": "送信中...",
+  "@sending": {
+    "description": "送信中ステータス"
+  },
+  
+  "sendTest": "テスト送信",
+  "@sendTest": {
+    "description": "テスト送信ボタン"
+  },
+  
+  "emailNotifications": "メール通知",
+  "@emailNotifications": {
+    "description": "メール通知のタイトル"
+  },
+  
+  "emailDescription": "メールでバックアップに関する通知を受け取る",
+  "@emailDescription": {
+    "description": "メール通知の説明"
+  },
+  
+  "emailProvider": "メールプロバイダー",
+  "@emailProvider": {
+    "description": "メールプロバイダーフィールド"
+  },
+  
+  "emailProviderHint": "プロバイダーを選択するか、手動で設定",
+  "@emailProviderHint": {
+    "description": "メールプロバイダーのヒント"
+  },
+  
+  "selectProvider": "プロバイダーを選択",
+  "@selectProvider": {
+    "description": "プロバイダー選択プレースホルダー"
+  },
+  
+  "smtpServer": "SMTPサーバー",
+  "@smtpServer": {
+    "description": "SMTPサーバーフィールド"
+  },
+  
+  "smtpServerExample": "例：smtp.gmail.com",
+  "@smtpServerExample": {
+    "description": "SMTPサーバーの例"
+  },
+  
+  "smtpServerPlaceholder": "smtp.example.com",
+  "@smtpServerPlaceholder": {
+    "description": "SMTPサーバープレースホルダー"
+  },
+  
+  "smtpPort": "SMTPポート",
+  "@smtpPort": {
+    "description": "SMTPポートフィールド"
+  },
+  
+  "smtpPortHint": "TLSは587、SSLは465",
+  "@smtpPortHint": {
+    "description": "SMTPポートのヒント"
+  },
+  
+  "smtpPortPlaceholder": "587",
+  "@smtpPortPlaceholder": {
+    "description": "SMTPポートプレースホルダー"
+  },
+  
+  "yourEmail": "メールアドレス",
+  "@yourEmail": {
+    "description": "メールアドレスフィールド"
+  },
+  
+  "yourEmailHint": "通知の送信に使用するメール",
+  "@yourEmailHint": {
+    "description": "メールアドレスのヒント"
+  },
+  
+  "yourEmailPlaceholder": "yourmail@gmail.com",
+  "@yourEmailPlaceholder": {
+    "description": "メールアドレスプレースホルダー"
+  },
+  
+  "emailPassword": "パスワードまたはアプリパスワード",
+  "@emailPassword": {
+    "description": "メールパスワードフィールド"
+  },
+  
+  "emailPasswordHint": "2段階認証の場合はアプリパスワードを使用",
+  "@emailPasswordHint": {
+    "description": "メールパスワードのヒント"
+  },
+  
+  "emailPasswordPlaceholder": "パスワードまたはアプリパスワード",
+  "@emailPasswordPlaceholder": {
+    "description": "メールパスワードプレースホルダー"
+  },
+  
+  "destinationEmails": "宛先メール",
+  "@destinationEmails": {
+    "description": "宛先メールフィールド"
+  },
+  
+  "destinationEmailsHint": "複数のメールはカンマで区切る",
+  "@destinationEmailsHint": {
+    "description": "宛先メールのヒント"
+  },
+  
+  "destinationEmailsPlaceholder": "email1@example.com, email2@example.com",
+  "@destinationEmailsPlaceholder": {
+    "description": "宛先メールプレースホルダー"
+  },
+  
+  "security": "セキュリティ",
+  "@security": {
+    "description": "セキュリティタイトル"
+  },
+  
+  "useStartTls": "STARTTLS を使用（推奨）",
+  "@useStartTls": {
+    "description": "STARTTLS使用オプション"
+  },
+  
+  "useSsl": "SSL を使用",
+  "@useSsl": {
+    "description": "SSL使用オプション"
+  },
+  
+  "save": "保存",
+  "@save": {
+    "description": "保存ボタン"
+  },
+  
+  "fillBotTokenAndChatId": "テスト送信にはボットトークンとチャットIDを入力してください",
+  "@fillBotTokenAndChatId": {
+    "description": "Telegramテスト送信時のエラーメッセージ"
+  },
+  
+  "testMessageSent": "テストメッセージが正常に送信されました！",
+  "@testMessageSent": {
+    "description": "テスト送信成功メッセージ"
+  },
+  
+  "errorWithMessage": "エラー：{message}",
+  "@errorWithMessage": {
+    "description": "一般的なエラーメッセージ",
+    "placeholders": {
+      "message": {
+        "type": "String",
+        "example": "接続が拒否されました"
+      }
+    }
+  },
+  
+  "fillAllFields": "すべての必須フィールドを入力してください",
+  "@fillAllFields": {
+    "description": "フィールド未入力時のエラーメッセージ"
+  },
+  
+  "enterAtLeastOneEmail": "宛先メールを少なくとも1つ入力してください",
+  "@enterAtLeastOneEmail": {
+    "description": "宛先メールなしでの保存エラーメッセージ"
+  },
+  
+  "testEmailSent": "テストメールが正常に送信されました！",
+  "@testEmailSent": {
+    "description": "テストメール送信成功メッセージ"
+  },
+  
+  
+  "basicData": "基本データ",
+  "@basicData": {
+    "description": "基本データステップ"
+  },
+  
+  "scheduling": "スケジュール",
+  "@scheduling": {
+    "description": "スケジュールステップ"
+  },
+  
+  "processing": "処理",
+  "@processing": {
+    "description": "処理ステップ"
+  },
+  
+  "review": "確認",
+  "@review": {
+    "description": "確認ステップ"
+  },
+  
+  "nextStep": "次へ",
+  "@nextStep": {
+    "description": "次のステップボタン"
+  },
+  
+  "saveRoutine": "ルーチンを保存",
+  "@saveRoutine": {
+    "description": "ルーチン保存ボタン"
+  },
+  
+  "back": "戻る",
+  "@back": {
+    "description": "戻るボタン"
+  },
+  
+  "routineName": "ルーチン名",
+  "@routineName": {
+    "description": "ルーチン名フィールド"
+  },
+  
+  "backupSources": "バックアップ元",
+  "@backupSources": {
+    "description": "バックアップ元タイトル"
+  },
+  
+  "selectFilesAndFolders": "ファイルやフォルダを選択できます。",
+  "@selectFilesAndFolders": {
+    "description": "バックアップ元の説明"
+  },
+  
+  "sourcePathsExample": "/Users/myuser/Documents;/Users/myuser/Projects",
+  "@sourcePathsExample": {
+    "description": "バックアップ元パスの例"
+  },
+  
+  "addSource": "バックアップ元を追加",
+  "@addSource": {
+    "description": "バックアップ元追加ボタン"
+  },
+  
+  "selecting": "選択中...",
+  "@selecting": {
+    "description": "選択中ステータス"
+  },
+  
+  "selectFiles": "ファイルを選択",
+  "@selectFiles": {
+    "description": "ファイル選択ボタン"
+  },
+  
+  "selectFolder": "フォルダを選択",
+  "@selectFolder": {
+    "description": "フォルダ選択ボタン"
+  },
+  
+  "backupDestination": "バックアップ先",
+  "@backupDestination": {
+    "description": "バックアップ先フィールド"
+  },
+  
+  "destinationDescription": "ファイルを保存するフォルダを選択してください。",
+  "@destinationDescription": {
+    "description": "バックアップ先の説明"
+  },
+  
+  "destinationExample": "/Volumes/Backup/Destination",
+  "@destinationExample": {
+    "description": "バックアップ先の例"
+  },
+  
+  "selectDestinationFolder": "保存先フォルダを選択",
+  "@selectDestinationFolder": {
+    "description": "保存先フォルダ選択ボタン"
+  },
+  
+  "frequency": "頻度",
+  "@frequency": {
+    "description": "頻度タイトル"
+  },
+  
+  "manual": "手動",
+  "@manual": {
+    "description": "手動スケジュールタイプ"
+  },
+  
+  "daily": "毎日",
+  "@daily": {
+    "description": "毎日スケジュールタイプ"
+  },
+  
+  "weekly": "毎週",
+  "@weekly": {
+    "description": "毎週スケジュールタイプ"
+  },
+  
+  "interval": "間隔",
+  "@interval": {
+    "description": "間隔スケジュールタイプ"
+  },
+  
+  "runAt": "実行時刻：",
+  "@runAt": {
+    "description": "実行時刻ラベル"
+  },
+  
+  "runEvery": "実行間隔：",
+  "@runEvery": {
+    "description": "実行間隔ラベル"
+  },
+  
+  "manualExecutionInfo": "カードの再生ボタンを押すと手動で実行されます。",
+  "@manualExecutionInfo": {
+    "description": "手動実行に関する説明"
+  },
+  
+  "oneMinute": "1分",
+  "@oneMinute": {
+    "description": "1分間隔"
+  },
+  
+  "nMinutes": "{n}分",
+  "@nMinutes": {
+    "description": "n分間隔",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "oneHour": "1時間",
+  "@oneHour": {
+    "description": "1時間間隔"
+  },
+  
+  "nHours": "{n}時間",
+  "@nHours": {
+    "description": "n時間間隔",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "oneDay": "1日",
+  "@oneDay": {
+    "description": "1日間隔"
+  },
+  
+  "nDays": "{n}日",
+  "@nDays": {
+    "description": "n日間隔",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "compressBackup": "バックアップを圧縮",
+  "@compressBackup": {
+    "description": "バックアップ圧縮オプション"
+  },
+  
+  "compressionFormat": "圧縮形式",
+  "@compressionFormat": {
+    "description": "圧縮形式フィールド"
+  },
+  
+  "encryptBackup": "バックアップを暗号化",
+  "@encryptBackup": {
+    "description": "バックアップ暗号化オプション"
+  },
+  
+  "name": "名前",
+  "@name": {
+    "description": "名前ラベル"
+  },
+  
+  "sources": "バックアップ元",
+  "@sources": {
+    "description": "バックアップ元ラベル"
+  },
+  
+  "destination": "バックアップ先",
+  "@destination": {
+    "description": "バックアップ先ラベル"
+  },
+  
+  "schedule": "スケジュール",
+  "@schedule": {
+    "description": "スケジュールラベル"
+  },
+  
+  "compression": "圧縮",
+  "@compression": {
+    "description": "圧縮ラベル"
+  },
+  
+  "activeWithFormat": "有効（{format}）",
+  "@activeWithFormat": {
+    "description": "形式付きの圧縮有効",
+    "placeholders": {
+      "format": {
+        "type": "String",
+        "example": "ZIP"
+      }
+    }
+  },
+  
+  "deactivated": "無効",
+  "@deactivated": {
+    "description": "無効"
+  },
+  
+  "encryption": "暗号化",
+  "@encryption": {
+    "description": "暗号化ラベル"
+  },
+  
+  "active": "有効",
+  "@active": {
+    "description": "有効"
+  },
+  
+  "diskSpace": "ディスク容量",
+  "@diskSpace": {
+    "description": "ディスク容量タイトル"
+  },
+  
+  "calculatingSizes": "サイズを計算中...",
+  "@calculatingSizes": {
+    "description": "サイズ計算中ステータス"
+  },
+  
+  "sourceSize": "バックアップ元のサイズ",
+  "@sourceSize": {
+    "description": "バックアップ元サイズラベル"
+  },
+  
+  "notAvailable": "利用不可",
+  "@notAvailable": {
+    "description": "利用不可"
+  },
+  
+  "availableSpace": "保存先の空き容量",
+  "@availableSpace": {
+    "description": "空き容量ラベル"
+  },
+  
+  "retention": "保持（バージョン数）",
+  "@retention": {
+    "description": "保持フィールド"
+  },
+  
+  "sufficientSpace": "十分な容量があります！{percent}%の余裕があります。",
+  "@sufficientSpace": {
+    "description": "十分な容量があるメッセージ",
+    "placeholders": {
+      "percent": {
+        "type": "String",
+        "example": "50"
+      }
+    }
+  },
+  
+  "insufficientSpace": "容量不足！保存先に{size}不足しています。",
+  "@insufficientSpace": {
+    "description": "容量不足メッセージ",
+    "placeholders": {
+      "size": {
+        "type": "String",
+        "example": "2.5 GB"
+      }
+    }
+  },
+  
+  "fileSelectionCancelled": "ファイル選択がキャンセルされました。",
+  "@fileSelectionCancelled": {
+    "description": "選択キャンセルメッセージ"
+  },
+  
+  "filesAdded": "{count, plural, =1{1ファイルがバックアップ元に追加されました。} other{{count}ファイルがバックアップ元に追加されました。}}",
+  "@filesAdded": {
+    "description": "ファイル追加メッセージ",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "failedToSelectFiles": "ファイル選択に失敗しました：{error}",
+  "@failedToSelectFiles": {
+    "description": "ファイル選択エラー",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  
+  "folderSelectionCancelled": "バックアップ元フォルダの選択がキャンセルされました。",
+  "@folderSelectionCancelled": {
+    "description": "選択キャンセルメッセージ"
+  },
+  
+  "sourceFolderSelected": "バックアップ元フォルダが選択されました。",
+  "@sourceFolderSelected": {
+    "description": "フォルダ選択メッセージ"
+  },
+  
+  "failedToSelectSourceFolder": "バックアップ元フォルダの選択に失敗しました：{error}",
+  "@failedToSelectSourceFolder": {
+    "description": "フォルダ選択エラー",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  
+  "iosSaveLocation": "iOSでは、バックアップは次の場所に保存されます：Documents/Backups",
+  "@iosSaveLocation": {
+    "description": "iOSでの保存場所に関する情報"
+  },
+  
+  "destinationSelectionCancelled": "保存先フォルダの選択がキャンセルされました。",
+  "@destinationSelectionCancelled": {
+    "description": "選択キャンセルメッセージ"
+  },
+  
+  "destinationFolderSelected": "保存先フォルダが選択されました。",
+  "@destinationFolderSelected": {
+    "description": "フォルダ選択メッセージ"
+  },
+  
+  "failedToSelectDestination": "保存先フォルダの選択に失敗しました：{error}",
+  "@failedToSelectDestination": {
+    "description": "保存先選択エラー",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  
+  "enterRoutineName": "ルーチン名を入力してください。",
+  "@enterRoutineName": {
+    "description": "ルーチン名検証エラー"
+  },
+  
+  "enterAtLeastOneSource": "バックアップ元を少なくとも1つ入力してください。",
+  "@enterAtLeastOneSource": {
+    "description": "バックアップ元検証エラー"
+  },
+  
+  "enterDestinationPath": "保存先パスを入力してください。",
+  "@enterDestinationPath": {
+    "description": "保存先検証エラー"
+  },
+  
+  "retentionMustBePositive": "保持数は0より大きい数値である必要があります。",
+  "@retentionMustBePositive": {
+    "description": "保持検証エラー"
+  },
+  
+  "configureEncryptionPassword": "暗号化を有効にする前に、設定で暗号化パスワードを設定してください。",
+  "@configureEncryptionPassword": {
+    "description": "パスワード未設定での暗号化エラー"
+  },
+  
+  
+  "decryptFile": "ファイルを復号化",
+  "@decryptFile": {
+    "description": "復号化ダイアログのタイトル"
+  },
+  
+  "decryptionDescription": "ShadowSyncで保護されたファイルを復号化",
+  "@decryptionDescription": {
+    "description": "復号化ダイアログの説明"
+  },
+  
+  "encryptedFile": "暗号化ファイル",
+  "@encryptedFile": {
+    "description": "暗号化ファイルラベル"
+  },
+  
+  "selectFileEllipsis": "ファイルを選択...",
+  "@selectFileEllipsis": {
+    "description": "ファイル選択プレースホルダー"
+  },
+  
+  "destinationFolder": "保存先フォルダ",
+  "@destinationFolder": {
+    "description": "保存先フォルダラベル"
+  },
+  
+  "selectFolderEllipsis": "フォルダを選択...",
+  "@selectFolderEllipsis": {
+    "description": "フォルダ選択プレースホルダー"
+  },
+  
+  "outputFileName": "出力ファイル名：",
+  "@outputFileName": {
+    "description": "出力ファイル名ラベル"
+  },
+  
+  "decryptionPassword": "復号化パスワード：",
+  "@decryptionPassword": {
+    "description": "復号化パスワードラベル"
+  },
+  
+  "enterEncryptionPassword": "暗号化時に使用したパスワードを入力",
+  "@enterEncryptionPassword": {
+    "description": "復号化パスワードのヒント"
+  },
+  
+  "selectEncryptedFile": "暗号化ファイルを選択",
+  "@selectEncryptedFile": {
+    "description": "暗号化ファイル選択ツールチップ"
+  },
+  
+  "selectDestinationFolderTooltip": "保存先フォルダを選択",
+  "@selectDestinationFolderTooltip": {
+    "description": "保存先フォルダ選択ツールチップ"
+  },
+  
+  "execute": "実行",
+  "@execute": {
+    "description": "実行ボタン"
+  },
+  
+  "decrypting": "復号化中...",
+  "@decrypting": {
+    "description": "復号化中ステータス"
+  },
+  
+  "close": "閉じる",
+  "@close": {
+    "description": "閉じるボタン"
+  },
+  
+  "decryptAnother": "別のファイルを復号化",
+  "@decryptAnother": {
+    "description": "別のファイルを復号化ボタン"
+  },
+  
+  "startingDecryption": "復号化を開始しています...",
+  "@startingDecryption": {
+    "description": "復号化開始ステータス"
+  },
+  
+  "preparingDecryption": "復号化を準備中...",
+  "@preparingDecryption": {
+    "description": "復号化準備ステータス"
+  },
+  
+  "decryptingFile": "ファイルを復号化中...",
+  "@decryptingFile": {
+    "description": "ファイル復号化ステータス"
+  },
+  
+  "extractingContent": "コンテンツを抽出中...",
+  "@extractingContent": {
+    "description": "コンテンツ抽出ステータス"
+  },
+  
+  "finalizing": "完了処理中...",
+  "@finalizing": {
+    "description": "完了処理ステータス"
+  },
+  
+  "decryptedSuccessfully": "復号化に成功しました！{count, plural, =1{1ファイルが抽出されました。} other{{count}ファイルが抽出されました。}}",
+  "@decryptedSuccessfully": {
+    "description": "復号化成功メッセージ",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "errorSelectingFile": "ファイル選択エラー：{error}",
+  "@errorSelectingFile": {
+    "description": "ファイル選択エラー",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  
+  "errorSelectingDestination": "保存先選択エラー：{error}",
+  "@errorSelectingDestination": {
+    "description": "保存先選択エラー",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  
+  
+  "verifyDiskTitle": "ディスクを確認",
+  "@verifyDiskTitle": {
+    "description": "ディスク確認ダイアログのタイトル"
+  },
+  
+  "selectDiskToVerify": "整合性を確認するディスクを選択",
+  "@selectDiskToVerify": {
+    "description": "確認ダイアログの説明"
+  },
+  
+  "verifying": "確認中：{diskName}",
+  "@verifying": {
+    "description": "ディスク確認タイトル",
+    "placeholders": {
+      "diskName": {
+        "type": "String",
+        "example": "メインディスク"
+      }
+    }
+  },
+  
+  "backToSelection": "選択に戻る",
+  "@backToSelection": {
+    "description": "選択に戻るツールチップ"
+  },
+  
+  "loadingDisks": "ディスクを読み込み中...",
+  "@loadingDisks": {
+    "description": "ディスク読み込みステータス"
+  },
+  
+  "errorLoadingDisks": "ディスク読み込みエラー：{error}",
+  "@errorLoadingDisks": {
+    "description": "ディスク読み込みエラー",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  
+  "tryAgain": "再試行",
+  "@tryAgain": {
+    "description": "再試行ボタン"
+  },
+  
+  "noDisksFound": "ディスクが見つかりません",
+  "@noDisksFound": {
+    "description": "ディスクがない場合のメッセージ"
+  },
+  
+  "freeSpace": "{size}空き",
+  "@freeSpace": {
+    "description": "ディスクの空き容量",
+    "placeholders": {
+      "size": {
+        "type": "String",
+        "example": "100 GB"
+      }
+    }
+  },
+  
+  "diskSpaceUnavailable": "容量情報が利用不可能",
+  "@diskSpaceUnavailable": {
+    "description": "ディスク容量情報が利用不可能な場合のメッセージ"
+  },
+  
+  "internalStorage": "内部ストレージ",
+  "@internalStorage": {
+    "description": "デバイスの内部ストレージの名前"
+  },
+  
+  "sdCard": "SDカード",
+  "@sdCard": {
+    "description": "SDカードの名前"
+  },
+  
+  "externalSdCard": "外部SDカード",
+  "@externalSdCard": {
+    "description": "外部SDカードの名前"
+  },
+  
+  "primaryStorage": "プライマリストレージ",
+  "@primaryStorage": {
+    "description": "プライマリストレージの名前"
+  },
+  
+  "externalStorage": "外部ストレージ",
+  "@externalStorage": {
+    "description": "外部ストレージの名前"
+  },
+  
+  "deviceStorage": "デバイスストレージ",
+  "@deviceStorage": {
+    "description": "デバイスストレージの名前"
+  },
+  
+  "appStorage": "アプリストレージ",
+  "@appStorage": {
+    "description": "アプリストレージの名前"
+  },
+  
+  "testsToRun": "実行するテスト：",
+  "@testsToRun": {
+    "description": "実行するテストのタイトル"
+  },
+  
+  "testResults": "テスト結果",
+  "@testResults": {
+    "description": "テスト結果のタイトル"
+  },
+  
+  "verificationInProgress": "確認実行中...",
+  "@verificationInProgress": {
+    "description": "確認実行中ステータス"
+  },
+  
+  "diskVerifiedNoProblems": "ディスクを確認しました - 問題は見つかりませんでした",
+  "@diskVerifiedNoProblems": {
+    "description": "問題なしのディスク確認ステータス"
+  },
+  
+  "verificationCompletedWithWarnings": "確認が完了しました（警告あり）",
+  "@verificationCompletedWithWarnings": {
+    "description": "警告ありの確認ステータス"
+  },
+  
+  "problemsDetected": "ディスクに問題が検出されました",
+  "@problemsDetected": {
+    "description": "問題検出ステータス"
+  },
+  
+  "waiting": "待機中...",
+  "@waiting": {
+    "description": "待機中ステータス"
+  },
+  
+  "totalTime": "合計時間：{duration}",
+  "@totalTime": {
+    "description": "確認の合計時間",
+    "placeholders": {
+      "duration": {
+        "type": "String",
+        "example": "2分30秒"
+      }
+    }
+  },
+  
+  "mountPoint": "マウントポイント",
+  "@mountPoint": {
+    "description": "マウントポイントラベル"
+  },
+  
+  "device": "デバイス",
+  "@device": {
+    "description": "デバイスラベル"
+  },
+  
+  "fileSystem": "ファイルシステム",
+  "@fileSystem": {
+    "description": "ファイルシステムラベル"
+  },
+  
+  "totalCapacity": "合計容量",
+  "@totalCapacity": {
+    "description": "合計容量ラベル"
+  },
+  
+  "availableSpaceLabel": "空き容量",
+  "@availableSpaceLabel": {
+    "description": "空き容量ラベル"
+  },
+  
+  "mediaType": "メディアタイプ",
+  "@mediaType": {
+    "description": "メディアタイプラベル"
+  },
+  
+  "type": "タイプ",
+  "@type": {
+    "description": "タイプラベル"
+  },
+  
+  "removable": "リムーバブル",
+  "@removable": {
+    "description": "リムーバブルタイプ"
+  },
+  
+  "internal": "内蔵",
+  "@internal": {
+    "description": "内蔵タイプ"
+  },
+  
+  "startVerification": "確認を開始",
+  "@startVerification": {
+    "description": "確認開始ボタン"
+  },
+  
+  "verifyAgain": "再確認",
+  "@verifyAgain": {
+    "description": "再確認ボタン"
+  },
+  
+  "testAccessibilityCheck": "アクセシビリティチェック",
+  "@testAccessibilityCheck": {
+    "description": "ディスクアクセシビリティテストの名前"
+  },
+  
+  "testSpaceAnalysis": "ディスク容量分析",
+  "@testSpaceAnalysis": {
+    "description": "ディスク容量分析テストの名前"
+  },
+  
+  "testReadTest": "読み込みテスト",
+  "@testReadTest": {
+    "description": "ディスク読み込みテストの名前"
+  },
+  
+  "testFileSystemCheck": "ファイルシステムチェック",
+  "@testFileSystemCheck": {
+    "description": "ファイルシステム検証テストの名前"
+  },
+  
+  "testSmartStatus": "S.M.A.R.T. ステータス",
+  "@testSmartStatus": {
+    "description": "S.M.A.R.T. ステータステストの名前"
+  },
+  
+  
+  "language": "言語",
+  "@language": {
+    "description": "言語選択"
+  },
+  
+  "languagePortuguese": "Português (Brasil)",
+  "@languagePortuguese": {
+    "description": "ポルトガル語の言語名"
+  },
+  
+  "languageEnglish": "English",
+  "@languageEnglish": {
+    "description": "英語の言語名"
+  },
+  
+  "languageFrench": "Français",
+  "@languageFrench": {
+    "description": "フランス語の言語名"
+  },
+  
+  "languageGerman": "Deutsch",
+  "@languageGerman": {
+    "description": "ドイツ語の言語名"
+  },
+  
+  "languageSpanish": "Español",
+  "@languageSpanish": {
+    "description": "スペイン語の言語名"
+  },
+  
+  "languageItalian": "Italiano",
+  "@languageItalian": {
+    "description": "イタリア語の言語名"
+  },
+  
+  "languageJapanese": "日本語",
+  "@languageJapanese": {
+    "description": "日本語の言語名"
+  },
+  
+  "languageChinese": "中文 (简体)",
+  "@languageChinese": {
+    "description": "簡体字中国語の言語名"
+  },
+  
+  "languageKorean": "한국어",
+  "@languageKorean": {
+    "description": "韓国語の言語名"
+  },
+  
+  "scheduleTypeManual": "手動",
+  "@scheduleTypeManual": {
+    "description": "Schedule type: Manual"
+  },
+  
+  "scheduleTypeDaily": "日々",
+  "@scheduleTypeDaily": {
+    "description": "Schedule type: Daily"
+  },
+  
+  "scheduleTypeWeekly": "週間",
+  "@scheduleTypeWeekly": {
+    "description": "Schedule type: Weekly"
+  },
+  
+  "scheduleTypeInterval": "間隔",
+  "@scheduleTypeInterval": {
+    "description": "Schedule type: Interval"
+  },
+  
+  "backupName": "名前",
+  "@backupName": {
+    "description": "Label: Backup name"
+  },
+  
+  "backupSource": "ソース",
+  "@backupSource": {
+    "description": "Label: Backup source(s)"
+  },
+  
+  "destination": "宛先",
+  "@destination": {
+    "description": "Label: Backup destination"
+  },
+  
+  "scheduling": "スケジュール",
+  "@scheduling": {
+    "description": "Label: Backup scheduling"
+  },
+  
+  "frequency": "頻度",
+  "@frequency": {
+    "description": "Label: Schedule frequency"
+  },
+  
+  "nextBackupFormat": "次: \"{routineName}\" {time}",
+  "@nextBackupFormat": {
+    "description": "Format of the next scheduled backup",
+    "placeholders": {
+      "routineName": {
+        "type": "String",
+        "example": "Backup Documents"
+      },
+      "time": {
+        "type": "String",
+        "example": "today, 14:30"
+      }
+    }
+  },
+  
+  "diskSpaceSufficient": "十分な空き容量! {margin}% の余裕が利用可能。",
+  "@diskSpaceSufficient": {
+    "description": "Message when there is available space",
+    "placeholders": {
+      "margin": {
+        "type": "String",
+        "example": "30"
+      }
+    }
+  },
+  
+  "diskSpaceInsufficient": "空き容量が不足しています! 宛先ディスクに {deficit} 必要です。",
+  "@diskSpaceInsufficient": {
+    "description": "Message when there is not enough available space",
+    "placeholders": {
+      "deficit": {
+        "type": "String",
+        "example": "500 MB"
+      }
+    }
+  },
+  
+  "backupCompression": "圧縮",
+  "@backupCompression": {
+    "description": "Label: Backup compression"
+  },
+  
+  "backupEncryption": "暗号化",
+  "@backupEncryption": {
+    "description": "Label: Backup encryption"
+  },
+  
+  "encryptionActive": "有効",
+  "@encryptionActive": {
+    "description": "Encryption status: Active"
+  },
+  
+  "noRoutinesConfigured": "ルーチンが構成されていません",
+  "@noRoutinesConfigured": {
+    "description": "Message: No routines configured"
+  },
+  
+  "noScheduledBackups": "スケジュール済みのバックアップがあります",
+  "@noScheduledBackups": {
+    "description": "Message: No scheduled backups"
+  },
+  
+  "serviceActive": "サービスがアクティブ",
+  "@serviceActive": {
+    "description": "Status message: Service active"
+  },
+  
+  "dateToday": "今日",
+  "@dateToday": {
+    "description": "Date label: Today"
+  },
+  
+  "dateTomorrow": "明日",
+  "@dateTomorrow": {
+    "description": "Date label: Tomorrow"
+  },
+  
+  "weekdayMonday": "月",
+  "@weekdayMonday": {
+    "description": "Abbreviation: Monday"
+  },
+  
+  "weekdayTuesday": "火",
+  "@weekdayTuesday": {
+    "description": "Abbreviation: Tuesday"
+  },
+  
+  "weekdayWednesday": "水",
+  "@weekdayWednesday": {
+    "description": "Abbreviation: Wednesday"
+  },
+  
+  "weekdayThursday": "木",
+  "@weekdayThursday": {
+    "description": "Abbreviation: Thursday"
+  },
+  
+  "weekdayFriday": "金",
+  "@weekdayFriday": {
+    "description": "Abbreviation: Friday"
+  },
+  
+  "weekdaySaturday": "土",
+  "@weekdaySaturday": {
+    "description": "Abbreviation: Saturday"
+  },
+  
+  "weekdaySunday": "日",
+  "@weekdaySunday": {
+    "description": "Abbreviation: Sunday"
+  },
+  
+  "about": "について",
+  "@about": {
+    "description": "About menu option"
+  },
+  
+  "aboutTitle": "ShadowSyncについて",
+  "@aboutTitle": {
+    "description": "About dialog title"
+  },
+  
+  "version": "バージョン",
+  "@version": {
+    "description": "App version label"
+  },
+  
+  "developer": "開発者",
+  "@developer": {
+    "description": "Developer label"
+  },
+  
+  "visitWebsite": "ウェブサイトを訪問",
+  "@visitWebsite": {
+    "description": "Button to visit website"
+  },
+
+  "backupCompleted": "バックアップが完了しました ✓",
+  "@backupCompleted": {
+    "description": "Notification title for successful backup"
+  }
+}

@@ -1,0 +1,1526 @@
+{
+  "@@locale": "zh_CN",
+  
+  
+  "appTitle": "ShadowSync",
+  "@appTitle": {
+    "description": "应用标题"
+  },
+  
+  "appSubtitle": "备份管理器",
+  "@appSubtitle": {
+    "description": "应用副标题"
+  },
+  
+  
+  "myRoutines": "我的例程",
+  "@myRoutines": {
+    "description": "例程部分标题"
+  },
+  
+  "verifyDisk": "验证磁盘",
+  "@verifyDisk": {
+    "description": "验证磁盘选项"
+  },
+  
+  "decrypt": "解密",
+  "@decrypt": {
+    "description": "解密选项"
+  },
+  
+  "settings": "设置",
+  "@settings": {
+    "description": "设置页面"
+  },
+  
+  "startingBackup": "正在启动备份\"{routineName}\"...",
+  "@startingBackup": {
+    "description": "启动备份时的消息",
+    "placeholders": {
+      "routineName": {
+        "type": "String",
+        "example": "文档备份"
+      }
+    }
+  },
+  
+  "deleteRoutine": "删除例程",
+  "@deleteRoutine": {
+    "description": "删除对话框标题"
+  },
+  
+  "deleteRoutineConfirm": "确定要删除例程\"{routineName}\"吗？此操作无法撤销。",
+  "@deleteRoutineConfirm": {
+    "description": "删除确认消息",
+    "placeholders": {
+      "routineName": {
+        "type": "String",
+        "example": "文档备份"
+      }
+    }
+  },
+  
+  "cancel": "取消",
+  "@cancel": {
+    "description": "取消按钮"
+  },
+  
+  "delete": "删除",
+  "@delete": {
+    "description": "删除按钮"
+  },
+  
+  
+  "noRoutines": "未配置例程",
+  "@noRoutines": {
+    "description": "没有例程时的消息"
+  },
+  
+  "noScheduledBackups": "未计划自动备份",
+  "@noScheduledBackups": {
+    "description": "没有计划备份时的消息"
+  },
+  
+  "serviceActive": "服务活动",
+  "@serviceActive": {
+    "description": "服务活动指示器"
+  },
+  
+  "nextBackup": "下一个：\"{name}\" {time}",
+  "@nextBackup": {
+    "description": "下一个计划备份",
+    "placeholders": {
+      "name": {
+        "type": "String",
+        "example": "文档备份"
+      },
+      "time": {
+        "type": "String",
+        "example": "14:30"
+      }
+    }
+  },
+  
+  "today": "今天",
+  "@today": {
+    "description": "今天"
+  },
+  
+  "tomorrow": "明天",
+  "@tomorrow": {
+    "description": "明天"
+  },
+  
+  "monday": "周一",
+  "@monday": {
+    "description": "星期一（缩写）"
+  },
+  
+  "tuesday": "周二",
+  "@tuesday": {
+    "description": "星期二（缩写）"
+  },
+  
+  "wednesday": "周三",
+  "@wednesday": {
+    "description": "星期三（缩写）"
+  },
+  
+  "thursday": "周四",
+  "@thursday": {
+    "description": "星期四（缩写）"
+  },
+  
+  "friday": "周五",
+  "@friday": {
+    "description": "星期五（缩写）"
+  },
+  
+  "saturday": "周六",
+  "@saturday": {
+    "description": "星期六（缩写）"
+  },
+  
+  "sunday": "周日",
+  "@sunday": {
+    "description": "星期日（缩写）"
+  },
+  
+  "newBackup": "新建备份",
+  "@newBackup": {
+    "description": "创建新备份按钮"
+  },
+  
+  
+  "runBackup": "运行备份",
+  "@runBackup": {
+    "description": "运行备份的工具提示"
+  },
+  
+  "deleteRoutineTooltip": "删除例程",
+  "@deleteRoutineTooltip": {
+    "description": "删除例程的工具提示"
+  },
+  
+  "manualExecution": "手动执行",
+  "@manualExecution": {
+    "description": "手动执行模式"
+  },
+  
+  "noScheduleAvailable": "未安排",
+  "@noScheduleAvailable": {
+    "description": "当没有下一个计划时间可用时"
+  },
+  
+  "scheduledDaily": "计划：每天 {time}",
+  "@scheduledDaily": {
+    "description": "每日计划",
+    "placeholders": {
+      "time": {
+        "type": "String",
+        "example": "14:30"
+      }
+    }
+  },
+  
+  "scheduledWeekly": "计划：每周 • {date}",
+  "@scheduledWeekly": {
+    "description": "每周计划",
+    "placeholders": {
+      "date": {
+        "type": "String",
+        "example": "星期一, 14:30"
+      }
+    }
+  },
+  
+  "scheduledInterval": "计划：每 {interval}",
+  "@scheduledInterval": {
+    "description": "间隔计划",
+    "placeholders": {
+      "interval": {
+        "type": "String",
+        "example": "2 小时"
+      }
+    }
+  },
+  
+  "mode": "模式：",
+  "@mode": {
+    "description": "模式标签"
+  },
+  
+  "next": "下一个：",
+  "@next": {
+    "description": "下一个标签"
+  },
+  
+  "last": "上一个：",
+  "@last": {
+    "description": "上一个标签"
+  },
+  
+  "lastBackupLabel": "上次备份：",
+  "@lastBackupLabel": {
+    "description": "上次备份标签"
+  },
+  
+  "fileCount": "{count, plural, =1{1 个文件} other{{count} 个文件}}",
+  "@fileCount": {
+    "description": "文件计数器",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "extractedCount": "{count, plural, =1{已提取 1 个} other{已提取 {count} 个}}",
+  "@extractedCount": {
+    "description": "提取文件计数器",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  
+  
+  "general": "常规",
+  "@general": {
+    "description": "常规选项卡"
+  },
+  
+  "telegram": "Telegram",
+  "@telegram": {
+    "description": "Telegram 选项卡"
+  },
+  
+  "email": "电子邮件",
+  "@email": {
+    "description": "电子邮件选项卡"
+  },
+  
+  "userName": "用户名",
+  "@userName": {
+    "description": "用户名字段"
+  },
+  
+  "enterYourName": "输入您的姓名",
+  "@enterYourName": {
+    "description": "用户名占位符"
+  },
+  
+  "encryptionPassword": "加密密码",
+  "@encryptionPassword": {
+    "description": "加密密码字段"
+  },
+  
+  "encryptionPasswordHint": "用于保护您的加密备份",
+  "@encryptionPasswordHint": {
+    "description": "加密密码提示"
+  },
+  
+  "enterPassword": "输入密码",
+  "@enterPassword": {
+    "description": "密码占位符"
+  },
+  
+  "backupFileName": "备份文件名",
+  "@backupFileName": {
+    "description": "备份文件名字段"
+  },
+  
+  "useCustomName": "使用自定义名称",
+  "@useCustomName": {
+    "description": "使用自定义名称选项"
+  },
+  
+  "customName": "自定义名称",
+  "@customName": {
+    "description": "自定义名称字段"
+  },
+  
+  "telegramNotifications": "Telegram 通知",
+  "@telegramNotifications": {
+    "description": "Telegram 通知标题"
+  },
+  
+  "telegramDescription": "通过 Telegram 接收备份提醒",
+  "@telegramDescription": {
+    "description": "Telegram 通知描述"
+  },
+  
+  "enableNotifications": "启用通知",
+  "@enableNotifications": {
+    "description": "启用通知选项"
+  },
+  
+  "botToken": "机器人令牌",
+  "@botToken": {
+    "description": "机器人令牌字段"
+  },
+  
+  "botTokenHint": "在 Telegram 中使用 @BotFather 创建机器人",
+  "@botTokenHint": {
+    "description": "机器人令牌提示"
+  },
+  
+  "botTokenExample": "123456789:ABCdefGHI...",
+  "@botTokenExample": {
+    "description": "机器人令牌示例"
+  },
+  
+  "chatId": "聊天 ID",
+  "@chatId": {
+    "description": "聊天 ID 字段"
+  },
+  
+  "chatIdHint": "向机器人发送 /start 并使用 @userinfobot 获取",
+  "@chatIdHint": {
+    "description": "聊天 ID 提示"
+  },
+  
+  "chatIdExample": "您的聊天 ID（例如：123456789）",
+  "@chatIdExample": {
+    "description": "聊天 ID 示例"
+  },
+  
+  "whenNotify": "何时通知",
+  "@whenNotify": {
+    "description": "何时通知标题"
+  },
+  
+  "backupSuccess": "备份成功完成",
+  "@backupSuccess": {
+    "description": "通知成功选项"
+  },
+  
+  "backupFailed": "备份失败",
+  "@backupFailed": {
+    "description": "通知失败选项"
+  },
+  
+  "backupStarted": "备份已开始",
+  "@backupStarted": {
+    "description": "通知开始选项"
+  },
+  
+  "sending": "发送中...",
+  "@sending": {
+    "description": "发送状态"
+  },
+  
+  "sendTest": "发送测试",
+  "@sendTest": {
+    "description": "发送测试按钮"
+  },
+  
+  "emailNotifications": "电子邮件通知",
+  "@emailNotifications": {
+    "description": "电子邮件通知标题"
+  },
+  
+  "emailDescription": "通过电子邮件接收备份提醒",
+  "@emailDescription": {
+    "description": "电子邮件通知描述"
+  },
+  
+  "emailProvider": "电子邮件提供商",
+  "@emailProvider": {
+    "description": "电子邮件提供商字段"
+  },
+  
+  "emailProviderHint": "选择您的提供商或手动配置",
+  "@emailProviderHint": {
+    "description": "电子邮件提供商提示"
+  },
+  
+  "selectProvider": "选择提供商",
+  "@selectProvider": {
+    "description": "选择提供商占位符"
+  },
+  
+  "smtpServer": "SMTP 服务器",
+  "@smtpServer": {
+    "description": "SMTP 服务器字段"
+  },
+  
+  "smtpServerExample": "例如：smtp.gmail.com",
+  "@smtpServerExample": {
+    "description": "SMTP 服务器示例"
+  },
+  
+  "smtpServerPlaceholder": "smtp.example.com",
+  "@smtpServerPlaceholder": {
+    "description": "SMTP 服务器占位符"
+  },
+  
+  "smtpPort": "SMTP 端口",
+  "@smtpPort": {
+    "description": "SMTP 端口字段"
+  },
+  
+  "smtpPortHint": "TLS 使用 587，SSL 使用 465",
+  "@smtpPortHint": {
+    "description": "SMTP 端口提示"
+  },
+  
+  "smtpPortPlaceholder": "587",
+  "@smtpPortPlaceholder": {
+    "description": "SMTP 端口占位符"
+  },
+  
+  "yourEmail": "您的电子邮件",
+  "@yourEmail": {
+    "description": "您的电子邮件字段"
+  },
+  
+  "yourEmailHint": "用于发送通知的电子邮件",
+  "@yourEmailHint": {
+    "description": "您的电子邮件提示"
+  },
+  
+  "yourEmailPlaceholder": "youremail@gmail.com",
+  "@yourEmailPlaceholder": {
+    "description": "您的电子邮件占位符"
+  },
+  
+  "emailPassword": "密码或应用密码",
+  "@emailPassword": {
+    "description": "电子邮件密码字段"
+  },
+  
+  "emailPasswordHint": "如果启用了两步验证，请使用应用密码",
+  "@emailPasswordHint": {
+    "description": "电子邮件密码提示"
+  },
+  
+  "emailPasswordPlaceholder": "您的密码或应用密码",
+  "@emailPasswordPlaceholder": {
+    "description": "电子邮件密码占位符"
+  },
+  
+  "destinationEmails": "目标电子邮件",
+  "@destinationEmails": {
+    "description": "目标电子邮件字段"
+  },
+  
+  "destinationEmailsHint": "用逗号分隔多个电子邮件",
+  "@destinationEmailsHint": {
+    "description": "目标电子邮件提示"
+  },
+  
+  "destinationEmailsPlaceholder": "email1@example.com, email2@example.com",
+  "@destinationEmailsPlaceholder": {
+    "description": "目标电子邮件占位符"
+  },
+  
+  "security": "安全",
+  "@security": {
+    "description": "安全标题"
+  },
+  
+  "useStartTls": "使用 STARTTLS（推荐）",
+  "@useStartTls": {
+    "description": "使用 STARTTLS 选项"
+  },
+  
+  "useSsl": "使用 SSL",
+  "@useSsl": {
+    "description": "使用 SSL 选项"
+  },
+  
+  "save": "保存",
+  "@save": {
+    "description": "保存按钮"
+  },
+  
+  "fillBotTokenAndChatId": "填写机器人令牌和聊天 ID 以发送测试",
+  "@fillBotTokenAndChatId": {
+    "description": "发送 Telegram 测试时的错误消息"
+  },
+  
+  "testMessageSent": "测试消息发送成功！",
+  "@testMessageSent": {
+    "description": "发送测试成功消息"
+  },
+  
+  "errorWithMessage": "错误：{message}",
+  "@errorWithMessage": {
+    "description": "通用错误消息",
+    "placeholders": {
+      "message": {
+        "type": "String",
+        "example": "连接被拒绝"
+      }
+    }
+  },
+  
+  "fillAllFields": "填写所有必填字段",
+  "@fillAllFields": {
+    "description": "保存时未填写字段的错误消息"
+  },
+  
+  "enterAtLeastOneEmail": "至少输入一个目标电子邮件",
+  "@enterAtLeastOneEmail": {
+    "description": "保存时未填写目标电子邮件的错误消息"
+  },
+  
+  "testEmailSent": "测试电子邮件发送成功！",
+  "@testEmailSent": {
+    "description": "发送电子邮件测试成功消息"
+  },
+  
+  
+  "basicData": "基本数据",
+  "@basicData": {
+    "description": "基本数据步骤"
+  },
+  
+  "scheduling": "计划",
+  "@scheduling": {
+    "description": "计划步骤"
+  },
+  
+  "processing": "处理",
+  "@processing": {
+    "description": "处理步骤"
+  },
+  
+  "review": "审查",
+  "@review": {
+    "description": "审查步骤"
+  },
+  
+  "nextStep": "下一步",
+  "@nextStep": {
+    "description": "下一步按钮"
+  },
+  
+  "saveRoutine": "保存例程",
+  "@saveRoutine": {
+    "description": "保存例程按钮"
+  },
+  
+  "back": "返回",
+  "@back": {
+    "description": "返回按钮"
+  },
+  
+  "routineName": "例程名称",
+  "@routineName": {
+    "description": "例程名称字段"
+  },
+  
+  "backupSources": "备份源",
+  "@backupSources": {
+    "description": "备份源标题"
+  },
+  
+  "selectFilesAndFolders": "您可以选择文件和/或文件夹。",
+  "@selectFilesAndFolders": {
+    "description": "源描述"
+  },
+  
+  "sourcePathsExample": "/Users/myuser/Documents;/Users/myuser/Projects",
+  "@sourcePathsExample": {
+    "description": "源路径示例"
+  },
+  
+  "addSource": "添加源",
+  "@addSource": {
+    "description": "添加源按钮"
+  },
+  
+  "selecting": "选择中...",
+  "@selecting": {
+    "description": "选择状态"
+  },
+  
+  "selectFiles": "选择文件",
+  "@selectFiles": {
+    "description": "选择文件按钮"
+  },
+  
+  "selectFolder": "选择文件夹",
+  "@selectFolder": {
+    "description": "选择文件夹按钮"
+  },
+  
+  "backupDestination": "备份目标",
+  "@backupDestination": {
+    "description": "备份目标字段"
+  },
+  
+  "destinationDescription": "选择保存文件的文件夹。",
+  "@destinationDescription": {
+    "description": "目标描述"
+  },
+  
+  "destinationExample": "/Volumes/Backup/Destination",
+  "@destinationExample": {
+    "description": "目标示例"
+  },
+  
+  "selectDestinationFolder": "选择目标文件夹",
+  "@selectDestinationFolder": {
+    "description": "选择目标文件夹按钮"
+  },
+  
+  "frequency": "频率",
+  "@frequency": {
+    "description": "频率标题"
+  },
+  
+  "manual": "手动",
+  "@manual": {
+    "description": "手动计划类型"
+  },
+  
+  "daily": "每日",
+  "@daily": {
+    "description": "每日计划类型"
+  },
+  
+  "weekly": "每周",
+  "@weekly": {
+    "description": "每周计划类型"
+  },
+  
+  "interval": "间隔",
+  "@interval": {
+    "description": "间隔计划类型"
+  },
+  
+  "runAt": "运行于：",
+  "@runAt": {
+    "description": "运行于标签"
+  },
+  
+  "runEvery": "运行频率：",
+  "@runEvery": {
+    "description": "运行频率标签"
+  },
+  
+  "manualExecutionInfo": "按卡片上的播放按钮时，备份将手动运行。",
+  "@manualExecutionInfo": {
+    "description": "手动执行信息"
+  },
+  
+  "oneMinute": "1 分钟",
+  "@oneMinute": {
+    "description": "1 分钟间隔"
+  },
+  
+  "nMinutes": "{n} 分钟",
+  "@nMinutes": {
+    "description": "n 分钟间隔",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "oneHour": "1 小时",
+  "@oneHour": {
+    "description": "1 小时间隔"
+  },
+  
+  "nHours": "{n} 小时",
+  "@nHours": {
+    "description": "n 小时间隔",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "oneDay": "1 天",
+  "@oneDay": {
+    "description": "1 天间隔"
+  },
+  
+  "nDays": "{n} 天",
+  "@nDays": {
+    "description": "n 天间隔",
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "compressBackup": "压缩备份",
+  "@compressBackup": {
+    "description": "压缩备份选项"
+  },
+  
+  "compressionFormat": "压缩格式",
+  "@compressionFormat": {
+    "description": "压缩格式字段"
+  },
+  
+  "encryptBackup": "加密备份",
+  "@encryptBackup": {
+    "description": "加密备份选项"
+  },
+  
+  "name": "名称",
+  "@name": {
+    "description": "名称标签"
+  },
+  
+  "sources": "源",
+  "@sources": {
+    "description": "源标签"
+  },
+  
+  "destination": "目标",
+  "@destination": {
+    "description": "目标标签"
+  },
+  
+  "schedule": "计划",
+  "@schedule": {
+    "description": "计划标签"
+  },
+  
+  "compression": "压缩",
+  "@compression": {
+    "description": "压缩标签"
+  },
+  
+  "activeWithFormat": "活动（{format}）",
+  "@activeWithFormat": {
+    "description": "带格式的活动压缩",
+    "placeholders": {
+      "format": {
+        "type": "String",
+        "example": "ZIP"
+      }
+    }
+  },
+  
+  "deactivated": "未激活",
+  "@deactivated": {
+    "description": "未激活"
+  },
+  
+  "encryption": "加密",
+  "@encryption": {
+    "description": "加密标签"
+  },
+  
+  "active": "活动",
+  "@active": {
+    "description": "活动"
+  },
+  
+  "diskSpace": "磁盘空间",
+  "@diskSpace": {
+    "description": "磁盘空间标题"
+  },
+  
+  "calculatingSizes": "正在计算大小...",
+  "@calculatingSizes": {
+    "description": "计算大小状态"
+  },
+  
+  "sourceSize": "源大小",
+  "@sourceSize": {
+    "description": "源大小标签"
+  },
+  
+  "notAvailable": "不可用",
+  "@notAvailable": {
+    "description": "不可用"
+  },
+  
+  "availableSpace": "目标可用空间",
+  "@availableSpace": {
+    "description": "可用空间标签"
+  },
+  
+  "retention": "保留（版本数量）",
+  "@retention": {
+    "description": "保留字段"
+  },
+  
+  "sufficientSpace": "空间充足！可用余量 {percent}%。",
+  "@sufficientSpace": {
+    "description": "空间充足消息",
+    "placeholders": {
+      "percent": {
+        "type": "String",
+        "example": "50"
+      }
+    }
+  },
+  
+  "insufficientSpace": "空间不足！目标磁盘缺少 {size}。",
+  "@insufficientSpace": {
+    "description": "空间不足消息",
+    "placeholders": {
+      "size": {
+        "type": "String",
+        "example": "2.5 GB"
+      }
+    }
+  },
+  
+  "fileSelectionCancelled": "文件选择已取消。",
+  "@fileSelectionCancelled": {
+    "description": "选择已取消消息"
+  },
+  
+  "filesAdded": "{count, plural, =1{1 个文件已添加到源。} other{{count} 个文件已添加到源。}}",
+  "@filesAdded": {
+    "description": "文件已添加消息",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "failedToSelectFiles": "选择文件失败：{error}",
+  "@failedToSelectFiles": {
+    "description": "选择文件错误",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  
+  "folderSelectionCancelled": "源文件夹选择已取消。",
+  "@folderSelectionCancelled": {
+    "description": "选择已取消消息"
+  },
+  
+  "sourceFolderSelected": "源文件夹已选择。",
+  "@sourceFolderSelected": {
+    "description": "文件夹已选择消息"
+  },
+  
+  "failedToSelectSourceFolder": "选择源文件夹失败：{error}",
+  "@failedToSelectSourceFolder": {
+    "description": "选择源文件夹错误",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  
+  "iosSaveLocation": "在 iOS 上，备份将保存在：文档/备份",
+  "@iosSaveLocation": {
+    "description": "iOS 保存位置信息"
+  },
+  
+  "destinationSelectionCancelled": "目标文件夹选择已取消。",
+  "@destinationSelectionCancelled": {
+    "description": "选择已取消消息"
+  },
+  
+  "destinationFolderSelected": "目标文件夹已选择。",
+  "@destinationFolderSelected": {
+    "description": "文件夹已选择消息"
+  },
+  
+  "failedToSelectDestination": "选择目标文件夹失败：{error}",
+  "@failedToSelectDestination": {
+    "description": "选择目标文件夹错误",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  
+  "enterRoutineName": "输入例程名称。",
+  "@enterRoutineName": {
+    "description": "验证例程名称错误"
+  },
+  
+  "enterAtLeastOneSource": "至少输入一个源。",
+  "@enterAtLeastOneSource": {
+    "description": "验证源错误"
+  },
+  
+  "enterDestinationPath": "输入目标路径。",
+  "@enterDestinationPath": {
+    "description": "验证目标错误"
+  },
+  
+  "retentionMustBePositive": "保留必须是大于零的数字。",
+  "@retentionMustBePositive": {
+    "description": "验证保留错误"
+  },
+  
+  "configureEncryptionPassword": "在启用加密之前，请在设置中配置加密密码。",
+  "@configureEncryptionPassword": {
+    "description": "未配置密码时启用加密的错误"
+  },
+  
+  
+  "decryptFile": "解密文件",
+  "@decryptFile": {
+    "description": "解密对话框标题"
+  },
+  
+  "decryptionDescription": "解密由 ShadowSync 保护的文件",
+  "@decryptionDescription": {
+    "description": "解密对话框描述"
+  },
+  
+  "encryptedFile": "加密文件",
+  "@encryptedFile": {
+    "description": "加密文件标签"
+  },
+  
+  "selectFileEllipsis": "选择文件...",
+  "@selectFileEllipsis": {
+    "description": "选择文件占位符"
+  },
+  
+  "destinationFolder": "目标文件夹",
+  "@destinationFolder": {
+    "description": "目标文件夹标签"
+  },
+  
+  "selectFolderEllipsis": "选择文件夹...",
+  "@selectFolderEllipsis": {
+    "description": "选择文件夹占位符"
+  },
+  
+  "outputFileName": "输出文件名：",
+  "@outputFileName": {
+    "description": "输出文件名标签"
+  },
+  
+  "decryptionPassword": "解密密码：",
+  "@decryptionPassword": {
+    "description": "解密密码标签"
+  },
+  
+  "enterEncryptionPassword": "输入加密时使用的密码",
+  "@enterEncryptionPassword": {
+    "description": "解密密码提示"
+  },
+  
+  "selectEncryptedFile": "选择加密文件",
+  "@selectEncryptedFile": {
+    "description": "选择加密文件工具提示"
+  },
+  
+  "selectDestinationFolderTooltip": "选择目标文件夹",
+  "@selectDestinationFolderTooltip": {
+    "description": "选择目标文件夹工具提示"
+  },
+  
+  "execute": "执行",
+  "@execute": {
+    "description": "执行按钮"
+  },
+  
+  "decrypting": "解密中...",
+  "@decrypting": {
+    "description": "解密状态"
+  },
+  
+  "close": "关闭",
+  "@close": {
+    "description": "关闭按钮"
+  },
+  
+  "decryptAnother": "解密另一个",
+  "@decryptAnother": {
+    "description": "解密另一个按钮"
+  },
+  
+  "startingDecryption": "正在启动解密...",
+  "@startingDecryption": {
+    "description": "正在启动解密状态"
+  },
+  
+  "preparingDecryption": "正在准备解密...",
+  "@preparingDecryption": {
+    "description": "正在准备解密状态"
+  },
+  
+  "decryptingFile": "正在解密文件...",
+  "@decryptingFile": {
+    "description": "正在解密文件状态"
+  },
+  
+  "extractingContent": "正在提取内容...",
+  "@extractingContent": {
+    "description": "正在提取内容状态"
+  },
+  
+  "finalizing": "正在完成...",
+  "@finalizing": {
+    "description": "正在完成状态"
+  },
+  
+  "decryptedSuccessfully": "解密成功！{count, plural, =1{已提取 1 个文件。} other{已提取 {count} 个文件。}}",
+  "@decryptedSuccessfully": {
+    "description": "解密成功消息",
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  
+  "errorSelectingFile": "选择文件时出错：{error}",
+  "@errorSelectingFile": {
+    "description": "选择文件错误",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  
+  "errorSelectingDestination": "选择目标时出错：{error}",
+  "@errorSelectingDestination": {
+    "description": "选择目标错误",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  
+  
+  "verifyDiskTitle": "验证磁盘",
+  "@verifyDiskTitle": {
+    "description": "磁盘验证对话框标题"
+  },
+  
+  "selectDiskToVerify": "选择要验证完整性的磁盘",
+  "@selectDiskToVerify": {
+    "description": "验证对话框描述"
+  },
+  
+  "verifying": "正在验证：{diskName}",
+  "@verifying": {
+    "description": "正在验证磁盘标题",
+    "placeholders": {
+      "diskName": {
+        "type": "String",
+        "example": "主磁盘"
+      }
+    }
+  },
+  
+  "backToSelection": "返回选择",
+  "@backToSelection": {
+    "description": "返回选择工具提示"
+  },
+  
+  "loadingDisks": "正在加载磁盘...",
+  "@loadingDisks": {
+    "description": "正在加载磁盘状态"
+  },
+  
+  "errorLoadingDisks": "加载磁盘时出错：{error}",
+  "@errorLoadingDisks": {
+    "description": "加载磁盘错误",
+    "placeholders": {
+      "error": {
+        "type": "String"
+      }
+    }
+  },
+  
+  "tryAgain": "重试",
+  "@tryAgain": {
+    "description": "重试按钮"
+  },
+  
+  "noDisksFound": "未找到磁盘",
+  "@noDisksFound": {
+    "description": "没有磁盘时的消息"
+  },
+  
+  "freeSpace": "{size} 可用",
+  "@freeSpace": {
+    "description": "磁盘可用空间",
+    "placeholders": {
+      "size": {
+        "type": "String",
+        "example": "100 GB"
+      }
+    }
+  },
+  
+  "diskSpaceUnavailable": "磁盘空间信息不可用",
+  "@diskSpaceUnavailable": {
+    "description": "磁盘空间信息不可用时的消息"
+  },
+  
+  "internalStorage": "内部存储",
+  "@internalStorage": {
+    "description": "设备内部存储的名称"
+  },
+  
+  "sdCard": "SD卡",
+  "@sdCard": {
+    "description": "SD卡的名称"
+  },
+  
+  "externalSdCard": "外部 SD 卡",
+  "@externalSdCard": {
+    "description": "外部 SD 卡的名称"
+  },
+  
+  "primaryStorage": "主要存储",
+  "@primaryStorage": {
+    "description": "主要存储的名称"
+  },
+  
+  "externalStorage": "外部存储",
+  "@externalStorage": {
+    "description": "外部存储的名称"
+  },
+  
+  "deviceStorage": "设备存储",
+  "@deviceStorage": {
+    "description": "设备存储的名称"
+  },
+  
+  "appStorage": "应用存储",
+  "@appStorage": {
+    "description": "应用存储的名称"
+  },
+  
+  "testsToRun": "将执行的测试：",
+  "@testsToRun": {
+    "description": "要执行的测试标题"
+  },
+  
+  "testResults": "测试结果",
+  "@testResults": {
+    "description": "测试结果标题"
+  },
+  
+  "verificationInProgress": "验证进行中...",
+  "@verificationInProgress": {
+    "description": "验证进行中状态"
+  },
+  
+  "diskVerifiedNoProblems": "磁盘已验证 - 未发现问题",
+  "@diskVerifiedNoProblems": {
+    "description": "磁盘已验证无问题状态"
+  },
+  
+  "verificationCompletedWithWarnings": "验证完成，但有警告",
+  "@verificationCompletedWithWarnings": {
+    "description": "验证有警告状态"
+  },
+  
+  "problemsDetected": "检测到磁盘问题",
+  "@problemsDetected": {
+    "description": "检测到问题状态"
+  },
+  
+  "waiting": "等待中...",
+  "@waiting": {
+    "description": "等待状态"
+  },
+  
+  "totalTime": "总时间：{duration}",
+  "@totalTime": {
+    "description": "验证总时间",
+    "placeholders": {
+      "duration": {
+        "type": "String",
+        "example": "2m 30s"
+      }
+    }
+  },
+  
+  "mountPoint": "挂载点",
+  "@mountPoint": {
+    "description": "挂载点标签"
+  },
+  
+  "device": "设备",
+  "@device": {
+    "description": "设备标签"
+  },
+  
+  "fileSystem": "文件系统",
+  "@fileSystem": {
+    "description": "文件系统标签"
+  },
+  
+  "totalCapacity": "总容量",
+  "@totalCapacity": {
+    "description": "总容量标签"
+  },
+  
+  "availableSpaceLabel": "可用空间",
+  "@availableSpaceLabel": {
+    "description": "可用空间标签"
+  },
+  
+  "mediaType": "媒体类型",
+  "@mediaType": {
+    "description": "媒体类型标签"
+  },
+  
+  "type": "类型",
+  "@type": {
+    "description": "类型标签"
+  },
+  
+  "removable": "可移动",
+  "@removable": {
+    "description": "可移动类型"
+  },
+  
+  "internal": "内部",
+  "@internal": {
+    "description": "内部类型"
+  },
+  
+  "startVerification": "开始验证",
+  "@startVerification": {
+    "description": "开始验证按钮"
+  },
+  
+  "verifyAgain": "再次验证",
+  "@verifyAgain": {
+    "description": "再次验证按钮"
+  },
+  
+  "testAccessibilityCheck": "可访问性检查",
+  "@testAccessibilityCheck": {
+    "description": "磁盘可访问性测试的名称"
+  },
+  
+  "testSpaceAnalysis": "磁盘空间分析",
+  "@testSpaceAnalysis": {
+    "description": "磁盘空间分析测试的名称"
+  },
+  
+  "testReadTest": "读取测试",
+  "@testReadTest": {
+    "description": "磁盘读取测试的名称"
+  },
+  
+  "testFileSystemCheck": "文件系统检查",
+  "@testFileSystemCheck": {
+    "description": "文件系统验证测试的名称"
+  },
+  
+  "testSmartStatus": "S.M.A.R.T. 状态",
+  "@testSmartStatus": {
+    "description": "S.M.A.R.T. 状态测试的名称"
+  },
+  
+  
+  "language": "语言",
+  "@language": {
+    "description": "语言选择"
+  },
+  
+  "languagePortuguese": "Português (Brasil)",
+  "@languagePortuguese": {
+    "description": "葡萄牙语名称"
+  },
+  
+  "languageEnglish": "English",
+  "@languageEnglish": {
+    "description": "英语名称"
+  },
+  
+  "languageFrench": "Français",
+  "@languageFrench": {
+    "description": "法语名称"
+  },
+  
+  "languageGerman": "Deutsch",
+  "@languageGerman": {
+    "description": "德语名称"
+  },
+  
+  "languageSpanish": "Español",
+  "@languageSpanish": {
+    "description": "西班牙语名称"
+  },
+  
+  "languageItalian": "Italiano",
+  "@languageItalian": {
+    "description": "意大利语名称"
+  },
+  
+  "languageJapanese": "日本語",
+  "@languageJapanese": {
+    "description": "日语名称"
+  },
+  
+  "languageChinese": "中文 (简体)",
+  "@languageChinese": {
+    "description": "简体中文名称"
+  },
+  
+  "languageKorean": "한국어",
+  "@languageKorean": {
+    "description": "韩语名称"
+  },
+  
+  "scheduleTypeManual": "手动",
+  "@scheduleTypeManual": {
+    "description": "Schedule type: Manual"
+  },
+  
+  "scheduleTypeDaily": "每天",
+  "@scheduleTypeDaily": {
+    "description": "Schedule type: Daily"
+  },
+  
+  "scheduleTypeWeekly": "每周",
+  "@scheduleTypeWeekly": {
+    "description": "Schedule type: Weekly"
+  },
+  
+  "scheduleTypeInterval": "间隔",
+  "@scheduleTypeInterval": {
+    "description": "Schedule type: Interval"
+  },
+  
+  "backupName": "名称",
+  "@backupName": {
+    "description": "Label: Backup name"
+  },
+  
+  "backupSource": "源",
+  "@backupSource": {
+    "description": "Label: Backup source(s)"
+  },
+  
+  "destination": "目的地",
+  "@destination": {
+    "description": "Label: Backup destination"
+  },
+  
+  "scheduling": "日程安排",
+  "@scheduling": {
+    "description": "Label: Backup scheduling"
+  },
+  
+  "frequency": "频率",
+  "@frequency": {
+    "description": "Label: Schedule frequency"
+  },
+  
+  "nextBackupFormat": "下一次: \"{routineName}\" {time}",
+  "@nextBackupFormat": {
+    "description": "Format of the next scheduled backup",
+    "placeholders": {
+      "routineName": {
+        "type": "String",
+        "example": "Backup Documents"
+      },
+      "time": {
+        "type": "String",
+        "example": "today, 14:30"
+      }
+    }
+  },
+  
+  "diskSpaceSufficient": "空间充足! {margin}% 的余量可用。",
+  "@diskSpaceSufficient": {
+    "description": "Message when there is available space",
+    "placeholders": {
+      "margin": {
+        "type": "String",
+        "example": "30"
+      }
+    }
+  },
+  
+  "diskSpaceInsufficient": "空间不足! 目标磁盘上缺少 {deficit}。",
+  "@diskSpaceInsufficient": {
+    "description": "Message when there is not enough available space",
+    "placeholders": {
+      "deficit": {
+        "type": "String",
+        "example": "500 MB"
+      }
+    }
+  },
+  
+  "backupCompression": "压缩",
+  "@backupCompression": {
+    "description": "Label: Backup compression"
+  },
+  
+  "backupEncryption": "加密",
+  "@backupEncryption": {
+    "description": "Label: Backup encryption"
+  },
+  
+  "encryptionActive": "启用",
+  "@encryptionActive": {
+    "description": "Encryption status: Active"
+  },
+  
+  "noRoutinesConfigured": "未配置任何例程",
+  "@noRoutinesConfigured": {
+    "description": "Message: No routines configured"
+  },
+  
+  "noScheduledBackups": "没有计划备份",
+  "@noScheduledBackups": {
+    "description": "Message: No scheduled backups"
+  },
+  
+  "serviceActive": "服务活跃",
+  "@serviceActive": {
+    "description": "Status message: Service active"
+  },
+  
+  "dateToday": "今天",
+  "@dateToday": {
+    "description": "Date label: Today"
+  },
+  
+  "dateTomorrow": "明天",
+  "@dateTomorrow": {
+    "description": "Date label: Tomorrow"
+  },
+  
+  "weekdayMonday": "周一",
+  "@weekdayMonday": {
+    "description": "Abbreviation: Monday"
+  },
+  
+  "weekdayTuesday": "周二",
+  "@weekdayTuesday": {
+    "description": "Abbreviation: Tuesday"
+  },
+  
+  "weekdayWednesday": "周三",
+  "@weekdayWednesday": {
+    "description": "Abbreviation: Wednesday"
+  },
+  
+  "weekdayThursday": "周四",
+  "@weekdayThursday": {
+    "description": "Abbreviation: Thursday"
+  },
+  
+  "weekdayFriday": "周五",
+  "@weekdayFriday": {
+    "description": "Abbreviation: Friday"
+  },
+  
+  "weekdaySaturday": "周六",
+  "@weekdaySaturday": {
+    "description": "Abbreviation: Saturday"
+  },
+  
+  "weekdaySunday": "周日",
+  "@weekdaySunday": {
+    "description": "Abbreviation: Sunday"
+  },
+  
+  "about": "关于",
+  "@about": {
+    "description": "About menu option"
+  },
+  
+  "aboutTitle": "关于 ShadowSync",
+  "@aboutTitle": {
+    "description": "About dialog title"
+  },
+  
+  "version": "版本",
+  "@version": {
+    "description": "App version label"
+  },
+  
+  "developer": "开发者",
+  "@developer": {
+    "description": "Developer label"
+  },
+  
+  "visitWebsite": "访问网站",
+  "@visitWebsite": {
+    "description": "Button to visit website"
+  },
+
+  "backupCompleted": "备份已完成 ✓",
+  "@backupCompleted": {
+    "description": "Notification title for successful backup"
+  }
+}
