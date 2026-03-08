@@ -219,7 +219,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get backupSuccess => 'Backup completed successfully';
 
   @override
-  String get backupFailed => 'Backup Failed ✗';
+  String get backupFailed => 'Backup failed';
 
   @override
   String get backupStarted => 'Backup started';
@@ -777,6 +777,14 @@ class AppLocalizationsEn extends AppLocalizations {
   String get testSmartStatus => 'S.M.A.R.T. Status';
 
   @override
+  String get fullDiskAccessRequired =>
+      'Access denied. On macOS, grant ShadowSync \"Full Disk Access\" in System Settings > Privacy & Security > Full Disk Access.';
+
+  @override
+  String get fileSystemCheckRequiresPrivileges =>
+      'File system verification requires privileged system access. Use the \"Disk Utility\" app on macOS to verify this volume manually.';
+
+  @override
   String get language => 'Language';
 
   @override
@@ -892,64 +900,4 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get visitWebsite => 'Visit Website';
-
-  @override
-  String get backupCompleted => 'Backup Completed ✓';
-
-  @override
-  String backupCompletedMessage(String routineName) {
-    return 'The backup \"$routineName\" has been completed successfully.';
-  }
-
-  @override
-  String backupFailedMessage(String routineName, String errorMessage) {
-    return 'The backup \"$routineName\" failed: $errorMessage';
-  }
-
-  @override
-  String get nextBackupScheduled => 'Next Backup Scheduled';
-
-  @override
-  String nextBackupMessage(String routineName, String timeDescription) {
-    return '\"$routineName\" will be executed $timeDescription.';
-  }
-
-  @override
-  String get inLessThanMinute => 'in less than 1 minute';
-
-  @override
-  String get inMinute => 'in 1 minute';
-
-  @override
-  String inMinutes(int count) {
-    return 'in $count minutes';
-  }
-
-  @override
-  String get inHour => 'in 1 hour';
-
-  @override
-  String inHours(int count) {
-    return 'in $count hours';
-  }
-
-  @override
-  String inHoursMinutes(int hours, int minutes) {
-    return 'in ${hours}h${minutes}min';
-  }
-
-  @override
-  String get inDay => 'in 1 day';
-
-  @override
-  String inDays(int count) {
-    return 'in $count days';
-  }
-
-  @override
-  String get notificationChannelName => 'ShadowSync Backups';
-
-  @override
-  String get notificationChannelDescription =>
-      'Notifications about backup status and schedules';
 }

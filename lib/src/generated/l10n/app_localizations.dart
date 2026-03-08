@@ -5,8 +5,15 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:intl/intl.dart' as intl;
 
+import 'app_localizations_de.dart';
 import 'app_localizations_en.dart';
+import 'app_localizations_es.dart';
+import 'app_localizations_fr.dart';
+import 'app_localizations_it.dart';
+import 'app_localizations_ja.dart';
+import 'app_localizations_ko.dart';
 import 'app_localizations_pt.dart';
+import 'app_localizations_zh.dart';
 
 // ignore_for_file: type=lint
 
@@ -94,9 +101,17 @@ abstract class AppLocalizations {
 
   /// A list of this localizations delegate's supported locales.
   static const List<Locale> supportedLocales = <Locale>[
+    Locale('de'),
     Locale('en'),
+    Locale('es'),
+    Locale('fr'),
+    Locale('it'),
+    Locale('ja'),
+    Locale('ko'),
     Locale('pt'),
     Locale('pt', 'BR'),
+    Locale('zh'),
+    Locale('zh', 'CN'),
   ];
 
   /// Título do aplicativo
@@ -459,10 +474,10 @@ abstract class AppLocalizations {
   /// **'Backup concluído com sucesso'**
   String get backupSuccess;
 
-  /// Título de notificação para backup com falha
+  /// Opção notificar falha
   ///
   /// In pt_BR, this message translates to:
-  /// **'Falha no Backup ✗'**
+  /// **'Backup falhou'**
   String get backupFailed;
 
   /// Opção notificar início
@@ -1455,6 +1470,18 @@ abstract class AppLocalizations {
   /// **'Status S.M.A.R.T.'**
   String get testSmartStatus;
 
+  /// Mensagem quando o app não tem permissão para acessar o volume no macOS
+  ///
+  /// In pt_BR, this message translates to:
+  /// **'Acesso negado. No macOS, conceda \"Acesso Total ao Disco\" ao ShadowSync em Ajustes do Sistema > Privacidade e Segurança > Acesso Total ao Disco.'**
+  String get fullDiskAccessRequired;
+
+  /// Mensagem quando diskutil não consegue comunicar com storagekitd (erro -69812)
+  ///
+  /// In pt_BR, this message translates to:
+  /// **'Verificação de sistema de arquivos requer acesso privilegiado do sistema. Use o aplicativo \"Utilidades de Disco\" do macOS para verificar este volume manualmente.'**
+  String get fileSystemCheckRequiresPrivileges;
+
   /// Seleção de idioma
   ///
   /// In pt_BR, this message translates to:
@@ -1676,96 +1703,6 @@ abstract class AppLocalizations {
   /// In pt_BR, this message translates to:
   /// **'Visitar Site'**
   String get visitWebsite;
-
-  /// Título de notificação para backup bem-sucedido
-  ///
-  /// In pt_BR, this message translates to:
-  /// **'Backup Concluído ✓'**
-  String get backupCompleted;
-
-  /// Mensagem de notificação para backup bem-sucedido
-  ///
-  /// In pt_BR, this message translates to:
-  /// **'O backup \"{routineName}\" foi concluído com sucesso.'**
-  String backupCompletedMessage(String routineName);
-
-  /// Mensagem de notificação para backup com falha
-  ///
-  /// In pt_BR, this message translates to:
-  /// **'O backup \"{routineName}\" falhou: {errorMessage}'**
-  String backupFailedMessage(String routineName, String errorMessage);
-
-  /// Título de notificação para próximo backup
-  ///
-  /// In pt_BR, this message translates to:
-  /// **'Próximo Backup Agendado'**
-  String get nextBackupScheduled;
-
-  /// Mensagem de notificação para próximo backup
-  ///
-  /// In pt_BR, this message translates to:
-  /// **'\"{routineName}\" será executado {timeDescription}.'**
-  String nextBackupMessage(String routineName, String timeDescription);
-
-  /// Descrição de tempo para menos de 1 minuto
-  ///
-  /// In pt_BR, this message translates to:
-  /// **'em menos de 1 minuto'**
-  String get inLessThanMinute;
-
-  /// Descrição de tempo para 1 minuto
-  ///
-  /// In pt_BR, this message translates to:
-  /// **'em 1 minuto'**
-  String get inMinute;
-
-  /// Descrição de tempo para múltiplos minutos
-  ///
-  /// In pt_BR, this message translates to:
-  /// **'em {count} minutos'**
-  String inMinutes(int count);
-
-  /// Descrição de tempo para 1 hora
-  ///
-  /// In pt_BR, this message translates to:
-  /// **'em 1 hora'**
-  String get inHour;
-
-  /// Descrição de tempo para múltiplas horas
-  ///
-  /// In pt_BR, this message translates to:
-  /// **'em {count} horas'**
-  String inHours(int count);
-
-  /// Descrição de tempo para horas e minutos
-  ///
-  /// In pt_BR, this message translates to:
-  /// **'em {hours}h{minutes}min'**
-  String inHoursMinutes(int hours, int minutes);
-
-  /// Descrição de tempo para 1 dia
-  ///
-  /// In pt_BR, this message translates to:
-  /// **'em 1 dia'**
-  String get inDay;
-
-  /// Descrição de tempo para múltiplos dias
-  ///
-  /// In pt_BR, this message translates to:
-  /// **'em {count} dias'**
-  String inDays(int count);
-
-  /// Nome do canal de notificação Android
-  ///
-  /// In pt_BR, this message translates to:
-  /// **'Backups do ShadowSync'**
-  String get notificationChannelName;
-
-  /// Descrição do canal de notificação Android
-  ///
-  /// In pt_BR, this message translates to:
-  /// **'Notificações sobre status de backups e agendamentos'**
-  String get notificationChannelDescription;
 }
 
 class _AppLocalizationsDelegate
@@ -1778,8 +1715,17 @@ class _AppLocalizationsDelegate
   }
 
   @override
-  bool isSupported(Locale locale) =>
-      <String>['en', 'pt'].contains(locale.languageCode);
+  bool isSupported(Locale locale) => <String>[
+    'de',
+    'en',
+    'es',
+    'fr',
+    'it',
+    'ja',
+    'ko',
+    'pt',
+    'zh',
+  ].contains(locale.languageCode);
 
   @override
   bool shouldReload(_AppLocalizationsDelegate old) => false;
@@ -1796,14 +1742,36 @@ AppLocalizations lookupAppLocalizations(Locale locale) {
         }
         break;
       }
+    case 'zh':
+      {
+        switch (locale.countryCode) {
+          case 'CN':
+            return AppLocalizationsZhCn();
+        }
+        break;
+      }
   }
 
   // Lookup logic when only language code is specified.
   switch (locale.languageCode) {
+    case 'de':
+      return AppLocalizationsDe();
     case 'en':
       return AppLocalizationsEn();
+    case 'es':
+      return AppLocalizationsEs();
+    case 'fr':
+      return AppLocalizationsFr();
+    case 'it':
+      return AppLocalizationsIt();
+    case 'ja':
+      return AppLocalizationsJa();
+    case 'ko':
+      return AppLocalizationsKo();
     case 'pt':
       return AppLocalizationsPt();
+    case 'zh':
+      return AppLocalizationsZh();
   }
 
   throw FlutterError(

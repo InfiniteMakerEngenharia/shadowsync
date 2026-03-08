@@ -10,7 +10,6 @@ import 'dart:ui';
 
 import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
-import 'package:path_provider/path_provider.dart';
 
 import '../../backend/services/compression_service.dart';
 import '../../backend/services/encryption_service.dart';
@@ -170,10 +169,10 @@ class _DecryptionDialogState extends State<DecryptionDialog> {
         _statusMessage = AppLocalizations.of(context).preparingDecryption;
       });
 
-      // Obtém o diretório temporário
-      final tempDir = await getTemporaryDirectory();
+      // Obtém caminho temporário sem usar path_provider (evita objective_c no macOS)
       final timestamp = DateTime.now().millisecondsSinceEpoch;
-      tempZipPath = '${tempDir.path}/shadowsync_decrypt_$timestamp.zip';
+      final tempDirPath = Directory.systemTemp.path;
+      tempZipPath = '$tempDirPath/shadowsync_decrypt_$timestamp.zip';
 
       setState(() {
         _statusMessage = AppLocalizations.of(context).decryptingFile;

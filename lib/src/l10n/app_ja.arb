@@ -1286,6 +1286,15 @@
     "description": "S.M.A.R.T. ステータステストの名前"
   },
   
+  "fullDiskAccessRequired": "アクセスが拒否されました。macOSでは、システム設定 > プライバシーとセキュリティ > フルディスクアクセスでShadowSyncに「フルディスクアクセス」を許可してください。",
+  "@fullDiskAccessRequired": {
+    "description": "macOSでボリュームにアクセスする権限がない場合のメッセージ"
+  },
+  
+  "fileSystemCheckRequiresPrivileges": "ファイルシステムの検証には特権的なシステムアクセスが必要です。macOSの「ディスクユーティリティ」アプリでこのボリュームを手動で検証してください。",
+  "@fileSystemCheckRequiresPrivileges": {
+    "description": "diskutilがstoragekitdと通信できない場合のメッセージ（エラー-69812）"
+  },
   
   "language": "言語",
   "@language": {
@@ -1517,10 +1526,5 @@
   "visitWebsite": "ウェブサイトを訪問",
   "@visitWebsite": {
     "description": "Button to visit website"
-  },
-
-  "backupCompleted": "バックアップが完了しました ✓",
-  "@backupCompleted": {
-    "description": "Notification title for successful backup"
   }
 }

@@ -126,6 +126,7 @@ class SchedulerService {
         final minutes = _resolveIntervalMinutes(routine);
         return _buildIntervalCronExpression(minutes);
     }
+    return null;
   }
 
   _TimeParts _resolveHourMinute(BackupRoutine routine) {

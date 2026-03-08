@@ -1291,6 +1291,15 @@
     "description": "Nome do teste de estado S.M.A.R.T."
   },
   
+  "fullDiskAccessRequired": "Acesso negado. No macOS, conceda \"Acesso Total ao Disco\" ao ShadowSync em Ajustes do Sistema > Privacidade e Segurança > Acesso Total ao Disco.",
+  "@fullDiskAccessRequired": {
+    "description": "Mensagem quando o app não tem permissão para acessar o volume no macOS"
+  },
+  
+  "fileSystemCheckRequiresPrivileges": "Verificação de sistema de arquivos requer acesso privilegiado do sistema. Use o aplicativo \"Utilidades de Disco\" do macOS para verificar este volume manualmente.",
+  "@fileSystemCheckRequiresPrivileges": {
+    "description": "Mensagem quando diskutil não consegue comunicar com storagekitd (erro -69812)"
+  },
   
   "language": "Idioma",
   "@language": {
@@ -1537,139 +1546,5 @@
   "visitWebsite": "Visitar Site",
   "@visitWebsite": {
     "description": "Botão para visitar o site"
-  },
-
-  "backupCompleted": "Backup Concluído ✓",
-  "@backupCompleted": {
-    "description": "Título de notificação para backup bem-sucedido"
-  },
-
-  "backupFailed": "Falha no Backup ✗",
-  "@backupFailed": {
-    "description": "Título de notificação para backup com falha"
-  },
-
-  "backupCompletedMessage": "O backup \"{routineName}\" foi concluído com sucesso.",
-  "@backupCompletedMessage": {
-    "description": "Mensagem de notificação para backup bem-sucedido",
-    "placeholders": {
-      "routineName": {
-        "type": "String",
-        "example": "Documentos"
-      }
-    }
-  },
-
-  "backupFailedMessage": "O backup \"{routineName}\" falhou: {errorMessage}",
-  "@backupFailedMessage": {
-    "description": "Mensagem de notificação para backup com falha",
-    "placeholders": {
-      "routineName": {
-        "type": "String",
-        "example": "Documentos"
-      },
-      "errorMessage": {
-        "type": "String",
-        "example": "Disco cheio"
-      }
-    }
-  },
-
-  "nextBackupScheduled": "Próximo Backup Agendado",
-  "@nextBackupScheduled": {
-    "description": "Título de notificação para próximo backup"
-  },
-
-  "nextBackupMessage": "\"{routineName}\" será executado {timeDescription}.",
-  "@nextBackupMessage": {
-    "description": "Mensagem de notificação para próximo backup",
-    "placeholders": {
-      "routineName": {
-        "type": "String",
-        "example": "Documentos"
-      },
-      "timeDescription": {
-        "type": "String",
-        "example": "em 1 hora"
-      }
-    }
-  },
-
-  "inLessThanMinute": "em menos de 1 minuto",
-  "@inLessThanMinute": {
-    "description": "Descrição de tempo para menos de 1 minuto"
-  },
-
-  "inMinute": "em 1 minuto",
-  "@inMinute": {
-    "description": "Descrição de tempo para 1 minuto"
-  },
-
-  "inMinutes": "em {count} minutos",
-  "@inMinutes": {
-    "description": "Descrição de tempo para múltiplos minutos",
-    "placeholders": {
-      "count": {
-        "type": "int",
-        "example": "5"
-      }
-    }
-  },
-
-  "inHour": "em 1 hora",
-  "@inHour": {
-    "description": "Descrição de tempo para 1 hora"
-  },
-
-  "inHours": "em {count} horas",
-  "@inHours": {
-    "description": "Descrição de tempo para múltiplas horas",
-    "placeholders": {
-      "count": {
-        "type": "int",
-        "example": "3"
-      }
-    }
-  },
-
-  "inHoursMinutes": "em {hours}h{minutes}min",
-  "@inHoursMinutes": {
-    "description": "Descrição de tempo para horas e minutos",
-    "placeholders": {
-      "hours": {
-        "type": "int",
-        "example": "2"
-      },
-      "minutes": {
-        "type": "int",
-        "example": "30"
-      }
-    }
-  },
-
-  "inDay": "em 1 dia",
-  "@inDay": {
-    "description": "Descrição de tempo para 1 dia"
-  },
-
-  "inDays": "em {count} dias",
-  "@inDays": {
-    "description": "Descrição de tempo para múltiplos dias",
-    "placeholders": {
-      "count": {
-        "type": "int",
-        "example": "5"
-      }
-    }
-  },
-
-  "notificationChannelName": "Backups do ShadowSync",
-  "@notificationChannelName": {
-    "description": "Nome do canal de notificação Android"
-  },
-
-  "notificationChannelDescription": "Notificações sobre status de backups e agendamentos",
-  "@notificationChannelDescription": {
-    "description": "Descrição do canal de notificação Android"
   }
 }

@@ -13,6 +13,7 @@ import '../models/user_settings.dart';
 import '../repositories/hive_backup_repository.dart';
 import 'backup_service.dart';
 import 'local_storage_service.dart';
+import 'notification_localizations.dart';
 import 'scheduler_service.dart';
 
 /// Serviço para manter o app funcionando em segundo plano no Android.
@@ -37,9 +38,11 @@ class BackgroundServiceManager {
       return;
     }
 
+    final l10n = NotificationLocalizations.getInstance();
+
     // Cria o canal de notificação primeiro (obrigatório no Android 8+)
     if (Platform.isAndroid) {
-      await _createNotificationChannel();
+      await _createNotificationChannel(l10n);
     }
 
     await _service.configure(
@@ -49,8 +52,8 @@ class BackgroundServiceManager {
         autoStartOnBoot: true,
         isForegroundMode: true,
         notificationChannelId: 'shadowsync_background',
-        initialNotificationTitle: 'ShadowSync',
-        initialNotificationContent: 'Monitorando backups agendados',
+        initialNotificationTitle: l10n.backgroundServiceNotificationTitle,
+        initialNotificationContent: l10n.backgroundServiceNotificationContent,
         foregroundServiceNotificationId: 888,
         foregroundServiceTypes: [AndroidForegroundType.dataSync],
       ),
@@ -63,13 +66,13 @@ class BackgroundServiceManager {
   }
 
   /// Cria o canal de notificação para o serviço de foreground
-  Future<void> _createNotificationChannel() async {
+  Future<void> _createNotificationChannel(NotificationLocalizations l10n) async {
     final flutterLocalNotificationsPlugin = FlutterLocalNotificationsPlugin();
-    
-    const channel = AndroidNotificationChannel(
+
+    final channel = AndroidNotificationChannel(
       'shadowsync_background', // ID do canal - deve ser o mesmo do serviço
-      'ShadowSync Background Service', // Nome do canal
-      description: 'Notificações do serviço de backup em segundo plano',
+      l10n.backgroundServiceChannelName,
+      description: l10n.backgroundServiceChannelDescription,
       importance: Importance.low, // Low para não incomodar o usuário
       playSound: false,
       enableVibration: false,

@@ -1286,6 +1286,15 @@
     "description": "S.M.A.R.T. 状态测试的名称"
   },
   
+  "fullDiskAccessRequired": "访问被拒绝。在 macOS 上，请在「系统设置」>「隐私与安全性」>「完全磁盘访问权限」中授予 ShadowSync「完全磁盘访问权限」。",
+  "@fullDiskAccessRequired": {
+    "description": "当应用在 macOS 上没有访问卷的权限时的消息"
+  },
+  
+  "fileSystemCheckRequiresPrivileges": "文件系统验证需要特权系统访问。请使用 macOS 的「磁盘工具」应用手动验证此卷。",
+  "@fileSystemCheckRequiresPrivileges": {
+    "description": "当 diskutil 无法与 storagekitd 通信时的消息（错误 -69812）"
+  },
   
   "language": "语言",
   "@language": {
@@ -1517,10 +1526,5 @@
   "visitWebsite": "访问网站",
   "@visitWebsite": {
     "description": "Button to visit website"
-  },
-
-  "backupCompleted": "备份已完成 ✓",
-  "@backupCompleted": {
-    "description": "Notification title for successful backup"
   }
 }

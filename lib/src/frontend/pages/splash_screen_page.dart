@@ -11,6 +11,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:rive/rive.dart';
 
+import '../../generated/l10n/app_localizations.dart';
 import '../theme/shadowsync_theme.dart';
 
 // ============================================================================
@@ -232,7 +233,7 @@ class _SplashScreenPageState extends State<SplashScreenPage>
 
               // Nome do app
               Text(
-                'ShadowSync',
+                AppLocalizations.of(context).appTitle,
                 style: TextStyle(
                   fontSize: 32,
                   fontWeight: FontWeight.bold,
@@ -245,7 +246,7 @@ class _SplashScreenPageState extends State<SplashScreenPage>
 
               // Subtítulo
               Text(
-                'Gerenciador de Backups',
+                AppLocalizations.of(context).appSubtitle,
                 style: TextStyle(
                   fontSize: 14,
                   color: ShadowSyncColors.text.withValues(alpha: 0.7),

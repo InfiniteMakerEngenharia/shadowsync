@@ -5,6 +5,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 
 import '../models/backup_routine.dart';
+import 'notification_localizations.dart';
 
 // ============================================================================
 // CONFIGURAÇÃO DO SERVIÇO DE NOTIFICAÇÕES
@@ -12,13 +13,6 @@ import '../models/backup_routine.dart';
 
 /// ID do canal de notificações para backups
 const String kNotificationChannelId = 'shadowsync_backup_channel';
-
-/// Nome do canal de notificações
-const String kNotificationChannelName = 'ShadowSync Backups';
-
-/// Descrição do canal de notificações
-const String kNotificationChannelDescription =
-    'Notificações sobre status de backups e agendamentos';
 
 /// ID da notificação de backup concluído
 const int kBackupCompletedNotificationId = 1;
@@ -47,6 +41,8 @@ class NotificationService {
 
   Timer? _periodicTimer;
   List<BackupRoutine> _routines = [];
+  String _channelName = 'ShadowSync Backups';
+  String _channelDescription = 'Notifications about backup status and scheduling';
 
   /// Obtém a instância singleton do serviço
   static Future<NotificationService> getInstance() async {
@@ -95,6 +91,11 @@ class NotificationService {
 
     debugPrint('[NotificationService] Plugin inicializado');
 
+    // Usa strings localizadas para o canal (respeita o idioma do app)
+    final l10n = NotificationLocalizations.getInstance();
+    _channelName = l10n.notificationChannelName;
+    _channelDescription = l10n.notificationChannelDescription;
+
     // Cria canal de notificação no Android
     if (Platform.isAndroid) {
       await _createNotificationChannel();
@@ -129,10 +130,10 @@ class NotificationService {
 
   /// Cria o canal de notificação no Android
   Future<void> _createNotificationChannel() async {
-    const androidChannel = AndroidNotificationChannel(
+    final androidChannel = AndroidNotificationChannel(
       kNotificationChannelId,
-      kNotificationChannelName,
-      description: kNotificationChannelDescription,
+      _channelName,
+      description: _channelDescription,
       importance: Importance.high,
       playSound: true,
       enableVibration: true,
@@ -167,10 +168,11 @@ class NotificationService {
     required bool success,
     String? errorMessage,
   }) async {
-    final title = success ? 'Backup Concluído ✓' : 'Falha no Backup ✗';
+    final l10n = NotificationLocalizations.getInstance();
+    final title = success ? l10n.notificationTitleBackupCompleted : l10n.notificationTitleBackupFailed;
     final body = success
-        ? 'O backup "$routineName" foi concluído com sucesso.'
-        : 'O backup "$routineName" falhou: ${errorMessage ?? "Erro desconhecido"}';
+        ? l10n.notificationBodyBackupSuccess(routineName)
+        : l10n.notificationBodyBackupFailed(routineName, errorMessage ?? l10n.notificationUnknownError);
 
     await _showNotification(
       id: kBackupCompletedNotificationId,
@@ -185,34 +187,36 @@ class NotificationService {
     required String routineName,
     required DateTime nextRunAt,
   }) async {
+    final l10n = NotificationLocalizations.getInstance();
     final now = DateTime.now();
     final difference = nextRunAt.difference(now);
 
-    String timeDescription;
-    if (difference.inMinutes < 1) {
-      timeDescription = 'em menos de 1 minuto';
-    } else if (difference.inMinutes < 60) {
-      final minutes = difference.inMinutes;
-      timeDescription = 'em $minutes ${minutes == 1 ? 'minuto' : 'minutos'}';
-    } else if (difference.inHours < 24) {
-      final hours = difference.inHours;
-      final remainingMinutes = difference.inMinutes % 60;
-      if (remainingMinutes > 0) {
-        timeDescription = 'em ${hours}h${remainingMinutes}min';
-      } else {
-        timeDescription = 'em $hours ${hours == 1 ? 'hora' : 'horas'}';
-      }
-    } else {
-      final days = difference.inDays;
-      timeDescription = 'em $days ${days == 1 ? 'dia' : 'dias'}';
-    }
+    final timeDescription = _formatTimeUntil(l10n, difference);
 
     await _showNotification(
       id: kNextBackupNotificationId,
-      title: 'Próximo Backup Agendado',
-      body: '"$routineName" será executado $timeDescription.',
+      title: l10n.notificationTitleNextBackup,
+      body: l10n.notificationBodyNextBackup(routineName, timeDescription),
       payload: 'next_backup:$routineName',
     );
+  }
+
+  String _formatTimeUntil(NotificationLocalizations l10n, Duration difference) {
+    if (difference.inMinutes < 1) {
+      return l10n.timeInLessThanMinute;
+    }
+    if (difference.inMinutes < 60) {
+      return l10n.timeMinutes(difference.inMinutes);
+    }
+    if (difference.inHours < 24) {
+      final hours = difference.inHours;
+      final remainingMinutes = difference.inMinutes % 60;
+      if (remainingMinutes > 0) {
+        return l10n.timeHoursAndMinutes(hours, remainingMinutes);
+      }
+      return l10n.timeHours(hours);
+    }
+    return l10n.timeDays(difference.inDays);
   }
 
   /// Exibe uma notificação
@@ -223,11 +227,11 @@ class NotificationService {
     String? payload,
   }) async {
     debugPrint('[NotificationService] Exibindo notificação: $title - $body');
-    
-    const androidDetails = AndroidNotificationDetails(
+
+    final androidDetails = AndroidNotificationDetails(
       kNotificationChannelId,
-      kNotificationChannelName,
-      channelDescription: kNotificationChannelDescription,
+      _channelName,
+      channelDescription: _channelDescription,
       importance: Importance.high,
       priority: Priority.high,
       showWhen: true,
@@ -242,7 +246,7 @@ class NotificationService {
 
     const linuxDetails = LinuxNotificationDetails();
 
-    const notificationDetails = NotificationDetails(
+    final notificationDetails = NotificationDetails(
       android: androidDetails,
       iOS: darwinDetails,
       macOS: darwinDetails,
@@ -320,11 +324,12 @@ class NotificationService {
       );
     } else {
       // Envia notificação de status quando não há backup agendado
+      final l10n = NotificationLocalizations.getInstance();
       debugPrint('[NotificationService] Nenhum backup agendado, enviando notificação de status');
       _showNotification(
         id: kNextBackupNotificationId,
-        title: 'ShadowSync Ativo',
-        body: 'Você tem ${_routines.length} rotinas configuradas. Nenhum backup agendado no momento.',
+        title: l10n.notificationTitleStatusActive,
+        body: l10n.notificationBodyStatusActive(_routines.length),
         payload: 'status',
       );
     }

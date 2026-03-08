@@ -359,7 +359,289 @@ class NotificationLocalizations {
     zh: '备份失败',
     ko: '백업 실패',
   );
-  
+
+  /// Frase "Backup concluído em {date}" / "Backup completed at {date}" para email/telegram
+  String backupCompletedAt(String formattedDate) => _getString(
+    'backupCompletedAt',
+    pt: 'Backup concluído em $formattedDate',
+    en: 'Backup completed at $formattedDate',
+    fr: 'Sauvegarde terminée le $formattedDate',
+    de: 'Sicherung abgeschlossen am $formattedDate',
+    es: 'Respaldo completado el $formattedDate',
+    it: 'Backup completato il $formattedDate',
+    ja: '$formattedDate にバックアップ完了',
+    zh: '备份完成于 $formattedDate',
+    ko: '$formattedDate 에 백업 완료',
+  );
+
+  // ========== Notificações locais (Android / sistema) ==========
+
+  String get notificationTitleBackupCompleted => _getString(
+    'notificationTitleBackupCompleted',
+    pt: 'Backup Concluído ✓',
+    en: 'Backup Completed ✓',
+    fr: 'Sauvegarde terminée ✓',
+    de: 'Sicherung abgeschlossen ✓',
+    es: 'Respaldo completado ✓',
+    it: 'Backup completato ✓',
+    ja: 'バックアップ完了 ✓',
+    zh: '备份完成 ✓',
+    ko: '백업 완료 ✓',
+  );
+
+  String get notificationTitleBackupFailed => _getString(
+    'notificationTitleBackupFailed',
+    pt: 'Falha no Backup ✗',
+    en: 'Backup Failed ✗',
+    fr: 'Échec de la sauvegarde ✗',
+    de: 'Sicherung fehlgeschlagen ✗',
+    es: 'Respaldo fallido ✗',
+    it: 'Backup fallito ✗',
+    ja: 'バックアップ失敗 ✗',
+    zh: '备份失败 ✗',
+    ko: '백업 실패 ✗',
+  );
+
+  String notificationBodyBackupSuccess(String routineName) => _getString(
+    'notificationBodyBackupSuccess',
+    pt: 'O backup "$routineName" foi concluído com sucesso.',
+    en: 'The backup "$routineName" completed successfully.',
+    fr: 'La sauvegarde "$routineName" s\'est terminée avec succès.',
+    de: 'Die Sicherung "$routineName" wurde erfolgreich abgeschlossen.',
+    es: 'El respaldo "$routineName" se completó correctamente.',
+    it: 'Il backup "$routineName" è stato completato con successo.',
+    ja: 'バックアップ「$routineName」が正常に完了しました。',
+    zh: '备份「$routineName」已成功完成。',
+    ko: '백업 "$routineName"이(가) 성공적으로 완료되었습니다.',
+  );
+
+  String notificationBodyBackupFailed(String routineName, String errorMessage) => _getString(
+    'notificationBodyBackupFailed',
+    pt: 'O backup "$routineName" falhou: $errorMessage',
+    en: 'The backup "$routineName" failed: $errorMessage',
+    fr: 'La sauvegarde "$routineName" a échoué : $errorMessage',
+    de: 'Die Sicherung "$routineName" ist fehlgeschlagen: $errorMessage',
+    es: 'El respaldo "$routineName" falló: $errorMessage',
+    it: 'Il backup "$routineName" è fallito: $errorMessage',
+    ja: 'バックアップ「$routineName」が失敗しました: $errorMessage',
+    zh: '备份「$routineName」失败：$errorMessage',
+    ko: '백업 "$routineName" 실패: $errorMessage',
+  );
+
+  String get notificationUnknownError => _getString(
+    'notificationUnknownError',
+    pt: 'Erro desconhecido',
+    en: 'Unknown error',
+    fr: 'Erreur inconnue',
+    de: 'Unbekannter Fehler',
+    es: 'Error desconocido',
+    it: 'Errore sconosciuto',
+    ja: '不明なエラー',
+    zh: '未知错误',
+    ko: '알 수 없는 오류',
+  );
+
+  String get notificationTitleNextBackup => _getString(
+    'notificationTitleNextBackup',
+    pt: 'Próximo Backup Agendado',
+    en: 'Next Backup Scheduled',
+    fr: 'Prochaine sauvegarde planifiée',
+    de: 'Nächste Sicherung geplant',
+    es: 'Próximo respaldo programado',
+    it: 'Prossimo backup programmato',
+    ja: '次のバックアップ予定',
+    zh: '下次备份计划',
+    ko: '다음 백업 예정',
+  );
+
+  String notificationBodyNextBackup(String routineName, String timeDescription) => _getString(
+    'notificationBodyNextBackup',
+    pt: '"$routineName" será executado $timeDescription.',
+    en: '"$routineName" will run $timeDescription.',
+    fr: '"$routineName" s\'exécutera $timeDescription.',
+    de: '"$routineName" wird $timeDescription ausgeführt.',
+    es: '"$routineName" se ejecutará $timeDescription.',
+    it: '"$routineName" verrà eseguito $timeDescription.',
+    ja: '「$routineName」は$timeDescription実行されます。',
+    zh: '「$routineName」将在$timeDescription运行。',
+    ko: '"$routineName"이(가) $timeDescription 실행됩니다.',
+  );
+
+  String get timeInLessThanMinute => _getString(
+    'timeInLessThanMinute',
+    pt: 'em menos de 1 minuto',
+    en: 'in less than 1 minute',
+    fr: 'dans moins d\'une minute',
+    de: 'in weniger als einer Minute',
+    es: 'en menos de 1 minuto',
+    it: 'in meno di 1 minuto',
+    ja: '1分以内に',
+    zh: '不到1分钟',
+    ko: '1분 이내에',
+  );
+
+  String timeMinutes(int n) => _getString(
+    'timeMinutes',
+    pt: n == 1 ? 'em 1 minuto' : 'em $n minutos',
+    en: n == 1 ? 'in 1 minute' : 'in $n minutes',
+    fr: n == 1 ? 'dans 1 minute' : 'dans $n minutes',
+    de: n == 1 ? 'in 1 Minute' : 'in $n Minuten',
+    es: n == 1 ? 'en 1 minuto' : 'en $n minutos',
+    it: n == 1 ? 'in 1 minuto' : 'in $n minuti',
+    ja: n == 1 ? '1分で' : '$n分で',
+    zh: n == 1 ? '1分钟后' : '$n分钟后',
+    ko: n == 1 ? '1분 후' : '$n분 후',
+  );
+
+  String timeHours(int n) => _getString(
+    'timeHours',
+    pt: n == 1 ? 'em 1 hora' : 'em $n horas',
+    en: n == 1 ? 'in 1 hour' : 'in $n hours',
+    fr: n == 1 ? 'dans 1 heure' : 'dans $n heures',
+    de: n == 1 ? 'in 1 Stunde' : 'in $n Stunden',
+    es: n == 1 ? 'en 1 hora' : 'en $n horas',
+    it: n == 1 ? 'in 1 ora' : 'in $n ore',
+    ja: n == 1 ? '1時間で' : '$n時間で',
+    zh: n == 1 ? '1小时后' : '$n小时后',
+    ko: n == 1 ? '1시간 후' : '$n시간 후',
+  );
+
+  String timeHoursAndMinutes(int hours, int minutes) => _getString(
+    'timeHoursAndMinutes',
+    pt: 'em ${hours}h${minutes}min',
+    en: 'in ${hours}h${minutes}min',
+    fr: 'dans ${hours}h${minutes}min',
+    de: 'in ${hours}h ${minutes}min',
+    es: 'en ${hours}h${minutes}min',
+    it: 'in ${hours}h${minutes}min',
+    ja: '$hours時間$minutes分で',
+    zh: '$hours小时$minutes分钟后',
+    ko: '$hours시간 $minutes분 후',
+  );
+
+  String timeDays(int n) => _getString(
+    'timeDays',
+    pt: n == 1 ? 'em 1 dia' : 'em $n dias',
+    en: n == 1 ? 'in 1 day' : 'in $n days',
+    fr: n == 1 ? 'dans 1 jour' : 'dans $n jours',
+    de: n == 1 ? 'in 1 Tag' : 'in $n Tagen',
+    es: n == 1 ? 'en 1 día' : 'en $n días',
+    it: n == 1 ? 'in 1 giorno' : 'in $n giorni',
+    ja: n == 1 ? '1日で' : '$n日で',
+    zh: n == 1 ? '1天后' : '$n天后',
+    ko: n == 1 ? '1일 후' : '$n일 후',
+  );
+
+  String get notificationTitleStatusActive => _getString(
+    'notificationTitleStatusActive',
+    pt: 'ShadowSync Ativo',
+    en: 'ShadowSync Active',
+    fr: 'ShadowSync actif',
+    de: 'ShadowSync aktiv',
+    es: 'ShadowSync activo',
+    it: 'ShadowSync attivo',
+    ja: 'ShadowSync 稼働中',
+    zh: 'ShadowSync 运行中',
+    ko: 'ShadowSync 활성',
+  );
+
+  String notificationBodyStatusActive(int count) => _getString(
+    'notificationBodyStatusActive',
+    pt: 'Você tem $count rotinas configuradas. Nenhum backup agendado no momento.',
+    en: 'You have $count routine(s) configured. No backup scheduled at the moment.',
+    fr: 'Vous avez $count routine(s) configurée(s). Aucune sauvegarde planifiée pour le moment.',
+    de: 'Sie haben $count Routine(n) konfiguriert. Keine Sicherung geplant.',
+    es: 'Tienes $count rutina(s) configurada(s). Ningún respaldo programado en este momento.',
+    it: 'Hai $count routine configurate. Nessun backup programmato al momento.',
+    ja: '$count件のルーチンが設定されています。現在予定されているバックアップはありません。',
+    zh: '您已配置 $count 个例程。当前没有计划备份。',
+    ko: '루틴 $count개가 구성되어 있습니다. 예정된 백업이 없습니다.',
+  );
+
+  /// Nome do canal de notificações (Android)
+  String get notificationChannelName => _getString(
+    'notificationChannelName',
+    pt: 'ShadowSync Backups',
+    en: 'ShadowSync Backups',
+    fr: 'ShadowSync Sauvegardes',
+    de: 'ShadowSync Sicherungen',
+    es: 'ShadowSync Respaldos',
+    it: 'ShadowSync Backup',
+    ja: 'ShadowSync バックアップ',
+    zh: 'ShadowSync 备份',
+    ko: 'ShadowSync 백업',
+  );
+
+  /// Descrição do canal de notificações (Android)
+  String get notificationChannelDescription => _getString(
+    'notificationChannelDescription',
+    pt: 'Notificações sobre status de backups e agendamentos',
+    en: 'Notifications about backup status and scheduling',
+    fr: 'Notifications sur l\'état des sauvegardes et la planification',
+    de: 'Benachrichtigungen zu Sicherungsstatus und -planung',
+    es: 'Notificaciones sobre estado de respaldos y programación',
+    it: 'Notifiche su stato backup e pianificazione',
+    ja: 'バックアップの状態とスケジュールの通知',
+    zh: '有关备份状态和计划的通知',
+    ko: '백업 상태 및 예약 알림',
+  );
+
+  /// Título da notificação do serviço em segundo plano (Android)
+  String get backgroundServiceNotificationTitle => _getString(
+    'backgroundServiceNotificationTitle',
+    pt: 'ShadowSync',
+    en: 'ShadowSync',
+    fr: 'ShadowSync',
+    de: 'ShadowSync',
+    es: 'ShadowSync',
+    it: 'ShadowSync',
+    ja: 'ShadowSync',
+    zh: 'ShadowSync',
+    ko: 'ShadowSync',
+  );
+
+  /// Conteúdo da notificação do serviço em segundo plano (Android)
+  String get backgroundServiceNotificationContent => _getString(
+    'backgroundServiceNotificationContent',
+    pt: 'Monitorando backups agendados',
+    en: 'Monitoring scheduled backups',
+    fr: 'Surveillance des sauvegardes planifiées',
+    de: 'Überwacht geplante Sicherungen',
+    es: 'Monitoreando respaldos programados',
+    it: 'Monitoraggio backup programmati',
+    ja: 'スケジュールされたバックアップを監視中',
+    zh: '正在监控计划备份',
+    ko: '예약된 백업 모니터링 중',
+  );
+
+  /// Nome do canal do serviço em segundo plano (Android)
+  String get backgroundServiceChannelName => _getString(
+    'backgroundServiceChannelName',
+    pt: 'ShadowSync em segundo plano',
+    en: 'ShadowSync Background Service',
+    fr: 'ShadowSync en arrière-plan',
+    de: 'ShadowSync im Hintergrund',
+    es: 'ShadowSync en segundo plano',
+    it: 'ShadowSync in background',
+    ja: 'ShadowSync バックグラウンド',
+    zh: 'ShadowSync 后台服务',
+    ko: 'ShadowSync 백그라운드',
+  );
+
+  /// Descrição do canal do serviço em segundo plano (Android)
+  String get backgroundServiceChannelDescription => _getString(
+    'backgroundServiceChannelDescription',
+    pt: 'Notificações do serviço de backup em segundo plano',
+    en: 'Background backup service notifications',
+    fr: 'Notifications du service de sauvegarde en arrière-plan',
+    de: 'Benachrichtigungen des Hintergrund-Sicherungsdienstes',
+    es: 'Notificaciones del servicio de respaldo en segundo plano',
+    it: 'Notifiche del servizio di backup in background',
+    ja: 'バックグラウンドバックアップサービスの通知',
+    zh: '后台备份服务通知',
+    ko: '백그라운드 백업 서비스 알림',
+  );
+
   // ========== Formatação de Data/Hora ==========
   
   /// Retorna "at" ou equivalente no idioma atual (ex: "às" em português)

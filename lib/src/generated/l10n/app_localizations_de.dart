@@ -788,6 +788,14 @@ class AppLocalizationsDe extends AppLocalizations {
   String get testSmartStatus => 'S.M.A.R.T. Status';
 
   @override
+  String get fullDiskAccessRequired =>
+      'Zugriff verweigert. Unter macOS gewähren Sie ShadowSync \"Vollständiger Festplattenzugriff\" in Systemeinstellungen > Datenschutz & Sicherheit > Vollständiger Festplattenzugriff.';
+
+  @override
+  String get fileSystemCheckRequiresPrivileges =>
+      'Die Dateisystemüberprüfung erfordert privilegierten Systemzugriff. Verwenden Sie die App \"Festplatten-Dienstprogramm\" unter macOS, um dieses Volume manuell zu überprüfen.';
+
+  @override
   String get language => 'Sprache';
 
   @override

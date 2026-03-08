@@ -10,6 +10,7 @@ import 'compression_service.dart';
 import 'device_info_service.dart';
 import 'email_notification_service.dart';
 import 'encryption_service.dart';
+import 'notification_localizations.dart';
 import 'notification_service.dart';
 import 'telegram_notification_service.dart';
 
@@ -203,15 +204,16 @@ class BackupEngineService {
           );
           await _repository.updateRoutine(currentRoutine);
 
-          // Se não comprimimos, precisamos criar um ZIP temporário das fontes originais
-          final tempDir = await getTemporaryDirectory();
-          await Directory(tempDir.path).create(recursive: true);
-          
+          // Se não comprimimos, precisamos criar um ZIP temporário das fontes originais.
+          // Usa Directory.systemTemp (dart:io) em vez de path_provider para evitar
+          // o carregamento de objective_c no macOS, que causa falha com DOBJC_initializeApi.
           final tempBaseName = 'shadowsync_enc_${DateTime.now().millisecondsSinceEpoch}';
-          
+          final tempDirPath = p.join(Directory.systemTemp.path, tempBaseName);
+          await Directory(tempDirPath).create(recursive: true);
+
           sourceForEncryption = await _compressionService.compressSources(
             sourcePaths: validSources, // Usa as fontes originais
-            outputDirectoryPath: tempDir.path,
+            outputDirectoryPath: tempDirPath,
             outputBaseName: tempBaseName,
             format: CompressionFormat.zip,
           );
@@ -290,26 +292,26 @@ class BackupEngineService {
         // Ignora erros de notificação
       }
 
-      // Notifica via Telegram que o backup foi concluído com sucesso
+      // Notifica via Telegram e Email que o backup foi concluído com sucesso
+      final successDetails = NotificationLocalizations.getInstance().backupCompletedAt(_formatDate(completedAt));
       try {
         final telegramService = await TelegramNotificationService.getInstance();
         await telegramService.sendNotification(
           eventType: NotificationEventType.backupSuccess,
           routineName: routine.name,
-          details: 'Backup concluído em ${_formatDate(completedAt)}',
+          details: successDetails,
           deviceName: deviceName,
         );
       } catch (_) {
         // Ignora erros de notificação
       }
 
-      // Notifica via Email que o backup foi concluído com sucesso
       try {
         final emailService = await EmailNotificationService.getInstance();
         await emailService.sendNotification(
           eventType: NotificationEventType.backupSuccess,
           routineName: routine.name,
-          details: 'Backup concluído em ${_formatDate(completedAt)}',
+          details: successDetails,
           deviceName: deviceName,
         );
       } catch (_) {
@@ -445,6 +447,7 @@ class BackupEngineService {
         final minutes = _readIntervalMinutes(value);
         return from.add(Duration(minutes: minutes));
     }
+    return null;
   }
 
   int _readIntervalMinutes(String rawValue) {

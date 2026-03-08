@@ -1,45 +1,103 @@
-# Miscellaneous
+# =============================================================================
+# ShadowSync - Git Ignore
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# Build outputs
+# -----------------------------------------------------------------------------
+build/
+**/build/
+
+# -----------------------------------------------------------------------------
+# Flutter / Dart
+# -----------------------------------------------------------------------------
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+**/doc/api/
+**/ios/Flutter/.last_build_id
+**/macos/build/
+**/macos/build/.last_build_id
+
+# -----------------------------------------------------------------------------
+# IDEs e editores
+# -----------------------------------------------------------------------------
+.idea/
+.vscode/
+.cursor/
+*.iml
+*.ipr
+*.iws
+*.swp
+*.swo
+*~
+
+# -----------------------------------------------------------------------------
+# Sistema operacional
+# -----------------------------------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# -----------------------------------------------------------------------------
+# Outros
+# -----------------------------------------------------------------------------
 *.class
 *.log
 *.pyc
-*.swp
-.DS_Store
-.atom/
-.build/
-.buildlog/
 .history
 .svn/
 .swiftpm/
 migrate_working_dir/
+.atom/
+.build/
+.buildlog/
 
-# IntelliJ related
-*.iml
-*.ipr
-*.iws
-.idea/
-
-# The .vscode folder contains launch configuration and tasks you configure in
-# VS Code which you may wish to be included in version control, so this line
-# is commented out by default.
-#.vscode/
-
-# Flutter/Dart/Pub related
-**/doc/api/
-**/ios/Flutter/.last_build_id
-.dart_tool/
-.flutter-plugins-dependencies
-.pub-cache/
-.pub/
-/build/
-/coverage/
-
-# Symbolication related
+# -----------------------------------------------------------------------------
+# Symbolication / Obfuscation
+# -----------------------------------------------------------------------------
 app.*.symbols
-
-# Obfuscation related
 app.*.map.json
 
-# Android Studio will place build artifacts here
+# -----------------------------------------------------------------------------
+# Android
+# -----------------------------------------------------------------------------
 /android/app/debug
 /android/app/profile
 /android/app/release
+/android/.gradle/
+/android/local.properties
+/android/key.properties
+*.jks
+*.keystore
+
+# -----------------------------------------------------------------------------
+# iOS / macOS
+# -----------------------------------------------------------------------------
+/ios/Pods/
+/ios/.symlinks/
+/ios/Flutter/Flutter.framework
+/ios/Flutter/Flutter.podspec
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/flutter_export_environment.sh
+**/ios/ServiceDefinitions.json
+**/macos/Flutter/ephemeral/
+**/xcuserdata/
+
+# -----------------------------------------------------------------------------
+# Cobertura de testes
+# -----------------------------------------------------------------------------
+/coverage/
+
+# -----------------------------------------------------------------------------
+# Variáveis de ambiente e secrets
+# -----------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+*.pem

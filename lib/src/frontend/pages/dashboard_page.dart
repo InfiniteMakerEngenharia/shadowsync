@@ -577,10 +577,20 @@ class _DashboardPageState extends State<DashboardPage> {
 
   /// Abre o website no navegador padrão.
   Future<void> _launchWebsite() async {
-    final Uri url = Uri.parse('https://infinitemaker.com.br');
+    final Uri url = Uri.parse('https://shadownsyncwebpage.pages.dev/');
     try {
-      if (await canLaunchUrl(url)) {
-        await launchUrl(url, mode: LaunchMode.externalApplication);
+      final opened = await launchUrl(
+        url,
+        mode: LaunchMode.externalApplication,
+      );
+
+      if (!opened && mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: const Text('Não foi possível abrir o site'),
+            backgroundColor: Colors.red.shade700,
+          ),
+        );
       }
     } catch (e) {
       debugPrint('[DashboardPage] Erro ao abrir URL: $e');

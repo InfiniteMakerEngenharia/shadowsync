@@ -946,10 +946,24 @@ class DiskVerificationService {
         },
       );
     } catch (e) {
+      final errorStr = e.toString();
+      final isPermissionDenied = errorStr.contains('Operation not permitted') ||
+          errorStr.contains('errno = 1') ||
+          errorStr.contains('PathAccessException');
+
+      String message;
+      if (Platform.isMacOS && isPermissionDenied) {
+        message = _localizations?.fullDiskAccessRequired ??
+            'Acesso negado. No macOS, conceda "Acesso Total ao Disco" ao ShadowSync em '
+            'Ajustes do Sistema > Privacidade e Segurança > Acesso Total ao Disco.';
+      } else {
+        message = 'Erro ao acessar disco: $e';
+      }
+
       return DiskTestResult(
         testName: _getLocalizedTestName(DiskVerificationTest.accessibility),
         status: DiskTestStatus.failed,
-        message: 'Erro ao acessar disco: $e',
+        message: message,
       );
     }
   }
@@ -1217,12 +1231,36 @@ class DiskVerificationService {
               details: {'output': output.trim()},
             );
           }
-          
+
+          final trimmedOutput = output.trim();
+
+          // Erro storagekitd (-69812): app sandboxed não consegue comunicar com o daemon do sistema
+          if (output.contains('storagekitd') && output.contains('-69812')) {
+            return DiskTestResult(
+              testName: _getLocalizedTestName(DiskVerificationTest.fileSystemCheck),
+              status: DiskTestStatus.skipped,
+              message: _localizations?.fileSystemCheckRequiresPrivileges ??
+                  'Verificação de sistema de arquivos requer acesso privilegiado do sistema. '
+                  'Use o aplicativo "Utilidades de Disco" do macOS para verificar este volume manualmente.',
+              details: {'output': trimmedOutput},
+            );
+          }
+
+          // Outros avisos: inclui a saída do diskutil para o usuário ver os detalhes
+          final maxLines = 8;
+          final lines = trimmedOutput.split('\n');
+          final displayOutput = lines.length > maxLines
+              ? '${lines.take(maxLines).join('\n')}\n...'
+              : trimmedOutput;
+          final displayMessage = trimmedOutput.isNotEmpty
+              ? 'Verificação retornou avisos:\n$displayOutput'
+              : 'Verificação retornou avisos';
+
           return DiskTestResult(
             testName: _getLocalizedTestName(DiskVerificationTest.fileSystemCheck),
             status: DiskTestStatus.warning,
-            message: 'Verificação retornou avisos',
-            details: {'output': output.trim()},
+            message: displayMessage,
+            details: {'output': trimmedOutput},
           );
         }
       } else if (Platform.isLinux) {

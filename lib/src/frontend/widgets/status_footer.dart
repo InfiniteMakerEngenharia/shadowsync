@@ -146,6 +146,7 @@ class StatusFooter extends StatelessWidget {
         }
         return DateTime(now.year, now.month, now.day, now.hour, nextMinute);
     }
+    return null;
   }
 
   /// Extrai hora e minuto de uma string no formato "HH:mm"

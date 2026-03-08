@@ -189,6 +189,7 @@ class ShadowSyncSidebar extends StatelessWidget {
                           _SidebarMenuItem(
                             icon: Icons.info_outline,
                             label: AppLocalizations.of(context).about,
+                            iconColor: ShadowSyncColors.text,
                             onPressed: onAboutPressed,
                           ),
                         ],
@@ -290,12 +291,14 @@ class _SidebarMenuItem extends StatefulWidget {
     required this.label,
     this.onPressed,
     this.icon,
+    this.iconColor,
   }) : assert(imagePath != null || icon != null, 'Either imagePath or icon must be provided');
 
   final String? imagePath;
   final String label;
   final VoidCallback? onPressed;
   final IconData? icon;
+  final Color? iconColor;
 
   @override
   State<_SidebarMenuItem> createState() => _SidebarMenuItemState();
@@ -332,7 +335,7 @@ class _SidebarMenuItemState extends State<_SidebarMenuItem> {
                   ? Icon(
                       widget.icon,
                       size: kSidebarMenuIconSize,
-                      color: ShadowSyncColors.accent,
+                      color: widget.iconColor ?? ShadowSyncColors.accent,
                     )
                   : Image.asset(
                       widget.imagePath!,

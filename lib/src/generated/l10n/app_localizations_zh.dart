@@ -765,6 +765,14 @@ class AppLocalizationsZh extends AppLocalizations {
   String get testSmartStatus => 'S.M.A.R.T. 狀態';
 
   @override
+  String get fullDiskAccessRequired =>
+      '存取被拒絕。在 macOS 上，請在「系統設定」>「隱私權與安全性」>「完整磁碟取用權限」中授予 ShadowSync「完整磁碟取用權限」。';
+
+  @override
+  String get fileSystemCheckRequiresPrivileges =>
+      '檔案系統驗證需要特權系統存取。請使用 macOS 的「磁碟工具程式」應用程式手動驗證此磁碟區。';
+
+  @override
   String get language => '语言';
 
   @override
@@ -1641,6 +1649,14 @@ class AppLocalizationsZhCn extends AppLocalizationsZh {
 
   @override
   String get testSmartStatus => 'S.M.A.R.T. 状态';
+
+  @override
+  String get fullDiskAccessRequired =>
+      '访问被拒绝。在 macOS 上，请在「系统设置」>「隐私与安全性」>「完全磁盘访问权限」中授予 ShadowSync「完全磁盘访问权限」。';
+
+  @override
+  String get fileSystemCheckRequiresPrivileges =>
+      '文件系统验证需要特权系统访问。请使用 macOS 的「磁盘工具」应用手动验证此卷。';
 
   @override
   String get language => '语言';

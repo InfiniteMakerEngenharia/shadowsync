@@ -1286,6 +1286,15 @@
     "description": "S.M.A.R.T. 狀態測試的名稱"
   },
   
+  "fullDiskAccessRequired": "存取被拒絕。在 macOS 上，請在「系統設定」>「隱私權與安全性」>「完整磁碟取用權限」中授予 ShadowSync「完整磁碟取用權限」。",
+  "@fullDiskAccessRequired": {
+    "description": "當應用程式在 macOS 上沒有存取磁碟區的權限時的訊息"
+  },
+  
+  "fileSystemCheckRequiresPrivileges": "檔案系統驗證需要特權系統存取。請使用 macOS 的「磁碟工具程式」應用程式手動驗證此磁碟區。",
+  "@fileSystemCheckRequiresPrivileges": {
+    "description": "當 diskutil 無法與 storagekitd 通訊時的訊息（錯誤 -69812）"
+  },
   
   "language": "语言",
   "@language": {
@@ -1517,10 +1526,5 @@
   "visitWebsite": "访问网站",
   "@visitWebsite": {
     "description": "Button to visit website"
-  },
-
-  "backupCompleted": "备份已完成 ✓",
-  "@backupCompleted": {
-    "description": "Notification title for successful backup"
   }
 }

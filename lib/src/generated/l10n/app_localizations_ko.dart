@@ -766,6 +766,14 @@ class AppLocalizationsKo extends AppLocalizations {
   String get testSmartStatus => 'S.M.A.R.T. 상태';
 
   @override
+  String get fullDiskAccessRequired =>
+      '액세스가 거부되었습니다. macOS에서 시스템 설정 > 개인 정보 보호 및 보안 > 전체 디스크 액세스에서 ShadowSync에 \"전체 디스크 액세스\"를 허용하세요.';
+
+  @override
+  String get fileSystemCheckRequiresPrivileges =>
+      '파일 시스템 검증에는 권한 있는 시스템 액세스가 필요합니다. macOS의 \"디스크 유틸리티\" 앱에서 이 볼륨을 수동으로 검증하세요.';
+
+  @override
   String get language => '언어';
 
   @override

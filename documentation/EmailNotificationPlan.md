@@ -409,3 +409,22 @@ EmailNotificationConfig(
 - [x] Senha armazenada de forma segura
 - [x] Tratamento de erros implementado
 - [x] Documentação atualizada
+
+---
+
+## 15. Como alterar o ícone do cabeçalho do email
+
+O ícone exibido no cabeçalho das mensagens de email é definido no serviço de notificação. Para alterar a URL da imagem:
+
+1. **Localização:** `lib/src/backend/services/email_notification_service.dart`
+2. **Método:** `_getIconImgTag()` (linha ~37)
+3. **Alteração:** Edite a constante `iconUrl` com a nova URL da imagem:
+
+```dart
+String _getIconImgTag() {
+  const iconUrl = 'https://shadownsyncwebpage.pages.dev/images/Email_Icon.png';
+  return '<img src="$iconUrl" alt="ShadowSync" width="64" height="64" style="display: block; border: 0;" />';
+}
+```
+
+4. **Requisitos da imagem:** Use uma URL pública e estável (HTTPS). Dimensões recomendadas: 64x64 pixels para boa exibição em clientes de email.

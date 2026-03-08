@@ -765,6 +765,14 @@ class AppLocalizationsJa extends AppLocalizations {
   String get testSmartStatus => 'S.M.A.R.T. ステータス';
 
   @override
+  String get fullDiskAccessRequired =>
+      'アクセスが拒否されました。macOSでは、システム設定 > プライバシーとセキュリティ > フルディスクアクセスでShadowSyncに「フルディスクアクセス」を許可してください。';
+
+  @override
+  String get fileSystemCheckRequiresPrivileges =>
+      'ファイルシステムの検証には特権的なシステムアクセスが必要です。macOSの「ディスクユーティリティ」アプリでこのボリュームを手動で検証してください。';
+
+  @override
   String get language => '言語';
 
   @override

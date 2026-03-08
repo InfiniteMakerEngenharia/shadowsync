@@ -1286,6 +1286,15 @@
     "description": "Nome del test di stato S.M.A.R.T."
   },
   
+  "fullDiskAccessRequired": "Accesso negato. Su macOS, concedi a ShadowSync \"Accesso completo al disco\" in Impostazioni di sistema > Privacy e sicurezza > Accesso completo al disco.",
+  "@fullDiskAccessRequired": {
+    "description": "Messaggio quando l'app non ha il permesso di accedere al volume su macOS"
+  },
+  
+  "fileSystemCheckRequiresPrivileges": "La verifica del file system richiede l'accesso privilegiato di sistema. Usa l'app \"Utility Disco\" di macOS per verificare manualmente questo volume.",
+  "@fileSystemCheckRequiresPrivileges": {
+    "description": "Messaggio quando diskutil non può comunicare con storagekitd (errore -69812)"
+  },
   
   "language": "Lingua",
   "@language": {
@@ -1517,10 +1526,5 @@
   "visitWebsite": "Visita il sito web",
   "@visitWebsite": {
     "description": "Pulsante per visitare il sito web"
-  },
-
-  "backupCompleted": "Backup completato ✓",
-  "@backupCompleted": {
-    "description": "Notification title for successful backup"
   }
 }

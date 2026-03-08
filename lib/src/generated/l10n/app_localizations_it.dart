@@ -786,6 +786,14 @@ class AppLocalizationsIt extends AppLocalizations {
   String get testSmartStatus => 'Stato S.M.A.R.T.';
 
   @override
+  String get fullDiskAccessRequired =>
+      'Accesso negato. Su macOS, concedi a ShadowSync \"Accesso completo al disco\" in Impostazioni di sistema > Privacy e sicurezza > Accesso completo al disco.';
+
+  @override
+  String get fileSystemCheckRequiresPrivileges =>
+      'La verifica del file system richiede l\'accesso privilegiato di sistema. Usa l\'app \"Utility Disco\" di macOS per verificare manualmente questo volume.';
+
+  @override
   String get language => 'Lingua';
 
   @override

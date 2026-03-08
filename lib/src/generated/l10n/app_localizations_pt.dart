@@ -219,7 +219,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get backupSuccess => 'Backup concluído com sucesso';
 
   @override
-  String get backupFailed => 'Falha no Backup ✗';
+  String get backupFailed => 'Backup falhou';
 
   @override
   String get backupStarted => 'Backup iniciado';
@@ -782,6 +782,14 @@ class AppLocalizationsPt extends AppLocalizations {
   String get testSmartStatus => 'Estado S.M.A.R.T.';
 
   @override
+  String get fullDiskAccessRequired =>
+      'Acesso negado. No macOS, conceda \"Acesso Total ao Disco\" ao ShadowSync em Ajustes do Sistema > Privacidade e Segurança > Acesso Total ao Disco.';
+
+  @override
+  String get fileSystemCheckRequiresPrivileges =>
+      'Verificação de sistema de arquivos requer acesso privilegiado do sistema. Use o aplicativo \"Utilidades de Disco\" do macOS para verificar este volume manualmente.';
+
+  @override
   String get language => 'Idioma';
 
   @override
@@ -897,66 +905,6 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get visitWebsite => 'Visitar Site';
-
-  @override
-  String get backupCompleted => 'Backup Concluído ✓';
-
-  @override
-  String backupCompletedMessage(String routineName) {
-    return 'O backup \"$routineName\" foi concluído com sucesso.';
-  }
-
-  @override
-  String backupFailedMessage(String routineName, String errorMessage) {
-    return 'O backup \"$routineName\" falhou: $errorMessage';
-  }
-
-  @override
-  String get nextBackupScheduled => 'Próximo Backup Agendado';
-
-  @override
-  String nextBackupMessage(String routineName, String timeDescription) {
-    return '\"$routineName\" será executado $timeDescription.';
-  }
-
-  @override
-  String get inLessThanMinute => 'em menos de 1 minuto';
-
-  @override
-  String get inMinute => 'em 1 minuto';
-
-  @override
-  String inMinutes(int count) {
-    return 'em $count minutos';
-  }
-
-  @override
-  String get inHour => 'em 1 hora';
-
-  @override
-  String inHours(int count) {
-    return 'em $count horas';
-  }
-
-  @override
-  String inHoursMinutes(int hours, int minutes) {
-    return 'em ${hours}h${minutes}min';
-  }
-
-  @override
-  String get inDay => 'em 1 dia';
-
-  @override
-  String inDays(int count) {
-    return 'em $count dias';
-  }
-
-  @override
-  String get notificationChannelName => 'Backups do ShadowSync';
-
-  @override
-  String get notificationChannelDescription =>
-      'Notificações sobre status de backups e agendamentos';
 }
 
 /// The translations for Portuguese, as used in Brazil (`pt_BR`).
@@ -1174,7 +1122,7 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get backupSuccess => 'Backup concluído com sucesso';
 
   @override
-  String get backupFailed => 'Falha no Backup ✗';
+  String get backupFailed => 'Backup falhou';
 
   @override
   String get backupStarted => 'Backup iniciado';
@@ -1737,6 +1685,14 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
   String get testSmartStatus => 'Status S.M.A.R.T.';
 
   @override
+  String get fullDiskAccessRequired =>
+      'Acesso negado. No macOS, conceda \"Acesso Total ao Disco\" ao ShadowSync em Ajustes do Sistema > Privacidade e Segurança > Acesso Total ao Disco.';
+
+  @override
+  String get fileSystemCheckRequiresPrivileges =>
+      'Verificação de sistema de arquivos requer acesso privilegiado do sistema. Use o aplicativo \"Utilidades de Disco\" do macOS para verificar este volume manualmente.';
+
+  @override
   String get language => 'Idioma';
 
   @override
@@ -1852,64 +1808,4 @@ class AppLocalizationsPtBr extends AppLocalizationsPt {
 
   @override
   String get visitWebsite => 'Visitar Site';
-
-  @override
-  String get backupCompleted => 'Backup Concluído ✓';
-
-  @override
-  String backupCompletedMessage(String routineName) {
-    return 'O backup \"$routineName\" foi concluído com sucesso.';
-  }
-
-  @override
-  String backupFailedMessage(String routineName, String errorMessage) {
-    return 'O backup \"$routineName\" falhou: $errorMessage';
-  }
-
-  @override
-  String get nextBackupScheduled => 'Próximo Backup Agendado';
-
-  @override
-  String nextBackupMessage(String routineName, String timeDescription) {
-    return '\"$routineName\" será executado $timeDescription.';
-  }
-
-  @override
-  String get inLessThanMinute => 'em menos de 1 minuto';
-
-  @override
-  String get inMinute => 'em 1 minuto';
-
-  @override
-  String inMinutes(int count) {
-    return 'em $count minutos';
-  }
-
-  @override
-  String get inHour => 'em 1 hora';
-
-  @override
-  String inHours(int count) {
-    return 'em $count horas';
-  }
-
-  @override
-  String inHoursMinutes(int hours, int minutes) {
-    return 'em ${hours}h${minutes}min';
-  }
-
-  @override
-  String get inDay => 'em 1 dia';
-
-  @override
-  String inDays(int count) {
-    return 'em $count dias';
-  }
-
-  @override
-  String get notificationChannelName => 'Backups do ShadowSync';
-
-  @override
-  String get notificationChannelDescription =>
-      'Notificações sobre status de backups e agendamentos';
 }

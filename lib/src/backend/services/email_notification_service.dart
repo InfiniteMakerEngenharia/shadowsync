@@ -33,10 +33,10 @@ class EmailNotificationService {
     _box = await Hive.openBox<EmailNotificationConfig>(_boxName);
   }
 
-  /// Retorna a tag img com o ícone do app
+  /// Retorna a tag img com o ícone do app no cabeçalho do email
   String _getIconImgTag() {
-    // Usar imagem hospedada no Firebase Storage
-    return '<img src="https://firebasestorage.googleapis.com/v0/b/shadowsyncbackup.firebasestorage.app/o/small_icon.png?alt=media&token=05089e5a-a1c0-4c99-8048-9da565a5f985" alt="ShadowSync" width="64" height="64" style="display: block; border: 0;" />';
+    const iconUrl = 'https://shadownsyncwebpage.pages.dev/images/Email_Icon.png';
+    return '<img src="$iconUrl" alt="ShadowSync" width="64" height="64" style="display: block; border: 0;" />';
   }
 
   /// Obtém a configuração atual

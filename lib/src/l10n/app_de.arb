@@ -1286,6 +1286,15 @@
     "description": "Name des S.M.A.R.T.-Status-Tests"
   },
   
+  "fullDiskAccessRequired": "Zugriff verweigert. Unter macOS gewähren Sie ShadowSync \"Vollständiger Festplattenzugriff\" in Systemeinstellungen > Datenschutz & Sicherheit > Vollständiger Festplattenzugriff.",
+  "@fullDiskAccessRequired": {
+    "description": "Meldung wenn die App keine Berechtigung hat, auf das Volume unter macOS zuzugreifen"
+  },
+  
+  "fileSystemCheckRequiresPrivileges": "Die Dateisystemüberprüfung erfordert privilegierten Systemzugriff. Verwenden Sie die App \"Festplatten-Dienstprogramm\" unter macOS, um dieses Volume manuell zu überprüfen.",
+  "@fileSystemCheckRequiresPrivileges": {
+    "description": "Meldung wenn diskutil nicht mit storagekitd kommunizieren kann (Fehler -69812)"
+  },
   
   "language": "Sprache",
   "@language": {
@@ -1517,10 +1526,5 @@
   "visitWebsite": "Website besuchen",
   "@visitWebsite": {
     "description": "Schaltfläche zum Besuch der Website"
-  },
-
-  "backupCompleted": "Sicherung abgeschlossen ✓",
-  "@backupCompleted": {
-    "description": "Notification title for successful backup"
   }
 }
