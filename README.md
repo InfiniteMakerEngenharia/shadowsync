@@ -1,251 +1,296 @@
 # ShadowSync
 
-Aplicativo desktop Flutter para gerenciamento de rotinas de backup com UI moderna no estilo glassmorphism.
+<p align="center">
+  <strong>Gerenciador de Backups</strong>
+</p>
 
-## Estrutura do projeto
+<p align="center">
+  Aplicativo multiplataforma para agendamento, execução e monitoramento de rotinas de backup com interface moderna e notificações integradas.
+</p>
 
-```text
-lib/
-	main.dart
-	src/
-		app.dart
-		backend/
-			models/
-			repositories/
-			services/
-		frontend/
-			controllers/
-			pages/
-			theme/
-			widgets/
-```
+---
 
-- `frontend`: interface, tema, widgets e controlador de tela.
-- `backend`: modelo de domínio, contrato de repositório e serviço de negócio.
+## Sobre o Projeto
+
+O **ShadowSync** é um aplicativo desktop e mobile desenvolvido em Flutter que permite criar, agendar e executar rotinas de backup com suporte a compressão (ZIP), criptografia AES-256 e notificações via Email e Telegram. A interface utiliza o estilo glassmorphism e oferece experiência fluida em macOS, Windows, Linux, Android e iOS.
+
+### Principais Funcionalidades
+
+- **Rotinas de backup** — Crie múltiplas rotinas com origens e destinos personalizados
+- **Agendamento** — Diário, semanal ou por intervalo de minutos
+- **Compressão** — Formato ZIP para reduzir o tamanho dos arquivos
+- **Criptografia** — AES-256-CBC para proteger backups sensíveis
+- **Notificações** — Alertas por Email (SMTP) e Telegram
+- **Verificação de disco** — Diagnóstico de saúde de armazenamento (SMART)
+- **Descriptografia** — Ferramenta integrada para desbloquear arquivos criptografados
+- **Internacionalização** — Suporte a 12 idiomas (PT-BR, EN, ES, FR, DE, IT, JA, ZH, KO, etc.)
+- **Serviço em segundo plano** — Execução de backups agendados no Android
+
+### Plataformas Suportadas
+
+| Plataforma | Status |
+|------------|--------|
+| macOS      | ✅     |
+| Windows    | ✅     |
+| Linux      | ✅     |
+| Android    | ✅     |
+| iOS        | ✅     |
+| Web        | ⚠️ Parcial |
+
+---
 
 ## Pré-requisitos
 
-- Flutter SDK 3.24+ (Desktop habilitado)
-- macOS, Windows ou Linux com toolchain configurado
+- **Flutter SDK** 3.10.4 ou superior (com suporte a desktop habilitado)
+- **Dart** 3.10.4+
+- Para **macOS**: Xcode e ferramentas de linha de comando
+- Para **Windows**: Visual Studio com workload de desenvolvimento em C++
+- Para **Linux**: GCC, clang, pkg-config, libgtk-3-dev
+- Para **Android**: Android Studio e SDK Android
 
-## Como executar
+---
 
-1. Instale as dependências:
+## Instalação
+
+1. **Clone o repositório**
+
+```bash
+git clone https://github.com/InfiniteMakerEngenharia/shadowsync.git
+cd shadowsync
+```
+
+2. **Instale as dependências**
 
 ```bash
 flutter pub get
 ```
 
-2. Rode no desktop desejado:
+3. **Gere os arquivos de localização** (se necessário)
 
 ```bash
+flutter gen-l10n
+```
+
+---
+
+## Como Executar
+
+### Desktop
+
+```bash
+# macOS
 flutter run -d macos
+
+# Windows
+flutter run -d windows
+
+# Linux
+flutter run -d linux
 ```
 
-Ou substitua por `-d windows` / `-d linux` conforme seu ambiente.
-
-## Como testar
-
-Execute os testes de widget:
+### Mobile
 
 ```bash
-flutter test
+# Android
+flutter run -d android
+
+# iOS
+flutter run -d ios
 ```
 
-Ou use o script para instalar dependências + testar + executar:
+### Script auxiliar
+
+O projeto inclui scripts para facilitar o fluxo de desenvolvimento:
 
 ```bash
-./CompileAndTest.sh
+# Instalar dependências, rodar testes e executar
+./scripts/CompileAndTest.sh macos
+./scripts/CompileAndTest.sh windows
+./scripts/CompileAndTest.sh linux
 ```
 
-Para escolher o device alvo:
+---
 
-```bash
-./CompileAndTest.sh macos
-./CompileAndTest.sh windows
-./CompileAndTest.sh linux
-```
-
-## Ícone do aplicativo
-
-O projeto usa `assets/images/icon.png` como ícone único para Android, iOS, Web, Windows e macOS.
-
-Para regenerar os ícones após alterar a imagem:
-
-```bash
-dart run flutter_launcher_icons
-```
-
-Ou use o script pronto:
-
-```bash
-./UpdateIcons.sh
-```
-
-### Teste visual (golden)
-
-Rodar os testes golden:
-
-```bash
-flutter test test/golden/dashboard_golden_test.dart
-```
-
-Atualizar snapshots golden (após mudanças visuais intencionais):
-
-```bash
-flutter test --update-goldens test/golden/dashboard_golden_test.dart
-```
-
-## Compilar versão final para distribuição
+## Build para Distribuição
 
 ### macOS
 
-Gera o app bundle (.app) em `build/macos/Build/Products/Release/`:
-
 ```bash
 flutter build macos --release
 ```
 
-Para distribuir na Mac App Store, é necessário assinar o app com um certificado Apple Developer e criar um arquivo `.pkg`:
-
-```bash
-# Após configurar o signing no Xcode
-flutter build macos --release
-# Abra o projeto no Xcode para Archive e Upload
-open macos/Runner.xcworkspace
-```
+O app será gerado em `build/macos/Build/Products/Release/`.
 
 ### Windows
-
-Gera o executável em `build/windows/x64/runner/Release/`:
 
 ```bash
 flutter build windows --release
 ```
 
-Para criar um instalador, recomenda-se usar [Inno Setup](https://jrsoftware.org/isinfo.php) ou [MSIX Packaging Tool](https://learn.microsoft.com/en-us/windows/msix/packaging-tool/tool-overview):
-
-```bash
-# Usando msix (adicione msix ao pubspec.yaml em dev_dependencies)
-dart run msix:create
-```
+O executável estará em `build/windows/x64/runner/Release/`.
 
 ### Linux
-
-Gera o executável em `build/linux/x64/release/bundle/`:
 
 ```bash
 flutter build linux --release
 ```
 
-Para distribuir, empacote como `.deb`, `.rpm`, `.AppImage` ou Snap. Exemplo com AppImage:
+Saída em `build/linux/x64/release/bundle/`.
 
-```bash
-# Instale appimagetool e crie a estrutura AppDir
-# Consulte: https://appimage.org/
-```
-
-### Android (APK para testes)
-
-Gera APK para instalação direta (sideload):
+### Android (APK)
 
 ```bash
 flutter build apk --release
 ```
 
-O arquivo será gerado em `build/app/outputs/flutter-apk/app-release.apk`.
+APK em `build/app/outputs/flutter-apk/app-release.apk`.
 
-### Android (AAB para Google Play Store)
-
-A Google Play Store **não aceita mais APK** para novos apps. É obrigatório usar o formato **Android App Bundle (AAB)**:
+### Android (AAB para Google Play)
 
 ```bash
 flutter build appbundle --release
 ```
 
-O arquivo será gerado em `build/app/outputs/bundle/release/app-release.aab`.
+AAB em `build/app/outputs/bundle/release/app-release.aab`.
 
-#### Pré-requisitos para publicação na Google Play:
-
-1. **Criar uma keystore** para assinar o app (apenas uma vez):
-
-```bash
-keytool -genkey -v -keystore ~/upload-keystore.jks -keyalg RSA \
-  -keysize 2048 -validity 10000 -alias upload
-```
-
-2. **Configurar a assinatura** criando o arquivo `android/key.properties`:
-
-```properties
-storePassword=<senha-da-keystore>
-keyPassword=<senha-da-chave>
-keyAlias=upload
-storeFile=<caminho-absoluto-para-upload-keystore.jks>
-```
-
-3. **Verificar se `android/app/build.gradle.kts`** está configurado para usar a keystore:
-
-```kotlin
-val keystoreProperties = Properties()
-val keystorePropertiesFile = rootProject.file("key.properties")
-if (keystorePropertiesFile.exists()) {
-    keystoreProperties.load(FileInputStream(keystorePropertiesFile))
-}
-
-android {
-    signingConfigs {
-        create("release") {
-            keyAlias = keystoreProperties["keyAlias"] as String
-            keyPassword = keystoreProperties["keyPassword"] as String
-            storeFile = file(keystoreProperties["storeFile"] as String)
-            storePassword = keystoreProperties["storePassword"] as String
-        }
-    }
-    buildTypes {
-        release {
-            signingConfig = signingConfigs.getByName("release")
-        }
-    }
-}
-```
-
-4. **Gerar o AAB assinado**:
-
-```bash
-flutter build appbundle --release
-```
-
-5. **Fazer upload** do arquivo `.aab` no [Google Play Console](https://play.google.com/console).
-
-### iOS (App Store)
-
-Gera o arquivo para App Store em `build/ios/ipa/`:
+### iOS
 
 ```bash
 flutter build ipa --release
 ```
 
-Requer conta Apple Developer e certificados configurados. Após o build:
+Requer conta Apple Developer e certificados configurados.
 
-```bash
-# Abra o Xcode para Archive e Upload
-open ios/Runner.xcworkspace
+---
+
+## Estrutura do Projeto
+
+```
+shadowsync/
+├── lib/
+│   ├── main.dart
+│   └── src/
+│       ├── app.dart
+│       ├── backend/           # Lógica de negócio
+│       │   ├── models/
+│       │   ├── repositories/
+│       │   └── services/
+│       ├── frontend/           # Interface do usuário
+│       │   ├── controllers/
+│       │   ├── pages/
+│       │   ├── theme/
+│       │   └── widgets/
+│       └── generated/          # Código gerado (l10n)
+├── assets/
+│   ├── images/
+│   └── animations/
+├── documentation/
+├── scripts/
+└── test/
 ```
 
-Ou use o Transporter app da Apple para fazer upload do `.ipa`.
+---
 
-### Web
-
-Gera os arquivos estáticos em `build/web/`:
+## Testes
 
 ```bash
-flutter build web --release
+# Todos os testes
+flutter test
+
+# Testes golden (snapshots visuais)
+flutter test test/golden/dashboard_golden_test.dart
+
+# Atualizar snapshots golden
+flutter test --update-goldens test/golden/dashboard_golden_test.dart
 ```
 
-Faça deploy em qualquer servidor web, Firebase Hosting, Vercel, Netlify, etc.
+---
 
-## Observações do MVP atual
+## Ícone do Aplicativo
 
-- Janela desktop sem borda nativa com botões customizados de controle.
-- Dashboard “Minhas Rotinas” com sidebar, cards, barra de progresso e rodapé de status.
-- Camadas `frontend` e `backend` separadas para facilitar evolução (agendamento, criptografia e persistência real).
+O ícone padrão está em `assets/images/icon.png`. Para regenerar os ícones em todas as plataformas:
+
+```bash
+dart run flutter_launcher_icons
+```
+
+Ou use o script:
+
+```bash
+./scripts/UpdateIcons.sh
+```
+
+---
+
+## Verificação de Disco (macOS)
+
+O app usa uma exceção de sandbox para leitura em `/Volumes/` e `/`, permitindo verificar discos e volumes sem exigir Acesso Total ao Disco. Se ainda assim aparecer "Operation not permitted":
+
+1. **Recompile o app** para aplicar os entitlements:
+   ```bash
+   flutter clean && flutter run -d macos
+   ```
+   Ou gere um novo build de release: `flutter build macos --release`.
+
+2. **Alternativa:** Conceda **Acesso Total ao Disco** ao ShadowSync em Ajustes do Sistema → Privacidade e Segurança → Acesso Total ao Disco, e adicione o executável que você está usando (ex.: `build/macos/Build/Products/Debug/shadowsync.app`). Reinicie o app depois.
+
+---
+
+## Configuração de Notificações
+
+### Email (SMTP)
+
+Configure em **Configurações → Email**:
+
+- Provedor (Gmail, Outlook, Yahoo, etc.) ou servidor personalizado
+- Credenciais e destinatários
+- Eventos a notificar (sucesso, falha, início)
+
+### Telegram
+
+Configure em **Configurações → Telegram**:
+
+- Bot Token e Chat ID
+- Eventos a notificar
+
+---
+
+## Documentação Adicional
+
+- [Primeiros Passos](documentation/FirstSteps.md)
+- [Plano de Internacionalização](documentation/InternationalizationPlan.md)
+- [Notificações por Email](documentation/EmailNotificationPlan.md)
+- [Notificações por Telegram](documentation/TelegramNotificationPlan.md)
+- [Instruções de Build](documentation/instructions.md)
+
+---
+
+## Tecnologias
+
+- **Flutter** — Framework multiplataforma
+- **Hive** — Persistência local
+- **Dart Mailer** — Envio de emails via SMTP
+- **Encrypt** — Criptografia AES-256
+- **Archive** — Compressão ZIP
+- **Cron** — Agendamento de tarefas
+
+---
+
+## Licença
+
+Este projeto é de uso privado. Entre em contato com o autor para informações sobre licenciamento.
+
+---
+
+## Autor
+
+**Eng. Hewerton Bianchi**
+
+- Website: [infinitemaker.com.br](https://infinitemaker.com.br)
+- Projeto: [ShadowSync](https://shadownsyncwebpage.pages.dev)
+
+---
+
+<p align="center">
+  <sub>ShadowSync v1.0.0 — Gerenciador de Backups</sub>
+</p>
